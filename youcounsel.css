@@ -1,0 +1,30 @@
+/* BODY STYLING */
+body{
+    background-image: url("PHOTOS/loginbackground.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: smaller;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5{
+    font-weight: bold;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* ALIGNMENT STYLING */
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    text-align: center;
+}
