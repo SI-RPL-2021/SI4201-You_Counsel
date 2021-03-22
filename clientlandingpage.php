@@ -62,10 +62,10 @@
 
     <!-- SOCMED -->
     
-    <a href="#" class="fa fa-twitter fa-3x" style="color: blue; margin-left: 40%; margin-top: 40px;"></a>
-    <a href="#" class="fa fa-facebook fa-3x" style="color: blue; margin-left: 20px;"></a>
-    <a href="#" class="fa fa-instagram fa-3x" style="color: blue; margin-left: 20px;"></a>
-    <a href="#" class="fa fa-google fa-3x" style="color: blue; margin-left: 20px;"></a>
+    <a href="https://twitter.com/" class="fa fa-twitter fa-3x" style="color: blue; margin-left: 40%; margin-top: 40px;"></a>
+    <a href="https://facebook.com/" class="fa fa-facebook fa-3x" style="color: blue; margin-left: 20px;"></a>
+    <a href="https://instagram.com/" class="fa fa-instagram fa-3x" style="color: blue; margin-left: 20px;"></a>
+    <a href="https://accounts.google.com/" class="fa fa-google fa-3x" style="color: blue; margin-left: 20px;"></a>
 
     <!-- CONTENT -->
 
