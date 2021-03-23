@@ -19,11 +19,11 @@
 <body>
 
   <!-- REGISTER FORM -->
-  <div style=" background-image: url('https://raw.githubusercontent.com/SI-RPL-2021/SI4201-You_Counsel/master/PHOTOS/RegisterBG.png'); height: 100%; ">
+  <div style=" background-image: url('https://raw.githubusercontent.com/SI-RPL-2021/SI4201-You_Counsel/master/PHOTOS/RegisterBG.png'); height: 112%; ">
     <div class="container">
       <div class="row justify-content-end">
         <div class="col-2 col-md-2">
-          <div class="card-body center" style="width: 500px; height: 100%; background-color:#06B2D8;">
+          <div class="card-body center" style="width: 500px; height: 109%; background-color:#06B2D8;">
             <h4 class="card-title" style="text-align:center; margin-top: 20; color:white;">Register</h4>
             <form action="" method="post">
               <div class="form-group">
