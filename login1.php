@@ -38,7 +38,7 @@
                     <label class="form-check-label" for="rememberme">Remember Me</label>
                 </div>
                 <br>
-                <button type="submit" class="btn btn-outline-danger">Login</button>
+                <button type="submit" class="btn btn-outline-primary">Login</button>
             </form>
         </div>
     <!-- LOGIN FORM -->
