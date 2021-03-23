@@ -2,15 +2,23 @@
 <head>
     <title>You-Counsel | MyJournal</title>
     <!-- LOGO -->
-    <link rel = "icon" href="photos/logoo.png" type = "image/x-icon">
+    <link rel = "icon" href="photos/LogoBiru-01.png" type = "image/x-icon">
     <!-- LOGO -->
 
     <!-- STYLING -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <meta charset="UTF-8">
+    <style>
+    <?php include 'youcounsel.css'; ?>
+    </style>
+    <!-- STYLING -->
+    
 </head>
 
 <body>
+
+
+
     <!-- CONTENT -->
     <div class="card-body center shadow" style="width: 65%; height:80%; background-color:white;text-align:left;margin-left: 20%;margin-top: 80px;">
         <h4 class="card-title" style="text-align:center; color:#0BA9D0;">My Journal</h4>
