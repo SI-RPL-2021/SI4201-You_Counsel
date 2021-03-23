@@ -19,7 +19,7 @@
 <body>
 
     <!-- REGISTER FORM -->
-    <div class="card-body center shadow" style="width: 500px; background-color:#06B2D8;">
+    <div style=" background-image: url('https://raw.githubusercontent.com/SI-RPL-2021/SI4201-You_Counsel/master/PHOTOS/RegisterBG.png'); height: 100%; ">
         <h4 class="card-title" style="text-align:center; color:white;">Register</h4>
         <br>
         <div class="card-body center" style="width: 350px; background-color:#06B2D8;">
@@ -27,22 +27,23 @@
                 <div class="form-group">
                     <label for="username" style="font-size:15px;">Name</label>
                     <input type="text" class="form-control" id="username" name="username" aria-describedby="textHelp" placeholder="Enter Name">
-                    
+
                 </div>
                 <div class="form-group">
                     <label for="email" style="font-size:15px;">Email</label>
                     <input type="email" class="form-control" id="email" name="email" aria-describedby="textHelp" placeholder="Enter Email">
-                    
+
                 </div>
                 <div class="form-group">
                     <label for="password" style="font-size:15px;">Password</label>
                     <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password">
                 </div>
-                
+
                 <br>
                 <button type="submit" class="btn btn-outline-danger">Register Now</button>
             </form>
         </div>
+      </div>
     <!-- REGISTER FORM -->
 
 </body>
