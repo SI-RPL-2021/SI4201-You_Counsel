@@ -1,8 +1,8 @@
 <html>
 <head>
-    <title>U-Counsel</title>
+    <title>You-Counsel</title>
     <!-- LOGO -->
-    <link rel = "icon" href="photos/logo.png" type = "image/x-icon">
+    <link rel = "icon" href="photos/LogoBiru-01.png" type = "image/x-icon">
     <!-- LOGO -->
 
     <!-- STYLING -->
@@ -18,30 +18,45 @@
 
 <body>
 
-    <!-- LOGIN FORM -->
-    <div class="card-body center shadow" style="width: 500px; background-color:#06B2D8;">
-        <h4 class="card-title" style="text-align:center; color:white;">LOGIN</h4>
-        <br>
-        <div class="card-body center" style="width: 350px; background-color:#06B2D8;">
-            <form action="connchecklogin.php" method="post">
-                <div class="form-group">
-                    <label for="username" style="font-size:15px;">Email</label>
-                    <input type="text" class="form-control" id="username" name="username" aria-describedby="textHelp" placeholder="Enter Email">
-                    
+<div class="container-fluid">
+  <div class="row no-gutter">
+    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
+    <td >Already have an account</td>
+    <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae neque orci erat nunc at. </br>
+    </div>
+    <div class="col-md-8 col-lg-6" style="background-image:  url('images/Background.png')">
+      <div class="login d-flex align-items-center py-5" >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              <h3 class="login-heading mb-4">Welcome back!</h3>
+              <form>
+                <div class="form-label-group">
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                  <label for="inputEmail">Email address</label>
                 </div>
-                <div class="form-group">
-                    <label for="password" style="font-size:15px;">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password">
+
+                <div class="form-label-group">
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                  <label for="inputPassword">Password</label>
                 </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="rememberme" name="rememberme[]">
-                    <label class="form-check-label" for="rememberme">Remember Me</label>
+
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Remember password</label>
                 </div>
-                <br>
-                <button type="submit" class="btn btn-outline-primary">Login</button>
-            </form>
+                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
+                <div class="text-center">
+                  <a class="small" href="#">Forgot password?</a></div>
+              </form>
+            </div>
+          </div>
         </div>
-    <!-- LOGIN FORM -->
+      </div>
+    </div>
+  </div>
+</div>
+
 
 </body>
 </html>
