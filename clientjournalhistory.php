@@ -45,24 +45,24 @@
   <!-- NAVBAR -->
 
   <!-- CONTENT -->
-  <div class="center" style="width:1000px; height:700px;  background-color:white;">
+  <div class="center" style="width:70%; height:700px;  background-color:white;">
     <img src="PHOTOS/journal2.jpg" alt="journal2" class="iconjournal">
     <h3 class="center" style="color:0788D9; margin-top:10px;">Journal History</h3>  
-    <table class="table table-bordered ml-auto mr-auto" style="width:900px;">
+    <table class="table table-bordered ml-auto mr-auto" style="position:static;width:95%;margin-top: -70px;">
       <thead class="thead-light">
         <tr>
-          <th scope="col" style="width:10px;">No</th>
-          <th scope="col" style="width:140px;">Date</th>
-          <th scope="col" style="width:180px;">Feeling</th>
-          <th scope="col">Message</th>
+          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">No</th>
+          <th scope="col" style="text-align:center; width:12%; color: #069FD7;">Date</th>
+          <th scope="col" style="text-align:center; width:15%; color: #069FD7;">Feeling</th>
+          <th scope="col" style="text-align:center; color: #069FD7;">Message</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <th scope="row" style="text-align:center;">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
+          <td>23/03/2021</td>
+          <td>Sad</td>
+          <td>I’m tired :(  </td>
         </tr> 
       </tbody>
     </table>
@@ -70,14 +70,17 @@
   <!-- CONTENT -->
 
   <!-- SOCMED -->
+  <div class=""align="center">
   <a href="https://twitter.com/" class="fa fa-twitter fa-3x"
-    style="color: white; margin-left: 40%; margin-top: 10px;"></a>
-  <a href="https://facebook.com/" class="fa fa-facebook fa-3x" style="color: white; margin-left: 30px;"></a>
-  <a href="https://instagram.com/" class="fa fa-instagram fa-3x" style="color: white; margin-left: 30px;"></a>
-  <a href="https://accounts.google.com/" class="fa fa-google fa-3x" style="color: white; margin-left: 30px;"></a>
+    style="color: white;"></a>&ensp;&ensp;
+  <a href="https://facebook.com/" class="fa fa-facebook fa-3x" style="color: white;"></a>&ensp;&ensp;
+  <a href="https://instagram.com/" class="fa fa-instagram fa-3x" style="color: white;"></a>&ensp;&ensp;
+  <a href="https://accounts.google.com/" class="fa fa-google fa-3x" style="color: white;"></a>&ensp;&ensp;
+  </div>
+  
   <!-- SOCMED -->
 
-
+<br>
 </body>
 
 </html>
