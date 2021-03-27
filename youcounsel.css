@@ -33,3 +33,11 @@ h1, h2, h3, h4, h5{
   margin-top: -80;
   margin-left: -99;
 }
+
+.iconjournal{
+    height: 145px;
+    width: 145px;
+    border-radius: 100px;
+    position: static;
+    margin-top: -70px;
+}
