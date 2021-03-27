@@ -21,7 +21,7 @@
     <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
     <div class="card-body" style="margin-top:650px;">
                         <h1>Already Have an account?</h1>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae neque orci erat nunc at.
+                        You-counsel adalah web yang membantu anda bisa terhubung dengan couselor terbaik.
                     </div>
     </div>
     <div class="col-md-8 col-lg-6" style="background-image:  url('images/Background.png')">
