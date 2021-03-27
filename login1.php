@@ -1,9 +1,7 @@
 <html>
 <head>
-    <title>You-Counsel</title>
-    <!-- LOGO -->
-    <link rel = "icon" href="photos/LogoBiru-01.png" type = "image/x-icon">
-    <!-- LOGO -->
+    <title>U-Counsel</title>
+   
 
     <!-- STYLING -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -21,8 +19,10 @@
 <div class="container-fluid">
   <div class="row no-gutter">
     <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
-    <td >Already have an account</td>
-    <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae neque orci erat nunc at. </br>
+    <div class="card-body" style="margin-top:650px;">
+                        <h1>Already Have an account?</h1>
+                        You-counsel adalah web yang membantu anda bisa terhubung dengan couselor terbaik.
+                    </div>
     </div>
     <div class="col-md-8 col-lg-6" style="background-image:  url('images/Background.png')">
       <div class="login d-flex align-items-center py-5" >
