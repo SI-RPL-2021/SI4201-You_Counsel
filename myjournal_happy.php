@@ -41,7 +41,7 @@
     <!-- CONTENT -->
 
     <img src="photos/journal2.jpg"  style= "border-radius: 50%; width:160px;height:150px; margin-left: 47%;margin-bottom: -10%;">
-    <div class="card-body center shadow" style="width: 65%; height:100%; background-color:white;text-align:left;margin-left: 20%;margin-top: 80px;">
+    <div class="card-body center shadow" style="width: 65%; height:105%; background-color:white;text-align:left;margin-left: 20%;margin-top: 80px;">
     <h3 class="card-title" style="text-align:center; color:#0BA9D0;margin-top: 50px;font-family: 'Be Vietnam';">My Journal</h3>
         <div class="card-body">
             <input type="text" readonly class="form-control-plaintext" style="font-family: 'Be Vietnam';font-size: 22px;" id="date" value="<?php echo date('D, d M Y');?>">
@@ -50,6 +50,14 @@
             <p style="font-size:110px;text-align:center;">&#128522;</p>
             <p style="color:#0BA9D0; font-family: 'Be Vietnam';font-size: 40px;text-align:center">Yeay! Glad to hear that, do you mind to tell us about today?</p>
             
+        <div class="form-check">
+            <textarea class="form-control" id="message" name="message" rows="5" style="border-color: #0BA9D0;"></textarea>
+        </div>
+            <a href="#" style=" box-shadow: 0 5px 5px 5px #D5D8DC;border-radius: 50%;
+                                background-color: white; color: #0BA9D0;
+                                margin-left:100%; padding: 10px;font-size:40px">&#8250;</a>                    
+        </form>
+
         </div>
     </div>
 
