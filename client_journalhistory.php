@@ -46,35 +46,28 @@
 
   <!-- CONTENT -->
   <div class="center" style="width:70%; height:700px;  background-color:white;">
-    <img src="PHOTOS/inboxicon.png" alt="journal2" class="iconjournal">
-    <h3 class="center" style="color:0788D9; margin-top:10px;">Inbox</h3>
-    <div class="" style="float:left; margin-top:-200px; margin-left:20px; position:static;">
-        <a id="tombolnext" href="#" class="previous round ">&#8249;</a> 
-        </div>  
-    <!-- Isi Konten -->
+    <img src="PHOTOS/journal2.jpg" alt="journal2" class="iconjournal">
+    <h3 class="center" style="color:0788D9; margin-top:10px;">Journal History</h3>  
     <table class="table table-bordered ml-auto mr-auto" style="position:static;width:95%;margin-top: -70px;">
       <thead class="thead-light">
         <tr>
-          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Date</th>
-          <th scope="col" style="text-align:center; width:12%; color: #069FD7;">Message From Counselor</th>
+          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">No</th>
+          <th scope="col" style="text-align:center; width:12%; color: #069FD7;">Date</th>
+          <th scope="col" style="text-align:center; width:15%; color: #069FD7;">Feeling</th>
+          <th scope="col" style="text-align:center; color: #069FD7;">Message</th>
+        </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row" style="text-align:center;">21/03/2021</th>
-          <td>Your appointment is rejected</td>
-        </tr> 
-        <tr>
-          <th scope="row" style="text-align:center;">26/03/2021</th>
-          <td>Please change your date appointment</td>
-        </tr> 
-        <tr>
-          <th scope="row" style="text-align:center;">06/04/2021</th>
-          <td>Your appointment is accepted</td>
+          <th scope="row" style="text-align:center;">1</th>
+          <td>23/03/2021</td>
+          <td>Sad</td>
+          <td>I’m tired :(  </td>
         </tr> 
       </tbody>
     </table>
   </div>
-  
+  <!-- CONTENT -->
 
   <!-- SOCMED -->
   <div class=""align="center">

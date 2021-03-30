@@ -47,37 +47,35 @@
   <!-- CONTENT -->
   <div class="center" style="width:70%; height:700px;  background-color:white;">
     <img src="PHOTOS/inboxicon.png" alt="journal2" class="iconjournal">
-    <h3 class="center" style="color:0788D9; margin-top:10px;">Inbox</h3>
-    <div class="" style="float:left; margin-top:-200px; margin-left:20px; position:static;">
-        <a id="tombolnext" href="#" class="previous round ">&#8249;</a> 
-        </div>  
+    <h3 class="center" style="color:0788D9; margin-top:10px; color:#0BA9D0;font-family: 'Be Vietnam';">Leave Us a Message</h3>
     <!-- Isi Konten -->
-    <table class="table table-bordered ml-auto mr-auto" style="position:static;width:95%;margin-top: -70px;">
-      <thead class="thead-light">
-        <tr>
-          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Date</th>
-          <th scope="col" style="text-align:center; width:12%; color: #069FD7;">Message From Counselor</th>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row" style="text-align:center;">21/03/2021</th>
-          <td>Your appointment is rejected</td>
-        </tr> 
-        <tr>
-          <th scope="row" style="text-align:center;">26/03/2021</th>
-          <td>Please change your date appointment</td>
-        </tr> 
-        <tr>
-          <th scope="row" style="text-align:center;">06/04/2021</th>
-          <td>Your appointment is accepted</td>
-        </tr> 
-      </tbody>
-    </table>
+    <input type="text" readonly class="form-control-plaintext"
+      style="font-family: 'Be Vietnam';font-size: 20px; margin-top:-80px;margin-left:10px;" id="date"
+      value="<?php echo date('D, d M Y');?>">
+    <input type="text" readonly class="form-control-plaintext"
+      style="font-family: 'Be Vietnam';font-size: 20px;margin-left:10px;" id="time"
+      value="<?php date_default_timezone_set("Asia/Jakarta");echo date("h:i");?>">
+    <center>
+      <div style="width:90%; margin-top:30px;">
+        <p style="color:#0BA9D0; font-family: 'Be Vietnam';font-size: 50px;margin-top:-20px;">Send us your thoughts because every mind should be free!</p>
+      </div>
+    </center>
+
+    <center>
+      <div class="form-check" style="width:85%;">
+        <textarea class="form-control" id="message" name="message" style="border-color: #0BA9D0;height:17%"
+          placeholder="Write down your thoughts...."></textarea>
+      </div>
+    </center>
+
+    <div class="" style="float:right;margin-right:20px">
+      <a id="tombolnext" href="#" class="next round ">&#8250;</a>
+    </div>
   </div>
   
 
   <!-- SOCMED -->
-  <div class=""align="center">
+  <div class="" align="center">
   <a href="https://twitter.com/" class="fa fa-twitter fa-3x"
     style="color: white;"></a>&ensp;&ensp;
   <a href="https://facebook.com/" class="fa fa-facebook fa-3x" style="color: white;"></a>&ensp;&ensp;
