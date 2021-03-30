@@ -46,33 +46,10 @@
 
   <!-- CONTENT -->
   <div class="center" style="width:70%; height:700px;  background-color:white;">
-    <img src="PHOTOS/inboxicon.png" alt="journal2" class="iconjournal">
-    <h3 class="center" style="color:0788D9; margin-top:10px;">Inbox</h3>
-    <div class="" style="float:left; margin-top:-200px; margin-left:20px; position:static;">
-        <a id="tombolnext" href="#" class="previous round ">&#8249;</a> 
-        </div>  
+    <img src="PHOTOS/journal2.jpg" alt="journal2" class="iconjournal">
+    <h3 class="center" style="color:0788D9; margin-top:10px;">Journal History</h3>  
     <!-- Isi Konten -->
-    <table class="table table-bordered ml-auto mr-auto" style="position:static;width:95%;margin-top: -70px;">
-      <thead class="thead-light">
-        <tr>
-          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Date</th>
-          <th scope="col" style="text-align:center; width:12%; color: #069FD7;">Message From Counselor</th>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row" style="text-align:center;">21/03/2021</th>
-          <td>Your appointment is rejected</td>
-        </tr> 
-        <tr>
-          <th scope="row" style="text-align:center;">26/03/2021</th>
-          <td>Please change your date appointment</td>
-        </tr> 
-        <tr>
-          <th scope="row" style="text-align:center;">06/04/2021</th>
-          <td>Your appointment is accepted</td>
-        </tr> 
-      </tbody>
-    </table>
+
   </div>
   
 
