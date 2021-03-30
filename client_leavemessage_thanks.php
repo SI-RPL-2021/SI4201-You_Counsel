@@ -47,7 +47,7 @@
 
     <!-- CONTENT -->
     <div class="center" style="width:70%; height:700px;  background-color:white;">
-        <img src="PHOTOS/journal2.jpg" alt="journal2" class="iconjournal">
+        <img src="PHOTOS/inboxicon.png" alt="journal2" class="iconjournal">
         <h3 class="center" style="color:0788D9; margin-top:10px; color:#0BA9D0;font-family: 'Be Vietnam';">My Journal
         </h3>
         <!-- Isi Konten -->
