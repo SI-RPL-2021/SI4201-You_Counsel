@@ -17,11 +17,11 @@
 </head>
 
 <body>
-  <div style=" background-image: url('https://raw.githubusercontent.com/SI-RPL-2021/SI4201-You_Counsel/master/PHOTOS/RegisterBG.png'); height: 100%; ">
+  <div style=" background-image: url('https://raw.githubusercontent.com/SI-RPL-2021/SI4201-You_Counsel/master/PHOTOS/RegisterBG.png'); height: 111%; ">
     <div class="container-fluid">
       <div class="row no-gutter">
         <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
-          <div class="card-body" style="margin-top:440px;">
+          <div class="card-body" style="margin-top:500px;">
             <div class="container">
               <div class="row">
                 <h1>Don't have an account?</h1>
@@ -40,7 +40,7 @@
 
           <div class="col-md-8 col-lg-5" style="margin-left: 111; background-image: linear-gradient(#2a9ade, #3bc8c9);opacity: 0.8;">
             <div class="login d-flex align-items-center py-5">
-              <a style="margin-top: -550;" href="#"><img src="PHOTOS/backarrow.png" style="width:25px;height:20px;"></a>
+              <a style="margin-top: -650;" href="#"><img src="PHOTOS/backarrow.png" style="width:25px;height:20px;"></a>
               <div class="container">
                 <div class="row">
                   <div class="col-md-11 col-lg-10 mx-auto">
@@ -48,16 +48,28 @@
                     <div>
                       <form id="contact-form" class="form" action="#" method="POST" role="form">
                         <div class="form-group">
-                          <label class="form-label" for="name">Name</label>
-                          <input type="text" class="form-control" id="name" name="name" placeholder="Name" tabindex="1" required>
+                          <label class="form-label" for="name">Nama</label>
+                          <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" tabindex="1" required>
                         </div>
                         <div class="form-group">
                           <label class="form-label" for="email">E-mail</label>
                           <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" tabindex="2" required>
                         </div>
                         <div class="form-group">
+                          <label class="form-label" for="univ">Universitas</label>
+                          <input type="text" class="form-control" id="univ" name="email" placeholder="Universitas" tabindex="3" required>
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label" for="alamat">Alamat</label>
+                          <input type="text" class="form-control" id="alamat" placeholder="Alamat" tabindex="4" required>
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label" for="notelp">No. Telp</label>
+                          <input type="text" class="form-control" id="notelp" placeholder="No. Telp" tabindex="5" required>
+                        </div>
+                        <div class="form-group">
                           <label class="form-label" for="password">Password</label>
-                          <input type="password" class="form-control" id="password" name="password" placeholder="Password" tabindex="3">
+                          <input type="password" class="form-control" id="password" name="password" placeholder="Password" tabindex="6" required>
                         </div>
                         <div class="text-center">
                           <button type="submit" class="btn btn-start-order">Register Now</button>
