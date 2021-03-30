@@ -14,6 +14,7 @@
     <meta charset="UTF-8">
     <style>
     <?php include 'youcounsel.css' ?>
+
     </style>
    <!-- STYLING -->
     
@@ -53,9 +54,11 @@
         <div class="form-check">
             <textarea class="form-control" id="message" name="message" rows="5" style="border-color: #0BA9D0;"></textarea>
         </div>
-            <a href="#" style=" box-shadow: 0 5px 5px 5px #D5D8DC;border-radius: 50%;
-                                background-color: white; color: #0BA9D0;
-                                margin-left:100%; padding: 10px;font-size:40px">&#8250;</a>                    
+        <br>
+        <div class="" style="float:right;">
+        <a id="tombolnext" href="#" class="next round ">&#8250;</a> 
+        </div>
+                               
         </form>
 
         </div>
