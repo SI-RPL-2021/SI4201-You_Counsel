@@ -6,17 +6,18 @@
   <link rel="icon" href="photos/LogoBiru-01.png" type="image/x-icon">
   <!-- LOGO -->
 
-  <!-- STYLING -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    <?php include 'youcounsel.css';
-    ?>
-  </style>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- STYLING -->
+ <!-- STYLING -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Be Vietnam' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <style>
+    <?php include 'youcounsel.css' ?>
+
+    </style>
+   <!-- STYLING -->
 </head>
 
 <body>
@@ -47,8 +48,24 @@
   <!-- CONTENT -->
   <div class="center" style="width:70%; height:700px;  background-color:white;">
     <img src="PHOTOS/journal2.jpg" alt="journal2" class="iconjournal">
-    <h3 class="center" style="color:0788D9; margin-top:10px;">Journal History</h3>  
+    <h3 class="center" style="color:0788D9; margin-top:10px; color:#0BA9D0;font-family: 'Be Vietnam';">My Journal</h3>  
     <!-- Isi Konten -->
+    <input type="text" readonly class="form-control-plaintext" style="font-family: 'Be Vietnam';font-size: 20px; margin-top:-80px;margin-left:10px;" id="date" value="<?php echo date('D, d M Y');?>">
+            <input type="text" readonly class="form-control-plaintext" style="font-family: 'Be Vietnam';font-size: 20px;margin-left:10px;" id="time" value= "<?php date_default_timezone_set("Asia/Jakarta");echo date("h:i");?>">
+            <p style="font-size:100px;text-align:center;margin-top:-40px;">&#128522;</p>
+            <center><div style="width:90%;">
+            <p style="color:#0BA9D0; font-family: 'Be Vietnam';font-size: 50px;margin-top:-20px;">Yeay! Glad to hear that, do you mind to tell us about today?</p>
+            </div>
+            </center>
+
+        <center><div class="form-check" style="width:85%;">
+        <textarea class="form-control" id="message" name="message" style="border-color: #0BA9D0;height:17%" placeholder="Write down your thoughts...."></textarea>
+        </div></center>
+
+
+        <div class="" style="float:right;margin-right:20px">
+        <a id="tombolnext" href="#" class="next round ">&#8250;</a> 
+        </div>
     
 
   </div>
