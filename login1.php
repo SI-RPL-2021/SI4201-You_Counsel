@@ -1,12 +1,11 @@
 <html>
 <head>
-    <title>You-Counsel</title>
-    <!-- LOGO -->
-    <link rel = "icon" href="photos/LogoBiru-01.png" type = "image/x-icon">
-    <!-- LOGO -->
+    <title>U-Counsel</title>
+   
 
     <!-- STYLING -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <style>
     <?php include 'ucounsel.css'; ?>
     </style>
@@ -21,9 +20,23 @@
 <div class="container-fluid">
   <div class="row no-gutter">
     <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
-    <td >Already have an account</td>
-    <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae neque orci erat nunc at. </br>
+      <div class="card-body" style="margin-top:600px;">
+        <div class="container">
+          <div class="row">
+            <h1>Already Have an account?</h1>
+            <p>You-counsel adalah web yang membantu anda bisa terhubung dengan couselor terbaik.</p>
+          </div>
+          <div class="row">
+              <i class="fa fa-twitter mr-3"></i>
+              <i class="fa fa-facebook ml-3 mr-3"></i>
+              <i class="fa fa-instagram ml-3 mr-3"></i>
+              <i class="fa fa-google-plus ml-3 mr-3"></i>
+          </div>
+        </div>
+      </div>
+      
     </div>
+    
     <div class="col-md-8 col-lg-6" style="background-image:  url('images/Background.png')">
       <div class="login d-flex align-items-center py-5" >
         <div class="container">
