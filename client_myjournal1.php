@@ -50,7 +50,7 @@
             <p class="card-text" style="color:#0BA9D0; font-family: 'Be Vietnam';font-size: 40px;text-align:center">How Are You Feeling Today?</p>
             
             <!-- emoji bold -->
-            <a href = "myjournal_happy.php" style="font-size:110px;margin-left:25%">
+            <a href = "client_myjournal_happy.php" style="font-size:110px;margin-left:25%">
             &#128522;</a>
             
             <a href = "myjournal_sad.php" style="font-size:110px;text-align:center;">
