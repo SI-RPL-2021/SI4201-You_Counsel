@@ -57,7 +57,7 @@
                         </div>
                         <div class="form-group">
                           <label class="form-label" for="univ">Universitas</label>
-                          <input type="text" class="form-control" id="univ" name="email" placeholder="Universitas" tabindex="3" required>
+                          <input type="text" class="form-control" id="univ" name="univ" placeholder="Universitas" tabindex="3" required>
                         </div>
                         <div class="form-group">
                           <label class="form-label" for="alamat">Alamat</label>
