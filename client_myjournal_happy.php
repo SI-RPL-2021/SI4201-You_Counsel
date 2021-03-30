@@ -64,7 +64,7 @@
 
 
         <div class="" style="float:right;margin-right:20px">
-        <a id="tombolnext" href="#" class="next round ">&#8250;</a> 
+        <a id="tombolnext" href="client_leavemessage_thanks.php" class="next round ">&#8250;</a> 
         </div>
     
 

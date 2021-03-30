@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>You-Counsel</title>
+  <title>You-Counsel | Journal History</title>
   <!-- LOGO -->
   <link rel="icon" href="photos/LogoBiru-01.png" type="image/x-icon">
   <!-- LOGO -->
