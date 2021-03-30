@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>U-Counsel</title>
+    <title>You-Counsel</title>
    
 
     <!-- STYLING -->
@@ -24,7 +24,7 @@
         <div class="container">
           <div class="row">
             <h1>Already Have an account?</h1>
-            <p>You-counsel adalah web yang membantu anda bisa terhubung dengan couselor terbaik.</p>
+            <p>You-counsel adalah web yang membantu anda bisa terhubung dengan counselor terbaik.</p>
           </div>
           <div class="row">
               <i class="fa fa-twitter mr-3"></i>
@@ -69,7 +69,5 @@
     </div>
   </div>
 </div>
-
-
 </body>
 </html>
