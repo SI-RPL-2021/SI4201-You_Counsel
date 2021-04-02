@@ -37,7 +37,7 @@
       
     </div>
     
-    <div class="col-md-8 col-lg-6" style="background-image:  url('images/Background.png')">
+    <div class="col-md-8 col-lg-6" style="background-image:  url('PHOTOS/Background.png')">
       <div class="login d-flex align-items-center py-5" >
         <div class="container">
           <div class="row">
