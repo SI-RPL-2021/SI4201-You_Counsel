@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>You-Counsel | Inbox</title>
+  <title>You-Counsel</title>
   <!-- LOGO -->
   <link rel="icon" href="photos/LogoBiru-01.png" type="image/x-icon">
   <!-- LOGO -->
@@ -11,6 +11,11 @@
   <style>
     <?php include 'youcounsel.css';
     ?>
+    #previous {
+      border: 1px solid;
+      padding: 10px;
+      box-shadow: 5px 10px 18px #888888;
+    }
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -49,8 +54,10 @@
     <img src="PHOTOS/inboxicon.png" alt="journal2" class="iconjournal">
     <h3 class="center" style="color:0788D9; margin-top:10px;">Inbox</h3>
     <div class="" style="float:left; margin-top:-200px; margin-left:20px; position:static;">
-        <a id="tombolnext" href="#" class="previous round ">&#8249;</a> 
-        </div>  
+    <div id="previous" class="previous round">
+        <p>&#8249;</p>
+      </div>
+    </div>  
     <!-- Isi Konten -->
     <table class="table table-bordered ml-auto mr-auto" style="position:static;width:95%;margin-top: -70px;">
       <thead class="thead-light">
@@ -77,13 +84,12 @@
   
 
   <!-- SOCMED -->
-  <div class=""align="center">
-  <a href="https://twitter.com/" class="fa fa-twitter fa-3x"
-    style="color: white;"></a>&ensp;&ensp;
-  <a href="https://facebook.com/" class="fa fa-facebook fa-3x" style="color: white;"></a>&ensp;&ensp;
-  <a href="https://instagram.com/" class="fa fa-instagram fa-3x" style="color: white;"></a>&ensp;&ensp;
-  <a href="https://accounts.google.com/" class="fa fa-google fa-3x" style="color: white;"></a>&ensp;&ensp;
-  </div>
+  <div class="" align="center" style="letter-spacing: 15px;">
+      <a href="https://twitter.com/" class="fa fa-twitter fa-3x" style="color: white;"></a>
+      <a href="https://facebook.com/" class="fa fa-facebook fa-3x" style="color: white;"></a>
+      <a href="https://instagram.com/" class="fa fa-instagram fa-3x" style="color: white;"></a>
+      <a href="https://accounts.google.com/" class="fa fa-google fa-3x" style="color: white;"></a>
+    </div>
   
   <!-- SOCMED -->
 
