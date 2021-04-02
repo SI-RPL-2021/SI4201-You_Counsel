@@ -29,7 +29,7 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#" style="color:white; font-size:15px;"><u>Inbox</u></a>
+                <a class="nav-link" href="inbox.php" style="color:white; font-size:15px;"><u>Inbox</u></a>
             </li>
             </ul>
             <span class="navbar-text" style="color:white;">
@@ -47,6 +47,7 @@
     <!-- TITLE -->
 
     <!-- CONTENT -->
+    <div class="" align="center">
     <table class="center" style="width:1200px; margin-top:50px; margin-left:180px;">
         <tr>
             <td style="width:400px;">
@@ -58,7 +59,7 @@
                     <br>
                     <center><a href="client_myjournal.php" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Open My Journal</button></a></center>
                     <br>
-                    <center><a href="/.php" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Journal History</button></a></center>
+                    <center><a href="client_journalhistory.php" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Journal History</button></a></center>
             </div>
             </div>
             </td>
@@ -82,7 +83,7 @@
                     <h5 class="card-title" style="text-align:center; color:#0788D9;">Leave us a Message</h4>
                     <p class="card-text" style="font-size:15px;text-align: center">Send us your thoughts because every mind should be free!</p>
                     <br>
-                    <center><a href="message.php" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Send Message</button></a></center>
+                    <center><a href="client_leavemessage.php" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Send Message</button></a></center>
                     <br>
                     <center><a href="/" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Message History</button></a></center>
             </div>
@@ -90,13 +91,16 @@
             </td>
         </tr>
     </table>
+    </div>
     <!-- CONTENT -->
 
     <!-- SOCMED -->
-    <a href="https://twitter.com/" class="fa fa-twitter fa-3x" style="color: white; margin-left: 40%; margin-top: 10px;"></a>
-    <a href="https://facebook.com/" class="fa fa-facebook fa-3x" style="color: white; margin-left: 30px;"></a>
-    <a href="https://instagram.com/" class="fa fa-instagram fa-3x" style="color: white; margin-left: 30px;"></a>
-    <a href="https://accounts.google.com/" class="fa fa-google fa-3x" style="color: white; margin-left: 30px;"></a>
+    <div class="" align="center" style="letter-spacing: 15px;">
+      <a href="https://twitter.com/" class="fa fa-twitter fa-3x" style="color: white;"></a>
+      <a href="https://facebook.com/" class="fa fa-facebook fa-3x" style="color: white;"></a>
+      <a href="https://instagram.com/" class="fa fa-instagram fa-3x" style="color: white;"></a>
+      <a href="https://accounts.google.com/" class="fa fa-google fa-3x" style="color: white;"></a>
+    </div>
      <!-- SOCMED -->
 
 
