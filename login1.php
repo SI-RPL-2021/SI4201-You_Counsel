@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>You-Counsel | Login</title>
+    <title>U-Counsel</title>
    
 
     <!-- STYLING -->
@@ -24,7 +24,7 @@
         <div class="container">
           <div class="row">
             <h1>Already Have an account?</h1>
-            <p>You-counsel adalah web yang membantu anda bisa terhubung dengan counselor terbaik.</p>
+            <p>A healthy mind signifies a healthy you..</p>
           </div>
           <div class="row">
               <i class="fa fa-twitter mr-3"></i>
@@ -43,25 +43,20 @@
           <div class="row">
             <div class="col-md-9 col-lg-8 mx-auto">
               <h3 class="login-heading mb-4">Welcome back!</h3>
-              <form>
-                <div class="form-label-group">
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                  <label for="inputEmail">Email address</label>
-                </div>
-
-                <div class="form-label-group">
-                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                  <label for="inputPassword">Password</label>
-                </div>
-
-                <div class="custom-control custom-checkbox mb-3">
-                  <input type="checkbox" class="custom-control-input" id="customCheck1">
-                  <label class="custom-control-label" for="customCheck1">Remember password</label>
-                </div>
-                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
-                <div class="text-center">
-                  <a class="small" href="#">Forgot password?</a></div>
-              </form>
+              <form id="contact-form" class="form" action="BACKEND/register.php" method="POST" role="form">
+                        <div class="form-group">
+                          <label class="form-label" for="name">Username</label>
+                          <input type="text" class="form-control" id="username" name="username" placeholder="Username" tabindex="1" required>
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label" for="password">Password</label>
+                          <input type="password" class="form-control" id="password" name="password" placeholder="Password" tabindex="7" required>
+                        </div>
+                        <div class="text-center">
+                        <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">log in</button>
+                        </div>
+                        <p style="color: white; text-align:center;">Already have an account? <a style="color:white" href="register.php"><b>Log in</b></a></p>
+                      </form>
             </div>
           </div>
         </div>
@@ -69,5 +64,7 @@
     </div>
   </div>
 </div>
+
+
 </body>
 </html>
