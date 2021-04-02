@@ -24,7 +24,7 @@
         <div class="container">
           <div class="row">
             <h1>Already Have an account?</h1>
-            <p>A healthy mind signifies a healthy you..</p>
+            <p>A healthy mind signifies a healthy you.</p>
           </div>
           <div class="row">
               <i class="fa fa-twitter mr-3"></i>
@@ -55,7 +55,7 @@
                         <div class="text-center">
                         <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">log in</button>
                         </div>
-                        <p style="color: white; text-align:center;">Already have an account? <a style="color:white" href="register.php"><b>Log in</b></a></p>
+                        <p style="color: white; text-align:center;">Don't Have an Account? <a style="color:white" href="register.php"><b>Register</b></a></p>
                       </form>
             </div>
           </div>
