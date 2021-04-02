@@ -43,7 +43,7 @@
           <div class="row">
             <div class="col-md-9 col-lg-8 mx-auto">
               <h3 class="login-heading mb-4">Welcome back!</h3>
-              <form id="contact-form" class="form" action="BACKEND/register.php" method="POST" role="form">
+              <form id="contact-form" class="form" action="BACKEND/login.php" method="POST" role="form">
                         <div class="form-group">
                           <label class="form-label" for="name">Username</label>
                           <input type="text" class="form-control" id="username" name="username" placeholder="Username" tabindex="1" required>
@@ -53,9 +53,9 @@
                           <input type="password" class="form-control" id="password" name="password" placeholder="Password" tabindex="7" required>
                         </div>
                         <div class="text-center">
-                        <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">log in</button>
+                        <button type="submit" class="btn btn-start-order">Login Now</button>
                         </div>
-                        <p style="color: white; text-align:center;">Don't Have an Account? <a style="color:white" href="register.php"><b>Register</b></a></p>
+                        <p style="color: white; text-align:center;">Don't have an Account? <a style="color:white" href="register.php"><b>Register</b></a></p>
                       </form>
             </div>
           </div>
