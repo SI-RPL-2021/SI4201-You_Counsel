@@ -50,14 +50,17 @@
         <img src="PHOTOS/inboxicon.png" alt="journal2" class="iconjournal">
         <h3 class="center" style="color:0788D9; margin-top:10px; color:#0BA9D0;font-family: 'Be Vietnam';">My Journal
         </h3>
+        <button type="submit" class="btn btn-outline-info btn-sm btn-block tblhistory">History</button>
         <!-- Isi Konten -->
-        <input type="text" readonly class="form-control-plaintext"
-            style="font-family: 'Be Vietnam';font-size: 20px; margin-top:-80px;margin-left:10px;" id="date"
-            value="<?php echo date('D, d M Y');?>">
-        <input type="text" readonly class="form-control-plaintext"
-            style="font-family: 'Be Vietnam';font-size: 20px;margin-left:10px;" id="time"
-            value="<?php date_default_timezone_set("Asia/Jakarta");echo date("h:i");?>">
-        <p style="font-size:100px;text-align:center;margin-top:-40px;">&#128522;</p>
+        <div class="tglwaktu" style="margin-top:-90px; margin-left:20px;">
+            <input type="text" readonly class="form-control-plaintext"
+                style="font-family: 'Be Vietnam';font-size: 20px;" id="date" value="<?php echo date('D, d M Y');?>">
+            <input type="text" readonly class="form-control-plaintext"
+                style="font-family: 'Be Vietnam';font-size: 20px;" id="time"
+                value="<?php date_default_timezone_set("Asia/Jakarta");echo date("h:i");?>">
+        </div>
+
+        <p style="font-size:100px;text-align:center;margin-top:10px;">&#128522;</p>
         <center>
             <div style="width:90%;">
                 <p style="color:#0BA9D0; font-family: 'Be Vietnam';font-size: 50px;margin-top:-20px;">Thank you for
@@ -66,10 +69,11 @@
         </center>
 
         <center>
-            <div style="width:20%; margin-top:60px; color:#0BA9D0; border-color: #0BA9D0">
-                <a href="clientlandingpage.php" style="text-decoration: none; color:#0BA9D0;"><button type="submit"
-                        class="btn btn-outline-primary btn-sm btn-block" style="color:#0BA9D0;border-color: #0BA9D0 ">Back to
-                        homepage</button></a>
+            <div style="margin-top:60px; color:#0BA9D0; border-color: #0BA9D0">
+                <a href="clientlandingpage.php" style="text-decoration: none; color:#0BA9D0;">
+                <button type="submit" class="btn btn-outline-info btn-sm btn-block tblbackhome">Back to
+                        homepage</button>
+                    
             </div>
         </center>
 

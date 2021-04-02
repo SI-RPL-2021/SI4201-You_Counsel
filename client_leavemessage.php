@@ -45,47 +45,56 @@
   <!-- NAVBAR -->
 
   <!-- CONTENT -->
-  <div class="center" style="width:70%; height:700px;  background-color:white;">
-    <img src="PHOTOS/inboxicon.png" alt="journal2" class="iconjournal">
-    <h3 class="center" style="color:0788D9; margin-top:10px; color:#0BA9D0;font-family: 'Be Vietnam';">Leave Us a Message</h3>
-    <!-- Isi Konten -->
-    <input type="text" readonly class="form-control-plaintext"
-      style="font-family: 'Be Vietnam';font-size: 20px; margin-top:-80px;margin-left:10px;" id="date"
-      value="<?php echo date('D, d M Y');?>">
-    <input type="text" readonly class="form-control-plaintext"
-      style="font-family: 'Be Vietnam';font-size: 20px;margin-left:10px;" id="time"
-      value="<?php date_default_timezone_set("Asia/Jakarta");echo date("h:i");?>">
-    <center>
-      <div style="width:90%; margin-top:30px;">
-        <p style="color:#0BA9D0; font-family: 'Be Vietnam';font-size: 50px;margin-top:-20px;">Send us your thoughts because every mind should be free!</p>
-      </div>
-    </center>
+  <div class="content">
+    <div class="center" style="width:70%; height:700px;  background-color:white;">
+      <img src="PHOTOS/inboxicon.png" alt="journal2" class="iconjournal">
 
-    <center>
-      <div class="form-check" style="width:85%;">
-        <textarea class="form-control" id="message" name="message" style="border-color: #0BA9D0;height:17%"
-          placeholder="Write down your thoughts...."></textarea>
-      </div>
-    </center>
+      <h3 class="center" style="color:0788D9; margin-top:10px; color:#0BA9D0;font-family: 'Be Vietnam';">Leave Us a
+        Message</h3>
+      <button type="submit" class="btn btn-outline-info btn-sm btn-block tblhistory">History</button>
 
-    <div class="" style="float:right;margin-right:20px">
-      <a id="tombolnext" href="#" class="next round ">&#8250;</a>
+      <!-- Isi Konten -->
+      <div class="tglwaktu" style="margin-top:-90px; margin-left:20px;">
+        <input type="text" readonly class="form-control-plaintext"
+          style="font-family: 'Be Vietnam';font-size: 20px;" id="date"
+          value="<?php echo date('D, d M Y');?>">
+        <input type="text" readonly class="form-control-plaintext"
+          style="font-family: 'Be Vietnam';font-size: 20px;" id="time"
+          value="<?php date_default_timezone_set("Asia/Jakarta");echo date("h:i");?>">
+      </div>
+
+      <center>
+        <div style="width:90%; margin-top:40px;">
+          <p style="color:#0BA9D0; font-family: 'Be Vietnam';font-size: 50px;margin-top:-20px;">Send us your thoughts
+            because every mind should be free!</p>
+        </div>
+      </center>
+
+      <center>
+        <div class="form-check" style="width:85%;">
+          <textarea class="form-control" id="message" name="message" style="border-color: #0BA9D0;height:17%"
+            placeholder="Write down your thoughts...."></textarea>
+        </div>
+      </center>
+
+      <div class="wrap">
+        <button class="tblsend">Send</button>
+      </div>
     </div>
-  </div>
-  
 
-  <!-- SOCMED -->
-  <div class="" align="center">
-  <a href="https://twitter.com/" class="fa fa-twitter fa-3x"
-    style="color: white;"></a>&ensp;&ensp;
-  <a href="https://facebook.com/" class="fa fa-facebook fa-3x" style="color: white;"></a>&ensp;&ensp;
-  <a href="https://instagram.com/" class="fa fa-instagram fa-3x" style="color: white;"></a>&ensp;&ensp;
-  <a href="https://accounts.google.com/" class="fa fa-google fa-3x" style="color: white;"></a>&ensp;&ensp;
-  </div>
-  
-  <!-- SOCMED -->
 
-<br>
+
+    <!-- SOCMED -->
+    <div class="" align="center">
+      <a href="https://twitter.com/" class="fa fa-twitter fa-3x" style="color: white;"></a>&ensp;&ensp;
+      <a href="https://facebook.com/" class="fa fa-facebook fa-3x" style="color: white;"></a>&ensp;&ensp;
+      <a href="https://instagram.com/" class="fa fa-instagram fa-3x" style="color: white;"></a>&ensp;&ensp;
+      <a href="https://accounts.google.com/" class="fa fa-google fa-3x" style="color: white;"></a>&ensp;&ensp;
+    </div>
+
+    <!-- SOCMED -->
+
+    <br>
 </body>
 
 </html>
