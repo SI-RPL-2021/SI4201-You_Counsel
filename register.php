@@ -48,7 +48,7 @@
                     <div>
                       <form id="contact-form" class="form" action="BACKEND/register.php" method="POST" role="form">
                         <div class="form-group">
-                          <label class="form-label" for="name">Username</label>
+                          <label class="form-label" for="username">Username</label>
                           <input type="text" class="form-control" id="username" name="username" placeholder="Username" tabindex="1" required>
                         </div>
                         <div class="form-group">
