@@ -48,31 +48,31 @@
                     <div>
                       <form id="contact-form" class="form" action="BACKEND/register.php" method="POST" role="form">
                         <div class="form-group">
-                          <label class="form-label" for="username">Username</label>
+                          <label style="color:white" class="form-label" for="username">Username</label>
                           <input type="text" class="form-control" id="username" name="username" placeholder="Username" tabindex="1" required>
                         </div>
                         <div class="form-group">
-                          <label class="form-label" for="name">Nama</label>
+                          <label style="color:white" class="form-label" for="name">Nama</label>
                           <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" tabindex="2" required>
                         </div>
                         <div class="form-group">
-                          <label class="form-label" for="email">E-mail</label>
+                          <label style="color:white" class="form-label" for="email">E-mail</label>
                           <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" tabindex="3" required>
                         </div>
                         <div class="form-group">
-                          <label class="form-label" for="univ">Universitas</label>
+                          <label style="color:white" class="form-label" for="univ">Universitas</label>
                           <input type="text" class="form-control" id="univ" name="univ" placeholder="Universitas" tabindex="4" required>
                         </div>
                         <div class="form-group">
-                          <label class="form-label" for="alamat">Alamat</label>
+                          <label style="color:white" class="form-label" for="alamat">Alamat</label>
                           <input type="text" class="form-control" id="alamat" placeholder="Alamat" tabindex="5" required>
                         </div>
                         <div class="form-group">
-                          <label class="form-label" for="notelp">No. Telp</label>
+                          <label style="color:white" class="form-label" for="notelp">No. Telp</label>
                           <input type="text" class="form-control" id="notelp" placeholder="No. Telp" tabindex="6" required>
                         </div>
                         <div class="form-group">
-                          <label class="form-label" for="password">Password</label>
+                          <label style="color:white" class="form-label" for="password">Password</label>
                           <input type="password" class="form-control" id="password" name="password" placeholder="Password" tabindex="7" required>
                         </div>
                         <div class="text-center">
