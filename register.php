@@ -17,16 +17,16 @@
 </head>
 
 <body>
-  <div style=" background-image: url('https://raw.githubusercontent.com/SI-RPL-2021/SI4201-You_Counsel/master/PHOTOS/RegisterBG.png'); height: 111%; ">
+  <div style=" background-image: url('https://raw.githubusercontent.com/SI-RPL-2021/SI4201-You_Counsel/master/PHOTOS/RegisterBG.png'); height: 122%; ">
     <div class="container-fluid">
       <div class="row no-gutter">
         <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
-          <div class="card-body" style="margin-top:500px;">
+          <div class="card-body" style="margin-top:600px;">
             <div class="container">
               <div class="row">
                 <h1>Don't have an account?</h1>
                 <p>Sign Up now for get the access to our services. <br>
-                  You-counsel adalah web yang membantu anda bisa terhubung dengan couselor terbaik.</p>
+                  A healthy mind signifies a healthy you.</p>
                 </div>
                 <div class="row">
                   <i class="fa fa-twitter mr-3"></i>
@@ -46,30 +46,34 @@
                   <div class="col-md-11 col-lg-10 mx-auto">
                     <h3 class="login-heading mb-4" style="color: #ffffff;">Register</h3>
                     <div>
-                      <form id="contact-form" class="form" action="#" method="POST" role="form">
+                      <form id="contact-form" class="form" action="BACKEND/register.php" method="POST" role="form">
+                        <div class="form-group">
+                          <label class="form-label" for="name">Username</label>
+                          <input type="text" class="form-control" id="username" name="username" placeholder="Username" tabindex="1" required>
+                        </div>
                         <div class="form-group">
                           <label class="form-label" for="name">Nama</label>
-                          <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" tabindex="1" required>
+                          <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" tabindex="2" required>
                         </div>
                         <div class="form-group">
                           <label class="form-label" for="email">E-mail</label>
-                          <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" tabindex="2" required>
+                          <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" tabindex="3" required>
                         </div>
                         <div class="form-group">
                           <label class="form-label" for="univ">Universitas</label>
-                          <input type="text" class="form-control" id="univ" name="univ" placeholder="Universitas" tabindex="3" required>
+                          <input type="text" class="form-control" id="univ" name="univ" placeholder="Universitas" tabindex="4" required>
                         </div>
                         <div class="form-group">
                           <label class="form-label" for="alamat">Alamat</label>
-                          <input type="text" class="form-control" id="alamat" placeholder="Alamat" tabindex="4" required>
+                          <input type="text" class="form-control" id="alamat" placeholder="Alamat" tabindex="5" required>
                         </div>
                         <div class="form-group">
                           <label class="form-label" for="notelp">No. Telp</label>
-                          <input type="text" class="form-control" id="notelp" placeholder="No. Telp" tabindex="5" required>
+                          <input type="text" class="form-control" id="notelp" placeholder="No. Telp" tabindex="6" required>
                         </div>
                         <div class="form-group">
                           <label class="form-label" for="password">Password</label>
-                          <input type="password" class="form-control" id="password" name="password" placeholder="Password" tabindex="6" required>
+                          <input type="password" class="form-control" id="password" name="password" placeholder="Password" tabindex="7" required>
                         </div>
                         <div class="text-center">
                           <button type="submit" class="btn btn-start-order">Register Now</button>
