@@ -65,11 +65,11 @@
                         </div>
                         <div class="form-group">
                           <label style="color:white" class="form-label" for="alamat">Alamat</label>
-                          <input type="text" class="form-control" id="alamat" placeholder="Alamat" tabindex="5" required>
+                          <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Alamat" tabindex="5" required>
                         </div>
                         <div class="form-group">
                           <label style="color:white" class="form-label" for="notelp">No. Telp</label>
-                          <input type="text" class="form-control" id="notelp" placeholder="No. Telp" tabindex="6" required>
+                          <input type="text" class="form-control" id="notelp" name="notelp" placeholder="No. Telp" tabindex="6" required>
                         </div>
                         <div class="form-group">
                           <label style="color:white" class="form-label" for="password">Password</label>
