@@ -54,10 +54,12 @@
     <img src="PHOTOS/inboxicon.png" alt="journal2" class="iconjournal">
     <h3 class="center" style="color:0788D9; margin-top:10px;">Inbox</h3>
     <div class="" style="float:left; margin-top:-200px; margin-left:20px; position:static;">
-    <div id="previous" class="previous round">
-        <p>&#8249;</p>
-      </div>
-    </div>  
+    <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
+                <a href="clientlandingpage.php" style="text-decoration: none; color:#0BA9D0;" >
+                    <button type="submit" style="width:70px; height:35px; font-size:15px" class="btn btn-outline-info btn-sm btn-block tblbackhome">Back</button>
+
+            </div>
+            </div> 
     <!-- Isi Konten -->
     <table class="table table-bordered ml-auto mr-auto" style="position:static;width:95%;margin-top: -70px;">
       <thead class="thead-light">
