@@ -52,16 +52,14 @@
     
 
   </div>
-  
 
-  <!-- SOCMED -->
-  <div class=""align="center">
-  <a href="https://twitter.com/" class="fa fa-twitter fa-3x"
-    style="color: white;"></a>&ensp;&ensp;
-  <a href="https://facebook.com/" class="fa fa-facebook fa-3x" style="color: white;"></a>&ensp;&ensp;
-  <a href="https://instagram.com/" class="fa fa-instagram fa-3x" style="color: white;"></a>&ensp;&ensp;
-  <a href="https://accounts.google.com/" class="fa fa-google fa-3x" style="color: white;"></a>&ensp;&ensp;
-  </div>
+<!-- SOCMED -->
+<div class="" align="center" style="letter-spacing: 15px;">
+      <a href="https://twitter.com/" class="fa fa-twitter fa-3x" style="color: white;"></a>
+      <a href="https://facebook.com/" class="fa fa-facebook fa-3x" style="color: white;"></a>
+      <a href="https://instagram.com/" class="fa fa-instagram fa-3x" style="color: white;"></a>
+      <a href="https://accounts.google.com/" class="fa fa-google fa-3x" style="color: white;"></a>
+    </div>
   
   <!-- SOCMED -->
 

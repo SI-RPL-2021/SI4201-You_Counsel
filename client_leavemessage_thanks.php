@@ -50,7 +50,6 @@
         <img src="PHOTOS/inboxicon.png" alt="journal2" class="iconjournal">
         <h3 class="center" style="color:0788D9; margin-top:10px; color:#0BA9D0;font-family: 'Be Vietnam';">My Journal
         </h3>
-        <button type="submit" class="btn btn-outline-info btn-sm btn-block tblhistory">History</button>
         <!-- Isi Konten -->
         <div class="tglwaktu" style="margin-top:-90px; margin-left:20px;">
             <input type="text" readonly class="form-control-plaintext"
@@ -71,9 +70,9 @@
         <center>
             <div style="margin-top:60px; color:#0BA9D0; border-color: #0BA9D0">
                 <a href="clientlandingpage.php" style="text-decoration: none; color:#0BA9D0;">
-                <button type="submit" class="btn btn-outline-info btn-sm btn-block tblbackhome">Back to
+                    <button type="submit" class="btn btn-outline-info btn-sm btn-block tblbackhome">Back to
                         homepage</button>
-                    
+
             </div>
         </center>
 
@@ -81,14 +80,12 @@
 
 
     <!-- SOCMED -->
-    <div class="" align="center">
-        <a href="https://twitter.com/" class="fa fa-twitter fa-3x" style="color: white;"></a>&ensp;&ensp;
-        <a href="https://facebook.com/" class="fa fa-facebook fa-3x" style="color: white;"></a>&ensp;&ensp;
-        <a href="https://instagram.com/" class="fa fa-instagram fa-3x" style="color: white;"></a>&ensp;&ensp;
-        <a href="https://accounts.google.com/" class="fa fa-google fa-3x" style="color: white;"></a>&ensp;&ensp;
+    <div class="" align="center" style="letter-spacing: 15px;">
+      <a href="https://twitter.com/" class="fa fa-twitter fa-3x" style="color: white;"></a>
+      <a href="https://facebook.com/" class="fa fa-facebook fa-3x" style="color: white;"></a>
+      <a href="https://instagram.com/" class="fa fa-instagram fa-3x" style="color: white;"></a>
+      <a href="https://accounts.google.com/" class="fa fa-google fa-3x" style="color: white;"></a>
     </div>
-
-    <!-- SOCMED -->
 
     <br>
 </body>
