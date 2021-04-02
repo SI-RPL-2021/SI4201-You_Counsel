@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
   <style>
-  <?php include 'ucounsel.css'; ?>
+  <?php include 'youcounsel.css'; ?>
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div style=" background-image: url('https://raw.githubusercontent.com/SI-RPL-2021/SI4201-You_Counsel/master/PHOTOS/RegisterBG.png'); height: 122%; ">
+  <div style=" background-image: url('https://raw.githubusercontent.com/SI-RPL-2021/SI4201-You_Counsel/master/PHOTOS/RegisterBG.png'); height: 122%; background-repeat:no-repeat; ">
     <div class="container-fluid">
       <div class="row no-gutter">
         <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">

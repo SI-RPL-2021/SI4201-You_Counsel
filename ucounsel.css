@@ -9,7 +9,7 @@
 }
 
 .bg-image {
-  background-image: url('images/loginbackground.png');
+  background-image: url('PHOTOS/loginbackground.png');
   background-size: cover;
   background-position: center;
 }
@@ -23,7 +23,7 @@ textarea {
 }
 .form-label {
   font-size: 12px;
-  color: #5e9bfc;
+  color: #000000;
   margin: 0;
   display: block;
   opacity: 1;
