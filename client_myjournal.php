@@ -49,6 +49,7 @@
   <div class="center" style="width:70%; height:700px;  background-color:white;">
     <img src="PHOTOS/journal2.jpg" alt="journal2" class="iconjournal">
     <h3 class="center" style="color:0788D9; margin-top:10px; color:#0BA9D0;font-family: 'Be Vietnam';">My Journal</h3>  
+    
     <!-- Isi Konten -->
     <input type="text" readonly class="form-control-plaintext" style="font-family: 'Be Vietnam';font-size: 20px; margin-top:-80px;margin-left:10px;" id="date" value="<?php echo date('D, d M Y');?>">
             <input type="text" readonly class="form-control-plaintext" style="font-family: 'Be Vietnam';font-size: 20px;margin-left:10px;" id="time" value= "<?php date_default_timezone_set("Asia/Jakarta");echo date("h:i");?>">
@@ -70,14 +71,14 @@
   
 
   <!-- SOCMED -->
-  <div class=""align="center">
-  <a href="https://twitter.com/" class="fa fa-twitter fa-3x"
-    style="color: white;"></a>&ensp;&ensp;
-  <a href="https://facebook.com/" class="fa fa-facebook fa-3x" style="color: white;"></a>&ensp;&ensp;
-  <a href="https://instagram.com/" class="fa fa-instagram fa-3x" style="color: white;"></a>&ensp;&ensp;
-  <a href="https://accounts.google.com/" class="fa fa-google fa-3x" style="color: white;"></a>&ensp;&ensp;
-  </div>
-  
+
+  <div class="" align="center" style="letter-spacing: 15px;">
+      <a href="https://twitter.com/" class="fa fa-twitter fa-3x" style="color: white;"></a>
+      <a href="https://facebook.com/" class="fa fa-facebook fa-3x" style="color: white;"></a>
+      <a href="https://instagram.com/" class="fa fa-instagram fa-3x" style="color: white;"></a>
+      <a href="https://accounts.google.com/" class="fa fa-google fa-3x" style="color: white;"></a>
+    </div>
+
   <!-- SOCMED -->
 
 <br>

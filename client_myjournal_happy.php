@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>You-Counsel</title>
+  <title>You-Counsel | MyJournal</title>
   <!-- LOGO -->
   <link rel="icon" href="photos/LogoBiru-01.png" type="image/x-icon">
   <!-- LOGO -->
@@ -48,11 +48,26 @@
   <!-- CONTENT -->
   <div class="center" style="width:70%; height:700px;  background-color:white;">
     <img src="PHOTOS/journal2.jpg" alt="journal2" class="iconjournal">
+    
     <h3 class="center" style="color:0788D9; margin-top:10px; color:#0BA9D0;font-family: 'Be Vietnam';">My Journal</h3>  
-    <!-- Isi Konten -->
-    <input type="text" readonly class="form-control-plaintext" style="font-family: 'Be Vietnam';font-size: 20px; margin-top:-80px;margin-left:10px;" id="date" value="<?php echo date('D, d M Y');?>">
-            <input type="text" readonly class="form-control-plaintext" style="font-family: 'Be Vietnam';font-size: 20px;margin-left:10px;" id="time" value= "<?php date_default_timezone_set("Asia/Jakarta");echo date("h:i");?>">
-            <p style="font-size:100px;text-align:center;margin-top:-40px;">&#128522;</p>
+    <div class="" style="float:left; margin-top:-200px; margin-left:20px; position:static;">
+        <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
+          <a href="client_myjournal.php" style="text-decoration: none; color:#0BA9D0;">
+            <button type="submit" style="width:70px; height:35px; font-size:15px"
+              class="btn btn-outline-info btn-sm btn-block tblbackhome">Back</button>
+
+        </div>
+      </div>
+
+      <!-- Isi Konten -->
+      <div class="tglwaktu" style="margin-top:-90px; margin-left:20px;">
+        <input type="text" readonly class="form-control-plaintext" style="font-family: 'Be Vietnam';font-size: 20px;"
+          id="date" value="<?php echo date('D, d M Y');?>">
+        <input type="text" readonly class="form-control-plaintext" style="font-family: 'Be Vietnam';font-size: 20px;"
+          id="time" value="<?php date_default_timezone_set("Asia/Jakarta");echo date("h:i");?>">
+      </div>
+      
+            <p style="font-size:100px;text-align:center;margin-top:-40px;margin-right:75px">&#128522;</p>
             <center><div style="width:90%;">
             <p style="color:#0BA9D0; font-family: 'Be Vietnam';font-size: 50px;margin-top:-20px;">Yeay! Glad to hear that, do you mind to tell us about today?</p>
             </div>
@@ -63,25 +78,25 @@
         </div></center>
 
 
-        <div class="" style="float:right;margin-right:20px">
-        <a id="tombolnext" href="client_leavemessage_thanks.php" class="next round ">&#8250;</a> 
-        </div>
+        <div class="wrap">
+        <button class="tblsend" style= "margin-top:-30px;">Send</button>
+      </div>
+    </div>
     
 
   </div>
   
 
-  <!-- SOCMED -->
-  <div class=""align="center">
-  <a href="https://twitter.com/" class="fa fa-twitter fa-3x"
-    style="color: white;"></a>&ensp;&ensp;
-  <a href="https://facebook.com/" class="fa fa-facebook fa-3x" style="color: white;"></a>&ensp;&ensp;
-  <a href="https://instagram.com/" class="fa fa-instagram fa-3x" style="color: white;"></a>&ensp;&ensp;
-  <a href="https://accounts.google.com/" class="fa fa-google fa-3x" style="color: white;"></a>&ensp;&ensp;
-  </div>
+   <!-- SOCMED -->
   
-  <!-- SOCMED -->
+   <div class="" align="center" style="letter-spacing: 15px;">
+      <a href="https://twitter.com/" class="fa fa-twitter fa-3x" style="color: white;"></a>
+      <a href="https://facebook.com/" class="fa fa-facebook fa-3x" style="color: white;"></a>
+      <a href="https://instagram.com/" class="fa fa-instagram fa-3x" style="color: white;"></a>
+      <a href="https://accounts.google.com/" class="fa fa-google fa-3x" style="color: white;"></a>
+    </div>
 
+  <!-- SOCMED -->
 <br>
 </body>
 
