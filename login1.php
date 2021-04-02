@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>U-Counsel</title>
+    <title>You-Counsel | Login</title>
    
 
     <!-- STYLING -->
