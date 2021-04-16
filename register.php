@@ -29,10 +29,10 @@
                   A healthy mind signifies a healthy you.</p>
                 </div>
                 <div class="row">
-                  <i class="fa fa-twitter mr-3"></i>
-                  <i class="fa fa-facebook ml-3 mr-3"></i>
-                  <i class="fa fa-instagram ml-3 mr-3"></i>
-                  <i class="fa fa-google-plus ml-3 mr-3"></i>
+                  <a href="https://twitter.com/" class="fa fa-twitter mr-3" style="color: black;"></a>
+                  <a href="https://facebook.com/" class="fa fa-facebook ml-3 mr-3" style="color: black;"></a>
+                  <a href="https://instagram.com/" class="fa fa-instagram ml-3 mr-3" style="color: black;"></a>
+                  <a href="https://accounts.google.com/" class="fa fa-google-plus ml-3 mr-3" style="color: black;"></a>
                 </div>
               </div>
             </div>
