@@ -1,0 +1,116 @@
+/* BODY STYLING */
+body{
+    background-image: url("PHOTOS/Background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: smaller;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5{
+    font-weight: bold;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* ALIGNMENT STYLING */
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.container{
+  margin-top: -80;
+  margin-left: -99;
+}
+
+.iconjournal{
+    height: 145px;
+    width: 145px;
+    border-radius: 100px;
+    position: static;
+    margin-top: -70px;
+}
+
+/* TOMBOL NEXT*/
+#tombolnext {
+
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 20px;
+  }
+  
+#tombolnext:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .next {
+    background-color: white;
+    color: #0BA9D0;
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
+
+/* TOMBOL SEND*/
+  .wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .tblsend {
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #0BA9D0;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    }
+  
+  .tblsend:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+
+/* TOMBOL BUTTON HISTORY */
+.tblhistory{
+  position: static;
+  height: 35px;
+  width: 100px;
+  float: right;
+  margin-top: -200px;
+  margin-right: 20px;
+  border-radius: 100px;
+}
+
+/* TOMBOL BUTTON BACKHOMEPAGE */
+.tblbackhome{
+  height: 40px;
+  width: 200px;
+  font-size: 18px;
+  border-radius: 12px;
+}
