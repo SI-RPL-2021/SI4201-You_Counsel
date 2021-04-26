@@ -21,17 +21,12 @@ Route::get('/client_myjournal', function () {
     return view('client_myjournal');
 });
 
-
 Route::get('/register', function () {
     return view('register');
 });
 
 Route::get('/login', function () {
     return view('login1');
-});
-
-Route::get('/client_myjournal_happy', function () {
-    return view('client_myjournal_happy');
 });
 
 Route::get('/client_myjournal_happy', function () {
