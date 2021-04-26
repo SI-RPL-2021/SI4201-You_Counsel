@@ -61,64 +61,29 @@
             </div>
             </div> 
     <!-- Isi Konten -->
-    <table class="table table-bordered ml-auto mr-auto" style="position:static;width:95%;margin-top: -70px;">
-      <thead class="thead-light">
-        <tr>
-          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Date</th>
-          <th scope="col" style="text-align:center; width:12%; color: #069FD7;">Topic</th>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row" style="text-align:center;">21/03/2021</th>
-          <td><a href = "inboxmessage.blade.php">Your appointment is rejected</a></td>
-        </tr>
-      </thead>
-      </tbody>
-    </table>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    <table class="table table-bordered ml-auto mr-auto" style="position:static;width:95%;margin-top: -70px;">
-      <thead class="thead-light">
-        <tr>
-          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Date</th>
-          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Requested Date</th>
-          <th scope="col" style="text-align:center; width:10%; color: #069FD7;">Counselor Name</th>
-          <th scope="col" style="text-align:center; width:10%; color: #069FD7;">Type</th>
-          <th scope="col" style="text-align:center; width:10%; color: #069FD7;">Method</th>
-          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Link</th>
-          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Approval</th>
-          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Action</th>
-      </thead>
-        <tr>
-          <th scope="row" style="text-align:center;">21/03/2021</th>
-          <td>24/03/2021</td>
-          <td>Dr. Ulala, S.psi</td>
-          <td>Personal Development</td>
-          <td>Video Call</td>
-          <td></td>
-          <td><b>Rejected</td>
-          <td style="text-align:center;"><i style="font-size:24px" class="fa">&#xf014;</i></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  
+    <div class="form-check" style="width:60%;">
+        <textarea class="form-control" id="message" name="message" style="border-color: #000000;height:40%"
+        >Your appointment is rejected
 
-  <!-- SOCMED -->
-  <div class="" align="center" style="letter-spacing: 15px;">
+        By Dr. Ulala, S.psi
+        Sunday, 21 March 2021 - 04:30 PM
+
+        I am sorry to say that your appointment is rejected, 
+        because I have some stuff to do. 
+        You can try another day or another counselor. 
+        Thank you 
+        </textarea>
+    </div>
+
+    <!-- SOCMED -->
+    <div class="" align="center" style="letter-spacing: 15px;">
       <a href="https://twitter.com/" class="fa fa-twitter fa-3x" style="color: white;"></a>
       <a href="https://facebook.com/" class="fa fa-facebook fa-3x" style="color: white;"></a>
       <a href="https://instagram.com/" class="fa fa-instagram fa-3x" style="color: white;"></a>
       <a href="https://accounts.google.com/" class="fa fa-google fa-3x" style="color: white;"></a>
     </div>
   
-  <!-- SOCMED -->
+    <!-- SOCMED -->
 
-<br>
 </body>
-
 </html>
