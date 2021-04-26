@@ -21,25 +21,7 @@ Route::get('/client_myjournal', function () {
     return view('client_myjournal');
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<<<<<<< HEAD
 Route::get('/register', function () {
     return view('register');
 });
@@ -47,3 +29,39 @@ Route::get('/register', function () {
 Route::get('/login', function () {
     return view('login1');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=======
+Route::get('/client_myjournal_happy', function () {
+    return view('client_myjournal_happy');
+});
+
+Route::get('/client_myjournal_happy', function () {
+    return view('client_myjournal_happy');
+});
+
+Route::get('/client_myjournal_sad', function () {
+    return view('client_myjournal_sad');
+});
+
+Route::get('/client_myjournal_flat', function () {
+    return view('client_myjournal_flat');
+});
+>>>>>>> f1ac7634379c8f4ebde95439a949ab6dc9fc5429
