@@ -20,3 +20,19 @@ Route::get('/', function () {
 Route::get('/client_myjournal', function () {
     return view('client_myjournal');
 });
+
+Route::get('/client_myjournal_happy', function () {
+    return view('client_myjournal_happy');
+});
+
+Route::get('/client_myjournal_happy', function () {
+    return view('client_myjournal_happy');
+});
+
+Route::get('/client_myjournal_sad', function () {
+    return view('client_myjournal_sad');
+});
+
+Route::get('/client_myjournal_flat', function () {
+    return view('client_myjournal_flat');
+});
