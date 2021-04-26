@@ -20,3 +20,30 @@ Route::get('/', function () {
 Route::get('/client_myjournal', function () {
     return view('client_myjournal');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Route::get('/register', function () {
+    return view('register');
+});
+
+Route::get('/login', function () {
+    return view('login1');
+});
