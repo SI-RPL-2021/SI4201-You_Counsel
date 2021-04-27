@@ -57,3 +57,6 @@ Route::get('/clientlandingpage', function () {
     return view('clientlandingpage');
 });
 
+Route::get('/penjadwalan', function () {
+    return view('penjadwalan');
+});
