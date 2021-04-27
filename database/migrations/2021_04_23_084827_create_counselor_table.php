@@ -15,13 +15,11 @@ class CreateCounselorTable extends Migration
     {
         Schema::create('counselor', function (Blueprint $table) {
             $table->id();
-            $table->string('counselorid');
             $table->string('username');
             $table->string('name');
             $table->string('email');
-            $table->string('phonenumber');
-            $table->string('password');
-            $table->smallInteger('access');
+            $table->string('specialization');
+            $table->string('availdays');
             $table->timestamps();
         });
     }
