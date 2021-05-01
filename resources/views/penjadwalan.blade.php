@@ -51,10 +51,13 @@
     <h3 class="center" style="color:0788D9; margin-top:10px; color:#0BA9D0;font-family: 'Be Vietnam';">User Management</h3>  
     
     <!-- Isi Konten -->
-    <input type="text" readonly class="form-control-plaintext" style="font-family: 'Be Vietnam';font-size: 20px; margin-top:-80px;margin-left:10px;" id="date" value="<?php echo date('D, d M Y');?>">
-            <input type="text" readonly class="form-control-plaintext" style="font-family: 'Be Vietnam';font-size: 20px;margin-left:10px;" id="time" value= "<?php date_default_timezone_set("Asia/Jakarta");echo date("h:i");?>">
-            
             <!-- FORM -->
+            <div>
+            <center>
+            <p style="border:#0BA9D0; margin-top: -80px; width:90%; height: 70%;border-style:solid; color:0BA9D0;font-size: 35px;font-family: 'Be Vietnam'">
+            Appointment Reply</p> 
+            </center>
+            </div>
 
   </div>
     <!-- Isi Konten -->
