@@ -53,10 +53,14 @@ Route::get('/checklogin', function () {
     return view('checklogin');
 });
 
-Route::get('/clientlandingpage', function () {
+Route::get('/clienthomepage', function () {
     return view('clientlandingpage');
 });
 
 Route::get('/penjadwalan', function () {
     return view('penjadwalan');
+});
+
+Route::get('/landing', function () {
+    return view('dashboard');
 });

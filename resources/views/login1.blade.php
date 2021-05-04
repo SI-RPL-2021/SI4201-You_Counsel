@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>You-Counsel | Login</title>
+    <link rel = "icon" href="photos/LogoBiru-01.png" type = "image/x-icon">
 
 
     <!-- STYLING -->
@@ -55,7 +56,7 @@
                         <div class="text-center">
                         <button type="submit" class="btn btn-start-order">Login Now</button>
                         </div>
-                        <p style="color: white; text-align:center;">Don't have an Account? <a style="color:white" href="register.blade.php"><b>Register</b></a></p>
+                        <p style="color: white; text-align:center;">Don't have an Account? <a style="color:white" href="register.php"><b>Register</b></a></p>
                       </form>
             </div>
           </div>

@@ -1,6 +1,7 @@
 <html>
 <head>
   <title>You-Counsel | Register</title>
+  <link rel = "icon" href="photos/LogoBiru-01.png" type = "image/x-icon">
 
 
   <!-- STYLING -->
