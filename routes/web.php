@@ -46,7 +46,7 @@ Route::get('/loginpage', function () {
 });
 
 Route::get('/register', function () {
-    return view('login1');
+    return view('register');
 });
 
 Route::get('/checklogin', function () {
