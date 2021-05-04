@@ -78,7 +78,7 @@
                         <div class="text-center">
                           <button type="submit" class="btn btn-start-order">Register Now</button>
                         </div>
-                        <p style="color: white; text-align:center;">Already have an account? <a style="color:white" href="login1.php"><b>Log in</b></a></p>
+                        <p style="color: white; text-align:center;">Already have an account? <a style="color:white" href="login1.blade.php"><b>Log in</b></a></p>
                       </form>
                     </div>
                   </div>
