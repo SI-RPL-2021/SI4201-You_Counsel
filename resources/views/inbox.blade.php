@@ -101,7 +101,7 @@
           <td>Video Call</td>
           <td></td>
           <td><b>Rejected</td>
-          <td style="text-align:center;"><i style="font-size:24px" class="fa">&#xf014;</i></td>
+          <td style="text-align:center;"><i style="font-size:24px" class="fa">&#xf014;</i>Delete</td>
         </tr>
       </tbody>
     </table>
