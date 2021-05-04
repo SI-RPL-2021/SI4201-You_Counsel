@@ -40,3 +40,23 @@ Route::get('/client_myjournal_sad', function () {
 Route::get('/client_myjournal_flat', function () {
     return view('client_myjournal_flat');
 });
+
+Route::get('/loginpage', function () {
+    return view('login1');
+});
+
+Route::get('/register', function () {
+    return view('login1');
+});
+
+Route::get('/checklogin', function () {
+    return view('checklogin');
+});
+
+Route::get('/clientlandingpage', function () {
+    return view('clientlandingpage');
+});
+
+Route::get('/penjadwalan', function () {
+    return view('penjadwalan');
+});
