@@ -29,6 +29,18 @@ Route::get('/login', function () {
     return view('login1');
 });
 
+Route::get('/client_journalhistory', function () {
+    return view('client_journalhistory');
+});
+
+Route::get('/client_leavemessage_thanks', function () {
+    return view('client_leavemessage_thanks');
+});
+
+Route::get('/client_leavemessage', function () {
+    return view('client_leavemessage');
+});
+
 Route::get('/client_myjournal_happy', function () {
     return view('client_myjournal_happy');
 });
