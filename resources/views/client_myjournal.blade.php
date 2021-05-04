@@ -58,13 +58,13 @@
             <p style="color:#0BA9D0; font-family: 'Be Vietnam';font-size: 50px;margin-top:30px;margin-bottom:8%;">How Are You Feeling Today?</p>
             </div></center>
             
-            <a href = "client_myjournal_happy.php" style="font-size:100px;margin-right:10%">
+            <a href = "/client_myjournal_happy" style="font-size:100px;margin-right:10%">
             &#128522;</a>
             
-            <a href = "client_myjournal_sad.php" style="font-size:100px;margin-right:10%">
+            <a href = "/client_myjournal_sad" style="font-size:100px;margin-right:10%">
             &#128577;</a>
             
-            <a href = "client_myjournal_flat.php" style="font-size:100px;">
+            <a href = "/client_myjournal_flat" style="font-size:100px;">
             &#128528;</a>
 
   </div>
