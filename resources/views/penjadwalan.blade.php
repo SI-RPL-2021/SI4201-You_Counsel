@@ -16,6 +16,14 @@
     <style>
     <?php include 'CSS/youcounsel.css' ?>
 
+    .box{
+    margin:0 auto; 
+    margin-top: -5%;
+    width:80%;
+    height:70%;
+    padding:20px;
+    border:2px solid #0BA9D0;}
+
     </style>
    <!-- STYLING -->
 </head>
@@ -48,16 +56,31 @@
   <!-- CONTENT -->
   <div class="center" style="width:70%; height:700px;  background-color:white;">
     <img src="PHOTOS/search.jpg" alt="journal2" class="iconjournal">
-    <h3 class="center" style="color:0788D9; margin-top:10px; color:#0BA9D0;font-family: 'Be Vietnam';">User Management</h3>  
+    <h3 class="center" style="margin-top:10px; color:#0BA9D0;font-family: 'Be Vietnam';">User Management</h3>  
     
     <!-- Isi Konten -->
             <!-- FORM -->
-            <div>
-            <center>
-            <p style="border:#0BA9D0; margin-top: -80px; width:90%; height: 70%;border-style:solid; color:0BA9D0;font-size: 35px;font-family: 'Be Vietnam'">
-            Appointment Reply</p> 
-            </center>
-            </div>
+        <div class = "box">
+          <p style="color:#0BA9D0;font-family: 'Be Vietnam'; text-shadow:1px 1px 3px #566573 ; font-size:40px;">Appointment Reply</p>
+            
+            <form action="">
+            <table border="0" style="margin-top:-50px;margin-left:25px">
+              
+              <tr><td><label style="color:#0BA9D0;font-family: 'Be Vietnam'; " for="schedule_id">Schedule ID</label></td></tr>
+              <tr><td><input type="email"></td><tr>
+
+              <tr><td><label style="color:#0BA9D0;font-family: 'Be Vietnam';" for="student_id">Student ID</label></td></tr>
+              <tr><td><input type="email"></td><tr>
+              
+              <tr><td><label style="color:#0BA9D0;font-family: 'Be Vietnam';" for="date">Date</label></td></tr>
+              <tr><td><input type="date"></td><tr>
+
+              <tr style= "height:20px;"><td></td></tr>   
+              <tr><td><button>Save</button></td></tr>
+                
+            </form>
+            
+        </div>
 
   </div>
     <!-- Isi Konten -->
