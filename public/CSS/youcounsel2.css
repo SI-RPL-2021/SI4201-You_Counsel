@@ -65,6 +65,20 @@ background-color: #ffffff;
   color: #39c6c9;
 }
 
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+h1 {
+  font-size: 80;
+  color: white;
+  text-shadow: 2px 2px 7px #000000;
+}
+
 /* Fallback for Edge
 -------------------------------------------------- */
 

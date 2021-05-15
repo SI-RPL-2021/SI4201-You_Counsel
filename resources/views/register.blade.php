@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <div style=" background-image: url('PHOTOS/RegisterBG.png'); height: 122%; background-repeat:no-repeat; ">
+  <div style=" background-image: url('PHOTOS/RegisterBG.png'); width: 100%; height: auto; background-size: cover;">
     <div class="container-fluid">
       <div class="row no-gutter">
         <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
@@ -39,7 +39,7 @@
             </div>
           </div>
 
-          <div class="col-md-8 col-lg-5" style="margin-left: 111; background-image: linear-gradient(#2a9ade, #3bc8c9);opacity: 0.8;">
+          <div class="col-md-8 col-lg-5" style="margin-left: auto; background-image: linear-gradient(#2a9ade, #3bc8c9);opacity: 0.8;">
             <div class="login d-flex align-items-center py-5">
               <a style="margin-top: -650;" href="#"><img src="PHOTOS/backarrow.png" style="width:25px;height:20px;"></a>
               <div class="container">
