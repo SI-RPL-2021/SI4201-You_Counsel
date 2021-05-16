@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('register');
+    return view('index');
 });
 
 Route::get('/client_myjournal', function () {
@@ -73,6 +73,6 @@ Route::get('/penjadwalan', function () {
     return view('penjadwalan');
 });
 
-Route::get('/landing', function () {
-    return view('dashboard');
+Route::get('/index', function () {
+    return view('index');
 });

@@ -41,7 +41,7 @@
 
           <div class="col-md-8 col-lg-5" style="margin-left: auto; background-image: linear-gradient(#2a9ade, #3bc8c9);opacity: 0.8;">
             <div class="login d-flex align-items-center py-5">
-              <a style="margin-top: -650;" href="#"><img src="PHOTOS/backarrow.png" style="width:25px;height:20px;"></a>
+              <a style="margin-top: -650;" href="/index"><img src="PHOTOS/backarrow.png" style="width:25px;height:20px;"></a>
               <div class="container">
                 <div class="row">
                   <div class="col-md-11 col-lg-10 mx-auto">
