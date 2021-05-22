@@ -50,9 +50,8 @@
         <div class="center" style="width:70%; height:700px;  background-color:white;">
             <img src="PHOTOS/inboxicon.png" alt="journal2" class="iconjournal">
 
-            <h3 class="center" style="color:0788D9; margin-top:10px; color:#0BA9D0;font-family: 'Be Vietnam';">Leave Us
-                a
-                Message</h3>
+            <h3 class="center" style="color:0788D9; margin-top:10px; color:#0BA9D0;font-family: 'Be Vietnam';">Message
+                History</h3>
             <div class="" style="float:left; margin-top:-200px; margin-left:20px; position:static;">
                 <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
                     <a href="/clienthomepage" style="text-decoration: none; color:#0BA9D0;">
@@ -63,36 +62,38 @@
             </div>
 
             <!-- Isi Konten -->
-            <div class="tglwaktu" style="margin-top:-90px; margin-left:20px;">
-                <input type="text" readonly class="form-control-plaintext"
-                    style="font-family: 'Be Vietnam';font-size: 20px;" id="date" value="<?php echo date('D, d M Y');?>">
-                <input type="text" readonly class="form-control-plaintext"
-                    style="font-family: 'Be Vietnam';font-size: 20px;" id="time"
-                    value="<?php date_default_timezone_set("Asia/Jakarta");echo date("h:i");?>">
-            </div>
-
             <center>
-                <div style="width:90%; margin-top:40px;">
-                    <p style="color:#0BA9D0; font-family: 'Be Vietnam';font-size: 50px;margin-top:-20px;">Send us your
-                        thoughts
-                        because every mind should be free!</p>
+                <div class="table-responsive" style="width:90%;">
+                    <table class="table table-hover">
+                        <thead style="background-color:#F2F2F2; color:#069ED7;">
+                            <tr>
+                                <th scope="col" style="width:20%; text-align:center;">Date</th>
+                                <th scope="col" style="width:70%; text-align:center;">Your Message</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" style="text-align:center;">21/03/2021</th>
+                                <td>I’m tired, so tired :)</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row" style="text-align:center;">21/03/2021</th>
+                                <td>I’m tired, so tired :)</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row" style="text-align:center;">21/03/2021</th>
+                                <td>I’m tired, so tired :)</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </center>
 
-            <center>
-                <div class="form-check" style="width:85%;">
-                    <textarea class="form-control" id="message" name="message" style="border-color: #0BA9D0;height:17%"
-                        placeholder="Write down your thoughts...."></textarea>
-                </div>
-            </center>
-
-            <div class="wrap">
-                <button class="tblsend">Send</button>
-            </div>
         </div>
-
-
-
         <!-- SOCMED -->
         <div class="" align="center" style="letter-spacing: 15px;">
             <a href="https://twitter.com/" class="fa fa-twitter fa-3x" style="color: white;"></a>
