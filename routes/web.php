@@ -41,6 +41,10 @@ Route::get('/client_leavemessage', function () {
     return view('client_leavemessage');
 });
 
+Route::get('/client_leavemessagehistory', function () {
+    return view('client_leavemessagehistory');
+});
+
 Route::get('/client_myjournal_happy', function () {
     return view('client_myjournal_happy');
 });
@@ -75,4 +79,20 @@ Route::get('/penjadwalan', function () {
 
 Route::get('/index', function () {
     return view('index');
+});
+
+Route::get('/counselor_message', function () {
+    return view('counselor_message');
+});
+
+Route::get('/counselor_message_reply', function () {
+    return view('counselor_message_reply');
+});
+
+Route::get('/counselor_journal_checker', function () {
+    return view('counselor_journal_checker');
+});
+
+Route::get('/counselor_journal_checker2', function () {
+    return view('counselor_journal_checker2');
 });
