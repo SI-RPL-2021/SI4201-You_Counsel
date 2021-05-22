@@ -85,12 +85,12 @@ Route::get('/counselor_message', function () {
     return view('counselor_message');
 });
 
-Route::get('/counselor_message_reply', function () {
-    return view('counselor_message_reply');
-});
-
 Route::get('/counselor_journal_checker', function () {
     return view('counselor_journal_checker');
+});
+
+Route::get('/counselor_message_reply', function () {
+    return view('counselor_message_reply');
 });
 
 Route::get('/counselor_journal_checker2', function () {
