@@ -95,8 +95,7 @@
 
   </nav> <!-- end of navbar -->
   <!-- end of navbar -->
-
-
+  
   @yield('container')
 
 
