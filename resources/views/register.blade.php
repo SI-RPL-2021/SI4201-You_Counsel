@@ -47,14 +47,15 @@
                   <div class="col-md-11 col-lg-10 mx-auto">
                     <h3 class="login-heading mb-4" style="color: #ffffff;">Register</h3>
                     <div>
-                      <form id="contact-form" class="form" action="BACKEND/register.php" method="POST" role="form">
+                      <form id="contact-form" class="form" action="/create" method="POST" role="form">
+                          {{csrf_field()}}
                         <div class="form-group">
                           <label style="color:white" class="form-label" for="username">Username</label>
                           <input type="text" class="form-control" id="username" name="username" placeholder="Username" tabindex="1" required>
                         </div>
                         <div class="form-group">
                           <label style="color:white" class="form-label" for="name">Nama</label>
-                          <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" tabindex="2" required>
+                          <input type="text" class="form-control" id="nama" name="name" placeholder="Nama" tabindex="2" required>
                         </div>
                         <div class="form-group">
                           <label style="color:white" class="form-label" for="email">E-mail</label>
@@ -62,11 +63,11 @@
                         </div>
                         <div class="form-group">
                           <label style="color:white" class="form-label" for="univ">Universitas</label>
-                          <input type="text" class="form-control" id="univ" name="univ" placeholder="Universitas" tabindex="4" required>
+                          <input type="text" class="form-control" id="univname" name="univname" placeholder="Universitas" tabindex="4" required>
                         </div>
                         <div class="form-group">
                           <label style="color:white" class="form-label" for="alamat">Alamat</label>
-                          <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Alamat" tabindex="5" required>
+                          <input type="text" class="form-control" id="address" name="address" placeholder="Alamat" tabindex="5" required>
                         </div>
                         <div class="form-group">
                           <label style="color:white" class="form-label" for="notelp">No. Telp</label>
@@ -75,6 +76,9 @@
                         <div class="form-group">
                           <label style="color:white" class="form-label" for="password">Password</label>
                           <input type="password" class="form-control" id="password" name="password" placeholder="Password" tabindex="7" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="hidden" class="form-control" id="access" name="access" value="3">
                         </div>
                         <div class="text-center">
                           <button type="submit" class="btn btn-start-order">Register Now</button>
