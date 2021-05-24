@@ -9,7 +9,7 @@
   <!-- STYLING -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
-    <?php include 'youcounsel.css';
+   <?php include 'CSS/youcounsel.css';
     ?>
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

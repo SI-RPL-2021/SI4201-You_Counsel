@@ -33,8 +33,8 @@
             </li>
             </ul>
             <span class="navbar-text" style="color:white;">
-            Hello, <a href="/" style="color:white; font-size:15px;"><u>James</u></a>!
-            <button type="button" class="btn btn-sm btn-outline-light">Logout</button>
+            Hello, <a href="/profile" style="color:white; font-size:15px;"><u>James</u></a>!
+            <a href="/index"><button type="button" class="btn btn-sm btn-outline-light">Logout</button></a>
             </span>
         </div>
         </nav>
