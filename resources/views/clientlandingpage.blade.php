@@ -57,9 +57,9 @@
                     <h5 class="card-title" style="text-align:center; color:#0788D9;">My Journal</h4>
                     <p class="card-text" style="font-size:15px;text-align: center;">Help us to understand you each and every day.</p>
                     <br>
-                    <center><a href="client_myjournal.php" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Open My Journal</button></a></center>
+                    <center><a href="/client_myjournal" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Open My Journal</button></a></center>
                     <br>
-                    <center><a href="client_journalhistory.php" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Journal History</button></a></center>
+                    <center><a href="/journalindex" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Journal History</button></a></center>
             </div>
             </div>
             </td>

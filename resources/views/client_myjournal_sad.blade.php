@@ -61,12 +61,16 @@
     </div>
 
     <!-- Isi Konten -->
-    <form action="#" method="POST">
+    <form action="/postjournal" method="POST">
       <div class="tglwaktu" style="margin-top:-90px; margin-left:20px;">
         <input type="text" readonly class="form-control-plaintext" style="font-family: 'Be Vietnam';font-size: 20px;"
           id="date" value="<?php echo date('D, d M Y');?>">
         <input type="text" readonly class="form-control-plaintext" style="font-family: 'Be Vietnam';font-size: 20px;"
           id="time" value="<?php date_default_timezone_set("Asia/Jakarta");echo date("h:i");?>">
+      </div>
+
+      <div class="form-group">
+        <input type="hidden" class="form-control" id="mood" name="mood" value="Sad">
       </div>
 
       <p style="font-size:100px;text-align:center;margin-top:-40px;margin-right:75px">&#128577;</p>

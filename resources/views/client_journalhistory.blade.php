@@ -51,7 +51,7 @@
     <h3 class="center" style="color:0788D9; margin-top:10px;">Journal History</h3>
     <div class="" style="float:left; margin-top:-200px; margin-left:20px; position:static;">
       <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
-        <a href="clientlandingpage.php" style="text-decoration: none; color:#0BA9D0;">
+        <a href="/clientlandingpage" style="text-decoration: none; color:#0BA9D0;">
           <button type="submit" style="width:70px; height:35px; font-size:15px"
             class="btn btn-outline-info btn-sm btn-block tblbackhome">Back</button>
         </a>
@@ -74,12 +74,14 @@
         </tr>
       </thead>
       <tbody>
+      @foreach($clientjournal as $client)
         <tr>
           <th scope="row" style="text-align:center;">1</th>
-          <td>23/03/2021</td>
-          <td>Sad</td>
-          <td>I’m tired :( </td>
+          <td>{{$client->created_at}}</td>
+          <td>{{$client->mood}}</td>
+          <td>{{$client->message}} </td>
         </tr>
+       @endforeach
       </tbody>
     </table>
   </div>

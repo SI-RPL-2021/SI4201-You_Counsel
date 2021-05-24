@@ -95,6 +95,8 @@ Route::get('/counselor_journal_checker2', function () {
 
 
 Route::get('/profile', 'App\Http\Controllers\ClientController@index');
+Route::get('/journalindex', 'App\Http\Controllers\JournalController@journalindex');
 Route::post('/postlogin', 'App\Http\Controllers\AuthController@postlogin');
 Route::post('/create', 'App\Http\Controllers\AuthController@create');
+Route::post('/postjournal', 'App\Http\Controllers\JournalController@createjournal');
     
