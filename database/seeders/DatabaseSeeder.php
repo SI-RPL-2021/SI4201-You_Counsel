@@ -23,23 +23,33 @@ class DatabaseSeeder extends Seeder
             'id' => 123,
             'username' => 'Alexgundara',
             'email' => 'alexgundara@gmail.com',
-            'password' => 12345,
+            'password' => bcrypt(12345),
             'access' => 3,
+            ]);
+        \DB::table('clients')->insert([
+            'id' => 123,
+            'username' => 'Alexgundara',
+            'name' => 'Alex Gundara',
+            'email' => 'alexgundara@gmail.com',
+            'address' => 'Jakarta',
+            'phonenumber' => 021654,
+            'univname' => 'Telkom University',
             ]);
 
         \DB::table('users')->insert([
             'id' => 456,
             'username' => 'todosantana',
             'email' => 'todosantana@gmail.com',
-            'password' => 12345,
+            'password' => bcrypt(12345),
             'access' => 1,
             ]);
+            
 
         \DB::table('users')->insert([
             'id' => 789,
             'username' => 'skinner123',
             'email' => 'skinner@gmail.com',
-            'password' => 12345,
+            'password' => bcrypt(12345),
             'access' => 2,
             ]);    
     }

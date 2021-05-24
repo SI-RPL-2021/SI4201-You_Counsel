@@ -69,10 +69,6 @@ Route::get('/checklogin', function () {
     return view('checklogin');
 });
 
-Route::get('/clienthomepage', function () {
-    return view('clientlandingpage');
-});
-
 Route::get('/penjadwalan', function () {
     return view('penjadwalan');
 });
@@ -96,3 +92,12 @@ Route::get('/counselor_message_reply', function () {
 Route::get('/counselor_journal_checker2', function () {
     return view('counselor_journal_checker2');
 });
+
+Route::get('/clienthomepage', function () {
+    Route::get('/clientlandingpage', function () {
+        return view('clientlandingpage');
+    });
+
+Route::get('/profile', 'App\Http\Controllers\ClientController@index');
+Route::post('/postlogin', 'App\Http\Controllers\AuthController@postlogin');
+    

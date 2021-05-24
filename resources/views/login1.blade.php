@@ -44,7 +44,8 @@
           <div class="row">
             <div class="col-md-9 col-lg-8 mx-auto">
               <h3 class="login-heading mb-4">Welcome back!</h3>
-              <form id="contact-form" class="form" action="BACKEND/login.php" method="POST" role="form">
+              <form id="contact-form" class="form" action="/postlogin" method="POST" role="form">
+                {{csrf_field()}}
                         <div class="form-group">
                           <label class="form-label" for="name">Username</label>
                           <input type="text" class="form-control" id="username" name="username" placeholder="Username" tabindex="1" required>
