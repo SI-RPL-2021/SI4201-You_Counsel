@@ -17,10 +17,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/client_myjournal', function () {
-    return view('client_myjournal');
-});
-
+//REGISTER LOGIN
 Route::get('/register', function () {
     return view('register');
 });
@@ -29,20 +26,21 @@ Route::get('/login', function () {
     return view('login1');
 });
 
+Route::get('/checklogin', function () {
+    return view('checklogin');
+});
+
+Route::get('/clientlandingpage', function () {
+    return view('clientlandingpage');
+});
+
+//JOURNAL
+Route::get('/client_myjournal', function () {
+    return view('client_myjournal');
+});
+
 Route::get('/client_journalhistory', function () {
     return view('client_journalhistory');
-});
-
-Route::get('/client_leavemessage_thanks', function () {
-    return view('client_leavemessage_thanks');
-});
-
-Route::get('/client_leavemessage', function () {
-    return view('client_leavemessage');
-});
-
-Route::get('/client_leavemessagehistory', function () {
-    return view('client_leavemessagehistory');
 });
 
 Route::get('/client_myjournal_happy', function () {
@@ -57,18 +55,20 @@ Route::get('/client_myjournal_flat', function () {
     return view('client_myjournal_flat');
 });
 
-Route::get('/loginpage', function () {
-    return view('login1');
+//LEAVE MESSAGE
+Route::get('/client_leavemessage_thanks', function () {
+    return view('client_leavemessage_thanks');
 });
 
-Route::get('/register', function () {
-    return view('register');
+Route::get('/client_leavemessage', function () {
+    return view('client_leavemessage');
 });
 
-Route::get('/checklogin', function () {
-    return view('checklogin');
+Route::get('/client_leavemessagehistory', function () {
+    return view('client_leavemessagehistory');
 });
 
+//KONSELOR
 Route::get('/penjadwalan', function () {
     return view('penjadwalan');
 });
@@ -93,11 +93,8 @@ Route::get('/counselor_journal_checker2', function () {
     return view('counselor_journal_checker2');
 });
 
-Route::get('/clienthomepage', function () {
-    Route::get('/clientlandingpage', function () {
-        return view('clientlandingpage');
-    });
 
 Route::get('/profile', 'App\Http\Controllers\ClientController@index');
 Route::post('/postlogin', 'App\Http\Controllers\AuthController@postlogin');
+Route::post('/create', 'App\Http\Controllers\AuthController@create');
     
