@@ -34,6 +34,10 @@ Route::get('/clientlandingpage', function () {
     return view('clientlandingpage');
 });
 
+Route::get('/counselor_userprofile', function () {
+    return view('counselor_userprofile');
+});
+
 //JOURNAL
 Route::get('/client_myjournal', function () {
     return view('client_myjournal');
