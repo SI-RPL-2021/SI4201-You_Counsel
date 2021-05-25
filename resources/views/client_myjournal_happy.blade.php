@@ -25,7 +25,7 @@
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-    <a class="navbar-brand" href="clientlandingpage"><img src="PHOTOS/LogoPutih-01.png" width="60" height="60"
+    <a class="navbar-brand" href="/clientlandingpage"><img src="PHOTOS/LogoPutih-01.png" width="60" height="60"
         class="d-inline-block align-top" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
       aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
