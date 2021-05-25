@@ -72,6 +72,15 @@ Route::get('/client_leavemessagehistory', function () {
     return view('client_leavemessagehistory');
 });
 
+//INBOX
+Route::get('/inbox', function () {
+    return view('inbox');
+});
+
+Route::get('/inboxmessage', function () {
+    return view('inboxmessage');
+});
+
 //KONSELOR
 Route::get('/penjadwalan', function () {
     return view('penjadwalan');
@@ -96,7 +105,6 @@ Route::get('/counselor_message_reply', function () {
 Route::get('/counselor_journal_checker2', function () {
     return view('counselor_journal_checker2');
 });
-
 
 Route::get('/profile', 'App\Http\Controllers\ClientController@index');
 Route::get('/journalindex', 'App\Http\Controllers\JournalController@journalindex');
