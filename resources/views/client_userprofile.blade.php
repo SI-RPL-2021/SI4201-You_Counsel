@@ -66,7 +66,7 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputFullName" style="text-shadow: 3px 3px 4px #bfbfbf;">Full Name</label>
-                                <input type="password" class="form-control" id="inputFullName">
+                                <input type="text" class="form-control" id="inputFullName">
                             </div>
                         </div>
                         <div class="form-row">
@@ -84,7 +84,7 @@
                         </h4>
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <labael for="inputNewPassword" style="text-shadow: 3px 3px 4px #bfbfbf;">New Password</label>
+                                <label for="inputNewPassword" style="text-shadow: 3px 3px 4px #bfbfbf;">New Password</label>
                                 <input type="password" class="form-control" id="inputNewPassword">
                             </div>
                             <div class="form-group col-md-6">
