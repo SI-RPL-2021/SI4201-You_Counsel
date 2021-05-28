@@ -106,6 +106,10 @@ Route::get('/counselor_journal_checker2', function () {
     return view('counselor_journal_checker2');
 });
 
+Route::get('/counselor_appointment_reply', function () {
+    return view('counselor_appointment_reply');
+});
+
 Route::get('/profile', 'App\Http\Controllers\ClientController@index');
 Route::get('/journalindex', 'App\Http\Controllers\JournalController@journalindex');
 Route::post('/postlogin', 'App\Http\Controllers\AuthController@postlogin');
