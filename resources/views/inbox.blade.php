@@ -9,7 +9,7 @@
   <!-- STYLING -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
-    <?php include 'youcounsel.css';
+    <?php include 'CSS/youcounsel.css';
     ?>
     #previous {
       border: 1px solid;
@@ -55,7 +55,7 @@
     <h3 class="center" style="color:0788D9; margin-top:10px;">Inbox</h3>
     <div class="" style="float:left; margin-top:-200px; margin-left:20px; position:static;">
     <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
-                <a href="clientlandingpage.php" style="text-decoration: none; color:#0BA9D0;" >
+                <a href="/clientlandingpage" style="text-decoration: none; color:#0BA9D0;" >
                     <button type="submit" style="width:70px; height:35px; font-size:15px" class="btn btn-outline-info btn-sm btn-block tblbackhome">Back</button>
 
             </div>
@@ -70,7 +70,7 @@
       <tbody>
         <tr>
           <th scope="row" style="text-align:center;">21/03/2021</th>
-          <td><a href = "inboxmessage.blade.php">Your appointment is rejected</a></td>
+          <td><a href = "/inboxmessage">Your appointment is rejected</a></td>
         </tr>
       </thead>
       </tbody>
