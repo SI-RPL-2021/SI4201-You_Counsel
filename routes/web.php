@@ -90,6 +90,10 @@ Route::get('/index', function () {
     return view('index');
 });
 
+Route::get('/counselor_homepage', function () {
+    return view('counselor_homepage');
+});
+
 Route::get('/counselor_message', function () {
     return view('counselor_message');
 });
