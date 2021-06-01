@@ -72,7 +72,7 @@
                         <div class="form-group row">
                             <label for="inputDate" class="col-sm-2 col-form-label">Date</label>
                             <div class="col-sm-9 ml-5">
-                                <input type="text" class="form-control" id="inputDate" disabled>
+                                <input type="text" class="form-control" id="inputDate" name="tanggal" disabled>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -82,11 +82,11 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" name="message_reply" rows="4"></textarea>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm-10">
-                                <button type="submit" class="btn btn-info">Send</button>
+                                <button type="submit" class="btn btn-info" >Send</button>
                             </div>
                         </div>
                     </form>
