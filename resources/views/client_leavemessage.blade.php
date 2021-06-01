@@ -39,7 +39,8 @@
             </ul>
             <span class="navbar-text" style="color:white;">
                 Hello, <a href="client_userprofile" style="color:white; font-size:15px;"><u>James</u></a>!
-                <a href="/"type="button" class="btn btn-sm btn-outline-light" role="button" style="color:white; font-size:15px;">Logout</a>
+                <a href="/" type="button" class="btn btn-sm btn-outline-light" role="button"
+                    style="color:white; font-size:15px;">Logout</a>
             </span>
         </div>
     </nav>
