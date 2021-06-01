@@ -48,7 +48,7 @@
 
     <!-- CONTENT -->
     <div class="content">
-        <div class="center" style="width:70%; height:630px;  background-color:white;">
+        <div class="center" style="width:70%; height:1000px;  background-color:white;">
             <img src="PHOTOS/inboxicon.png" alt="journal2" class="iconjournal">
 
             <!-- Isi Konten -->
@@ -102,22 +102,24 @@
                     </h4>
                     <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;">
                         <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <input type="text" class="form-control" id="inputspecialization" style="border:5;background-color:white;text-shadow: 3px 3px 4px #bfbfbf;" placeholder="Minat/Bakat,Karir,Pribadi" disabled>
+                            <div class="form-group col-md-12">
+                                <input type="text" class="form-control" id="inputspecialization" style="border:5;background-color:#E1E1E1;text-shadow: 3px 3px 4px #bfbfbf;" placeholder="Minat/Bakat,Karir,Pribadi" disabled>
                             </div>
                         </div>
                     </form>
                 </div>
 
-                <div style="margin-top:50px;width:70%;" align="left">
+                <div style="margin-top:px;width:70%;" align="left">
                     <h4 style="margin-left:-100px;margin-bottom:30px;color:#848484;font-family: 'Be Vietnam';">Available Days
                     </h4>
                     <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;">
                         <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <input type="text" class="form-control" id="inputdays" style="border:5;background-color:white;text-shadow: 3px 3px 4px #bfbfbf;" placeholder="Mon,Tue,Fri" disabled>
+                            <div class="form-group col-md-12">
+                                <input type="text" class="form-control" id="inputdays" style="border:5;background-color:#E1E1E1;text-shadow: 3px 3px 4px #bfbfbf;" placeholder="Mon,Tue,Fri" disabled>
                             </div>
                         </div>
+
+                        <center><button type="button" class="btn btn-outline-info" style="margin-top:30px;">Change your Schedules</button><center>
                     </form>
                 </div>
 
