@@ -81,15 +81,18 @@
             </center>
 
             <center>
-                <div class="form-check" style="width:85%;">
-                    <textarea class="form-control" id="message" name="message" style="border-color: #0BA9D0;height:17%"
-                        placeholder="Write down your thoughts...."></textarea>
-                </div>
+                <form method="">
+                    <div class="form-check" style="width:85%;">
+                        <textarea class="form-control" id="message" name="pesanclient"
+                            style="border-color: #0BA9D0;height:17%"
+                            placeholder="Write down your thoughts...."></textarea>
+                    </div>
             </center>
 
             <div class="wrap">
                 <button class="tblsend">Send</button>
             </div>
+            </form>
         </div>
 
 
