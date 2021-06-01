@@ -45,7 +45,7 @@
 
     <!-- CONTENT -->
     <div class="content">
-        <div class="center" style="width:70%; height:700px;  background-color:white;">
+        <div class="center" style="width:90%; height:auto;  background-color:white;">
             <img src="PHOTOS/inboxicon.png" alt="journal2" class="iconjournal">
 
             <h3 class="center" style="color:0788D9; margin-top:10px; color:#0BA9D0;font-family: 'Be Vietnam';">Messages
@@ -82,7 +82,7 @@
 
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody >
                             <tr>
                                 <td scope="row" style="text-align:center;">1</td>
                                 <td>187692</td>
@@ -96,6 +96,7 @@
                                     <button type="button" class="btn btn-danger" style="width:70px;">Delete</button>
                                 </td>
                             </tr>
+                            
                         </tbody>
                     </table>
                 </div>
