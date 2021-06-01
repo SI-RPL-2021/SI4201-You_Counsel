@@ -25,7 +25,7 @@
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <a class="navbar-brand" href="clientlandingpage.php"><img src="PHOTOS/LogoPutih-01.png" width="60" height="60"
+        <a class="navbar-brand" href="/counselor_homepage"><img src="PHOTOS/LogoPutih-01.png" width="60" height="60"
                 class="d-inline-block align-top" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,8 +36,8 @@
 
             </ul>
             <span class="navbar-text" style="color:white;">
-                Hello, <a href="/" style="color:white; font-size:15px;"><u>James</u></a>!
-                <button type="button" class="btn btn-sm btn-outline-light">Logout</button>
+                Hello, <a href="/counselor_userprofile" style="color:white; font-size:15px;"><u>James</u></a>!
+                <a href="/"><button type="button" class="btn btn-sm btn-outline-light">Logout</button></a>
             </span>
         </div>
     </nav>
