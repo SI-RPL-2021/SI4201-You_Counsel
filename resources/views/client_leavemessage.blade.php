@@ -25,7 +25,7 @@
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <a class="navbar-brand" href="clientlandingpage.php"><img src="PHOTOS/LogoPutih-01.png" width="60" height="60"
+        <a class="navbar-brand" href="clientlandingpage"><img src="PHOTOS/LogoPutih-01.png" width="60" height="60"
                 class="d-inline-block align-top" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,12 +34,12 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="inbox.php" style="color:white; font-size:15px;"><u>Inbox</u></a>
+                    <a class="nav-link" href="inbox" style="color:white; font-size:15px;"><u>Inbox</u></a>
                 </li>
             </ul>
             <span class="navbar-text" style="color:white;">
-                Hello, <a href="/" style="color:white; font-size:15px;"><u>James</u></a>!
-                <button type="button" class="btn btn-sm btn-outline-light">Logout</button>
+                Hello, <a href="client_userprofile" style="color:white; font-size:15px;"><u>James</u></a>!
+                <a href="/"type="button" class="btn btn-sm btn-outline-light" role="button" style="color:white; font-size:15px;">Logout</a>
             </span>
         </div>
     </nav>
@@ -55,7 +55,7 @@
                 Message</h3>
             <div class="" style="float:left; margin-top:-200px; margin-left:20px; position:static;">
                 <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
-                    <a href="/clienthomepage" style="text-decoration: none; color:#0BA9D0;">
+                    <a href="/clientlandingpage" style="text-decoration: none; color:#0BA9D0;">
                         <button type="submit" style="width:70px; height:35px; font-size:15px"
                             class="btn btn-outline-info btn-sm btn-block tblbackhome">Back</button>
                     </a>
