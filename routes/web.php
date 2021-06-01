@@ -123,6 +123,10 @@ Route::get('/client_scheduleAppointment', function () {
     return view('client_scheduleAppointment');
 });
 
+Route::get('/tes', function () {
+    return view('tes');
+});
+
 Route::get('/profile', 'App\Http\Controllers\ClientController@index');
 Route::get('/journalindex', 'App\Http\Controllers\JournalController@journalindex');
 Route::post('/postlogin', 'App\Http\Controllers\AuthController@postlogin');
