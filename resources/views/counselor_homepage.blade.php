@@ -66,7 +66,7 @@
                     <h5 class="card-title" style="text-align:center; color:#0788D9;">Appointment Request</h4>
                     <p class="card-text" style="font-size:15px;text-align: center;">Check your appointment requests.</p>
                     <br>
-                    <center><a href="schedulephp" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Go to Request</button></a></center>
+                    <center><a href="counselor_appointment_reply" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Go to Request</button></a></center>
                     <br>
             </div>
             </div>
