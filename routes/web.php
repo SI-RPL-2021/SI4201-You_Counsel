@@ -118,6 +118,7 @@ Route::get('/counselor_userprofile', function () {
     return view('counselor_userprofile');
 });
 
+//SCHEDULE APPOINTMENT
 Route::get('/client_scheduleAppointment', function () {
     return view('client_scheduleAppointment');
 });

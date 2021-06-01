@@ -46,7 +46,7 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color:white; font-size:15px;"><u>Inbox</u></a>
+                    <a class="nav-link" href="/inbox" style="color:white; font-size:15px;"><u>Inbox</u></a>
                 </li>
             </ul>
             <span class="navbar-text" style="color:white;">
@@ -79,8 +79,8 @@
                             Counseling</label>
                         <div class="col-sm-8 ml-auto">
                             <select class="form-control" name="type">
-                                <option>Personal Develoment</option>
-                                <option>Carrer</option>
+                                <option>Personal Development</option>
+                                <option>Career</option>
                             </select>
                         </div>
                     </div>
@@ -90,6 +90,7 @@
                             <select class="form-control" name="counselor">
                                 <option>Dr. Ulala, S.Psi.</option>
                                 <option>Dr. Budi, S.Psi.</option>
+                                <option>Dr. Alex, S.Psi.</option>
                             </select>
                         </div>
                     </div>
@@ -108,7 +109,7 @@
                             about it?</label>
                         <div class="col-sm-8 ml-auto">
                             <textarea class="form-control" id="exampleFormControlTextarea1" row="3"
-                                placeholder="Write your story briefly...." name="tulis"></textarea>
+                                placeholder="Write your story briefly...." name="story"></textarea>
                         </div>
                     </div>
                     <div class="wrap">
