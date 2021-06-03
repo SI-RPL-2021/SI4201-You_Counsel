@@ -23,6 +23,6 @@ class AppointmentReqController extends Controller
 
         
         //   \App\Models\User::create($request->only('username', 'email', Hash::'password', 'access'));
-        return redirect('/clientlandingpage');
+        return redirect('/client_appointment_thanks');
     }
 }

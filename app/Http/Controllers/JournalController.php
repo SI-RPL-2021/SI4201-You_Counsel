@@ -18,7 +18,7 @@ class JournalController extends Controller
         $request -> message = request('message');
         $request -> save(); 
 
-        return redirect('/client_leavemessage_thanks');
+        return redirect('/client_myjournal_thanks');
     }
 
     public function journalindex()

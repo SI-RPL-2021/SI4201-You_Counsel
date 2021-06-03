@@ -130,14 +130,15 @@ Route::get('/counselor_userprofile', function () {
 });
 
 //SCHEDULE APPOINTMENT
-Route::get('/client_scheduleAppointment', function () {
-    return view('client_scheduleAppointment');
+Route::get('/client_scheduleappointment', function () {
+    return view('client_scheduleappointment');
 });
 
 Route::get('/tes', function () {
     return view('tes');
 });
 Route::post('/appointmentans', 'App\Http\Controllers\AppointmentAnsController@create');
+Route::post('/appointmentreq', 'App\Http\Controllers\AppointmentReqController@create');
 
 Route::get('/client_appointment_thanks', function () {
     return view('client_appointment_thanks');
@@ -157,5 +158,6 @@ Route::post('/postjournal', 'App\Http\Controllers\JournalController@createjourna
 Route::post('/leavemessage', 'App\Http\Controllers\MessageController@createmessage');
 Route::get('/messagehistory', 'App\Http\Controllers\MessageController@index');
 Route::get('/clientinbox', 'App\Http\Controllers\MessageController@getreplies');
+Route::get('/counselormessages', 'App\Http\Controllers\MessageController@getmessages');
 
     
