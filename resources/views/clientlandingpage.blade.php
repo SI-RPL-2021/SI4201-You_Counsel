@@ -29,12 +29,12 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="/inbox" style="color:white; font-size:15px;"><u>Inbox</u></a>
+                <a class="nav-link" href="/clientinbox" style="color:white; font-size:15px;"><u>Inbox</u></a>
             </li>
             </ul>
             <span class="navbar-text" style="color:white;">
             Hello, <a href="/profile" style="color:white; font-size:15px;"><u>James</u></a>!
-            <a href="/index"><button type="button" class="btn btn-sm btn-outline-light">Logout</button></a>
+            <a href="/logout"><button type="button" class="btn btn-sm btn-outline-light">Logout</button></a>
             </span>
         </div>
         </nav>
@@ -83,9 +83,9 @@
                     <h5 class="card-title" style="text-align:center; color:#0788D9;">Leave us a Message</h4>
                     <p class="card-text" style="font-size:15px;text-align: center">Send us your thoughts because every mind should be free!</p>
                     <br>
-                    <center><a href="client_leavemessage.php" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Send Message</button></a></center>
+                    <center><a href="/client_leavemessage" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Send Message</button></a></center>
                     <br>
-                    <center><a href="/" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Message History</button></a></center>
+                    <center><a href="/messagehistory" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Message History</button></a></center>
             </div>
             </div>
             </td>

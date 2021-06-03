@@ -42,7 +42,7 @@
         </li>
       </ul>
       <span class="navbar-text" style="color:white;">
-        Hello, <a href="/" style="color:white; font-size:15px;"><u>James</u></a>!
+        Hello, <a href="/logout" style="color:white; font-size:15px;"><u>James</u></a>!
         <button type="button" class="btn btn-sm btn-outline-light">Logout</button>
       </span>
     </div>
@@ -52,66 +52,49 @@
   <!-- CONTENT -->
   <div class="center" style="width:70%; height:700px;  background-color:white;">
     <img src="PHOTOS/inboxicon.png" alt="journal2" class="iconjournal">
-    <h3 class="center" style="color:0788D9; margin-top:10px;">Inbox</h3>
+    <h3 class="center" style="color:0788D9; margin-top:10px;">Client Profile</h3>
     <div class="" style="float:left; margin-top:-200px; margin-left:20px; position:static;">
     <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
                 <a href="/clientlandingpage" style="text-decoration: none; color:#0BA9D0;" >
                     <button type="submit" style="width:70px; height:35px; font-size:15px" class="btn btn-outline-info btn-sm btn-block tblbackhome">Back</button>
+                </a>
 
+                
             </div>
-            </div> 
-    <!-- Isi Konten -->
-  
-    <table class="table table-bordered ml-auto mr-auto" style="position:static;width:95%; margin-top:20px;">
-                        <thead class="thead-light">
-                            <tr>
-                            <th scope="col" style="text-align:center; width:5%; color: #069FD7;">No</th>
-                            <th scope="col" style="text-align:center; width:12%; color: #069FD7;">Date</th>
-                            <th scope="col" style="text-align:center; width:15%; color: #069FD7;">Messages</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        @foreach($inbox as $client)
-                            <tr>
-                            <th scope="row" style="text-align:center;"> <?php for ($i=1; $i <= 10; $i++) {echo " ".$i ;} ?> </th>
-                            <td>{{$client->created_at}}</td>
-                            <td>{{$client->messages}}</td>
-                            </tr>
-                        @endforeach
-                        </tbody>
-                     </table>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    <table class="table table-bordered ml-auto mr-auto" style="position:static;width:95%;margin-top: -70px;">
-      <thead class="thead-light">
-        <tr>
-          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Date</th>
-          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Requested Date</th>
-          <th scope="col" style="text-align:center; width:10%; color: #069FD7;">Counselor Name</th>
-          <th scope="col" style="text-align:center; width:10%; color: #069FD7;">Type</th>
-          <th scope="col" style="text-align:center; width:10%; color: #069FD7;">Method</th>
-          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Link</th>
-          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Approval</th>
-          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Action</th>
-      </thead>
-        <tr>
-          <th scope="row" style="text-align:center;">21/03/2021</th>
-          <td>24/03/2021</td>
-          <td>Dr. Ulala, S.psi</td>
-          <td>Personal Development</td>
-          <td>Video Call</td>
-          <td></td>
-          <td><b>Rejected</td>
-          <td style="text-align:center;"><i style="font-size:24px" class="fa">&#xf014;</i>Delete</td>
-        </tr>
-      </tbody>
+            </div>
+    <table>
+    @foreach($clientprofile as $client)
+    <tr>
+      <th> ID </th>
+      <td>{{$client->id}}</td>
+    </tr>
+    <tr>
+      <th> Username </th>
+      <td>{{$client->username}}</td>
+    </tr>
+    <tr>
+      <th> Name </th>
+      <td>{{$client->name}}</td>
+    </tr>
+    <tr>
+      <th> Email </th>
+      <td>{{$client->email}}</td>
+    </tr>
+    <tr>
+      <th> Address </th>
+      <td>{{$client->address}}</td>
+    </tr>
+    <tr>
+      <th> Phone Number </th>
+      <td>{{$client->phonenumber}}</td>
+    </tr>
+    <tr>
+      <th> Univname </th>
+      <td>{{$client->univname}}</td>
+    </tr>
     </table>
-  </div>
-  
+    @endforeach 
+    <!-- Isi Konten -->
 
   <!-- SOCMED -->
   <div class="" align="center" style="letter-spacing: 15px;">

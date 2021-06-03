@@ -62,6 +62,7 @@
 
     <!-- Isi Konten -->
     <form action="/postjournal" method="POST">
+    {{csrf_field()}}
       <div class="tglwaktu" style="margin-top:-90px; margin-left:20px;">
         <input type="text" readonly class="form-control-plaintext" style="font-family: 'Be Vietnam';font-size: 20px;"
           id="date" value="<?php echo date('D, d M Y');?>">

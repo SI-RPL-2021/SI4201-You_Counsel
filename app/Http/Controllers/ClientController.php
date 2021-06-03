@@ -14,6 +14,8 @@ class ClientController extends Controller
 
     $userId = Auth::id();
     $clientprofile = \App\Models\Client::all()->where('id', $userId);
-    return view('userprofile', ['clientprofile' => $clientprofile]);
-    }   
+    return view('clientprofile', ['clientprofile' => $clientprofile]);
+    }
+     
 }
+ 

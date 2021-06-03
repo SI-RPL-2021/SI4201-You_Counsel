@@ -43,14 +43,43 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt(12345),
             'access' => 1,
             ]);
-            
-
         \DB::table('users')->insert([
             'id' => 789,
             'username' => 'skinner123',
             'email' => 'skinner@gmail.com',
             'password' => bcrypt(12345),
             'access' => 2,
-            ]);    
+            ]);
+        \DB::table('counselor')->insert([
+            'id' => 789,
+            'username' => 'skinner123',
+            'name'=> 'B. F. Skinner',
+            'email' => 'skinner@gmail.com',
+            'specialization' => 'A, B, C',
+            'availdays' => 'Mon, Tue, Wed',
+            ]);   
+        \DB::table('messages')->insert([
+            'id' => 001,
+            'clientid' => '123',
+            'counselorid'=> '789',
+            'messages' => 'Need some help!',
+            ]);     
+        \DB::table('replies')->insert([
+            'id' => 001,
+            'clientid' => '123',
+            'messageid' => 001,
+            'counselorid'=> '789',
+            'messages' => 'You can be better!',
+            ]);  
+        \DB::table('appointmentreq')->insert([
+            'id' => 001,
+            'scheduleid' => '101',
+            'requesteddate' => '001',
+            'clientid'=> '123',
+            'counselorid'=> '789',
+            'type'=> 'Personal Development',
+            'method' => 'Video Counseling',
+            'reason'=> 'Need help to plan my future!',
+            ]);      
     }
 }
