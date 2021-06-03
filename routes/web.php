@@ -110,6 +110,10 @@ Route::get('/counselor_journal_checker2', function () {
     return view('counselor_journal_checker2');
 });
 
+Route::get('/counselor_appointment', function () {
+    return view('counselor_appointment');
+});
+
 Route::get('/counselor_appointment_reply', function () {
     return view('counselor_appointment_reply');
 });

@@ -16,6 +16,7 @@
     <style>
         <?php include 'CSS/youcounsel.css'?>
 
+
     </style>
     <!-- STYLING -->
 </head>
@@ -46,9 +47,10 @@
     <!-- CONTENT -->
     <div class="content">
         <div class="center" style="width:90%; height:auto;  background-color:white;">
-            <img src="PHOTOS/inboxicon.png" alt="journal2" class="iconjournal">
+            <img src="PHOTOS/appointment.jpg" alt="journal2" class="iconjournal">
 
-            <h3 class="center" style="color:0788D9; margin-top:10px; color:#0BA9D0;font-family: 'Be Vietnam';">Messages
+            <h3 class="center" style="color:0788D9; margin-top:10px; color:#0BA9D0;font-family: 'Be Vietnam';">
+                Appointment Requests
             </h3>
             <div class="" style="float:left; margin-top:-200px; margin-left:20px; position:static;">
                 <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
@@ -61,8 +63,8 @@
 
             <center>
                 <div>
-                    <p style="color:#0BA9D0; font-family: 'Be Vietnam';font-size: 40px; margin-top:-80px;">Message From
-                        Clients</p>
+                    <p style="color:#0BA9D0; font-family: 'Be Vietnam';font-size: 40px; margin-top:-80px;">Appointment
+                        Requests of Students</p>
                 </div>
             </center>
 
@@ -72,17 +74,17 @@
                         <thead style="background-color:#F2F2F2; color:#069ED7;">
                             <tr>
                                 <th scope="col" style=" text-align:center;">No</th>
-                                <th scope="col" style=" text-align:center;">Message ID</th>
-                                <th scope="col" style="text-align:center;">Date</th>
+                                <th scope="col" style=" text-align:center;">Schedule ID </th>
+                                <th scope="col" style=" text-align:center;">Requested Date </th>
                                 <th scope="col" style=" text-align:center;">Student's ID</th>
-                                <th scope="col" style=" text-align:center;">Student's Name</th>
-                                <th scope="col" style=" text-align:center;">Message</th>
-                                <th scope="col" style=" text-align:center;">Reply</th>
-                                <th scope="col" style=" text-align:center;">Action</th>
-
+                                <th scope="col" style="text-align:center;">Student's Name</th>
+                                <th scope="col" style=" text-align:center;">Type</th>
+                                <th scope="col" style=" text-align:center;">Method</th>
+                                <th scope="col" style=" text-align:center;">Reason</th>
+                                <th scope="col" style=" text-align:center;">Approval</th>
                             </tr>
                         </thead>
-                        <tbody >
+                        <tbody style="text-align:center;">
                             <tr>
                                 <td scope="row" style="text-align:center;">1</td>
                                 <td>187692</td>
@@ -90,13 +92,11 @@
                                 <td>974075</td>
                                 <td>Alexander Gundara</td>
                                 <td>I need some help</td>
-                                <td align="center">Yes</td>
-                                <td align="center">
-                                    <button type="button" class="btn btn-success" style="width:70px;">Reply</button>
-                                    <button type="button" class="btn btn-danger" style="width:70px;">Delete</button>
-                                </td>
+                                <td>Yes</td>
+                                <td>Crazy</td>
+                                <td>Approved</td>
                             </tr>
-                            
+
                         </tbody>
                     </table>
                 </div>
