@@ -70,7 +70,7 @@
                     <h5 class="card-title" style="text-align:center; color:#0788D9;">Schedule an Appointment</h4>
                     <p class="card-text" style="font-size:15px;text-align: center;">Connect with us and feel free to talk about anything to us!</p>
                     <br>
-                    <center><a href="schedulephp" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Create Schedule</button></a></center>
+                    <center><a href="/client_scheduleappointment" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Create Schedule</button></a></center>
                     <br>
                     <center><a href="/" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Schedule History</button></a></center>
             </div>
