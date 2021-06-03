@@ -84,9 +84,6 @@ Route::get('/inboxmessage', function () {
     return view('inboxmessage');
 });
 
-Route::get('/client_inbox2', function () {
-    return view('client_inbox2');
-});
 //KONSELOR
 Route::get('/penjadwalan', function () {
     return view('penjadwalan');
@@ -146,6 +143,7 @@ Route::post('/appointmentreq', 'App\Http\Controllers\AppointmentReqController@cr
 Route::get('/client_appointment_thanks', function () {
     return view('client_appointment_thanks');
 });
+Route::get('/appointmentlist', '\App\Http\Controllers\AppointmentReqController@index');
 
 //USER AUTH
 Route::post('/postlogin', 'App\Http\Controllers\AuthController@postlogin');
