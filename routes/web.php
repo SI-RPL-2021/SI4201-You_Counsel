@@ -58,6 +58,9 @@ Route::get('/client_myjournal_sad', function () {
 Route::get('/client_myjournal_flat', function () {
     return view('client_myjournal_flat');
 });
+Route::get('/client_myjournal_thanks', function () {
+    return view('client_myjournal_thanks');
+});
 
 //LEAVE MESSAGE
 Route::get('/client_leavemessage_thanks', function () {
