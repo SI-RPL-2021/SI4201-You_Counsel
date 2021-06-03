@@ -32,7 +32,7 @@ class AuthController extends Controller
             return redirect('/counselor_homepage');
         }
        }
-         return redirect('/loginpage');
+         return redirect('/login');
     }
 
     public function logout()
@@ -60,7 +60,7 @@ class AuthController extends Controller
         $request -> save(); 
         
         //   \App\Models\User::create($request->only('username', 'email', Hash::'password', 'access'));
-        return redirect('/loginpage');
+        return redirect('/login');
     }
     
 }

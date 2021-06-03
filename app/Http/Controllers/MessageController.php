@@ -20,7 +20,7 @@ class MessageController extends Controller
         $request = new \App\Models\Message;
         $request -> clientid = $userId;
         $request -> counselorid = $counsid;
-        $request -> messages = request('message');
+        $request -> messages = request('pesanclient');
         $request -> save(); 
 
         return redirect('/client_leavemessage_thanks');

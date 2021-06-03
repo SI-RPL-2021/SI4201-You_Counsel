@@ -67,7 +67,8 @@
         <!-- FORM -->
         <center>
             <div class="box">
-                <form method=""style="color:#0BA9D0;font-family: 'Be Vietnam';" align="left">
+                <form method="POST" action="/appointmentreq" style="color:#0BA9D0;font-family: 'Be Vietnam';" align="left">
+                {{csrf_field()}}
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-lg">Date</label>
                         <div class="col-sm-8 ml-auto">
@@ -87,10 +88,8 @@
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-lg">Counselor</label>
                         <div class="col-sm-8 ml-auto">
-                            <select class="form-control" name="counselor">
-                                <option>Dr. Ulala, S.Psi.</option>
-                                <option>Dr. Budi, S.Psi.</option>
-                                <option>Dr. Alex, S.Psi.</option>
+                            <select class="form-control" name="counselorid">
+                                <option value='789'>B. F. Skinner</option>
                             </select>
                         </div>
                     </div>
@@ -99,7 +98,8 @@
                         <div class="col-sm-8 ml-auto">
                             <select class="form-control" name="method">
                                 <option>Video Call</option>
-                                <option>On Call</option>
+                                <option>Voice Call</option>
+                                <option>Offline</option>
                             </select>
                         </div>
                     </div>
@@ -109,7 +109,7 @@
                             about it?</label>
                         <div class="col-sm-8 ml-auto">
                             <textarea class="form-control" id="exampleFormControlTextarea1" row="3"
-                                placeholder="Write your story briefly...." name="story"></textarea>
+                                placeholder="Write your story briefly...." name="reason"></textarea>
                         </div>
                     </div>
                     <div class="wrap">

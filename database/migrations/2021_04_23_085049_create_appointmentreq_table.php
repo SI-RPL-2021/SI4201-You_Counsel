@@ -15,7 +15,6 @@ class CreateAppointmentreqTable extends Migration
     {
         Schema::create('appointmentreq', function (Blueprint $table) {
             $table->id();
-            $table->string('scheduleid');
             $table->string('requesteddate');
             $table->string('clientid');
             $table->string('counselorid');

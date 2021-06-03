@@ -1,32 +1,28 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\AppointmentReq;
 
 class AppointmentReqController extends Controller
 {
     //
     public function create(Request $request)
     {
-        $request = new \App\Models\AppointmentAns;
-        $request -> username = request('username');
-        $request -> email = request('email');
-        $request -> password = bcrypt(request('password'));
-        $request -> access = request('access');
+        $userId = Auth::id();
+        $request = new \App\Models\AppointmentReq;
+        $request -> requesteddate = request('date');
+        $request -> clientid = $userId;
+        $request -> counselorid = request('counselorid');
+        $request -> type = request('type');
+        $request -> method = request('method');
+        $request -> reason = request('reason');
         $request -> save(); 
 
-        $request = new \App\Models\Client;
-        $request -> username = request('username');
-        $request -> name = request('name');
-        $request -> email = request('email');
-        $request -> address = request('address');
-        $request -> phonenumber = request('notelp');
-        $request -> univname = request('univname');
-        $request -> save(); 
         
         //   \App\Models\User::create($request->only('username', 'email', Hash::'password', 'access'));
-        return redirect('/loginpage');
+        return redirect('/clientlandingpage');
     }
 }
