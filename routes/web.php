@@ -84,6 +84,9 @@ Route::get('/inboxmessage', function () {
     return view('inboxmessage');
 });
 
+Route::get('/client_inbox2', function () {
+    return view('client_inbox2');
+});
 //KONSELOR
 Route::get('/penjadwalan', function () {
     return view('penjadwalan');

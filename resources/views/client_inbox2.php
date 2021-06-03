@@ -55,38 +55,47 @@
     <h3 class="center" style="color:0788D9; margin-top:10px;">Inbox</h3>
     <div class="" style="float:left; margin-top:-200px; margin-left:20px; position:static;">
     <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
-                <a href="/clientlandingpage" style="text-decoration: none; color:#0BA9D0;" >
+                <a href="/clientinbox" style="text-decoration: none; color:#0BA9D0;" >
                     <button type="submit" style="width:70px; height:35px; font-size:15px" class="btn btn-outline-info btn-sm btn-block tblbackhome">Back</button>
             </div>
             </div>
     <div class="" style="float:right; margin-top:-200px; margin-right:20px; position:static;">
     <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
-                <a href="/client_inbox2" style="text-decoration: none; color:#0BA9D0;" >
-                    <button type="submit" style="width:200px; height:35px; font-size:15px" class="btn btn-outline-info btn-sm btn-block tblbackhome">Appoinment Request</button>
+                <a href="/inboxmessage" style="text-decoration: none; color:#0BA9D0;" >
+                    <button type="submit" style="width:80px; height:35px; font-size:15px" class="btn btn-outline-info btn-sm btn-block tblbackhome">Message</button>
 
             </div>
             </div> 
     <!-- Isi Konten -->
+
+    <table class="table table-bordered ml-auto mr-auto" style="position:static;width:95%;margin-top: -70px;">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Date</th>
+          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Requested Date</th>
+          <th scope="col" style="text-align:center; width:10%; color: #069FD7;">Counselor Name</th>
+          <th scope="col" style="text-align:center; width:10%; color: #069FD7;">Type</th>
+          <th scope="col" style="text-align:center; width:10%; color: #069FD7;">Method</th>
+          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Link</th>
+          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Approval</th>
+          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Action</th>
+      </thead>
+        <tr>
+          <th scope="row" style="text-align:center;">21/03/2021</th>
+          <td>24/03/2021</td>
+          <td>Dr. Ulala, S.psi</td>
+          <td>Personal Development</td>
+          <td>Video Call</td>
+          <td></td>
+          <td><b>Rejected</td>
+          <td align="center">
+                <button type="button" class="btn btn-danger" style="width:70px;">Delete</button>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
   
-    <table class="table table-bordered ml-auto mr-auto" style="position:static;width:95%; margin-top:20px;">
-                        <thead class="thead-light">
-                            <tr>
-                            <th scope="col" style="text-align:center; width:5%; color: #069FD7;">No</th>
-                            <th scope="col" style="text-align:center; width:12%; color: #069FD7;">Date</th>
-                            <th scope="col" style="text-align:center; width:15%; color: #069FD7;">Messages</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        @php $no = 1; @endphp
-                        @foreach($inbox as $client)
-                            <tr>
-                            <th scope="row" style="text-align:center;"> {{ $no++ }} </th>
-                            <td>{{$client->created_at}}</td>
-                            <td>{{$client->messages}}</td>
-                            </tr>
-                        @endforeach
-                        </tbody>
-                     </table>
 
   <!-- SOCMED -->
   <div class="" align="center" style="letter-spacing: 15px;">
