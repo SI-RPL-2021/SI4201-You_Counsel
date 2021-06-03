@@ -126,10 +126,22 @@ Route::get('/client_scheduleAppointment', function () {
 Route::get('/tes', function () {
     return view('tes');
 });
+Route::post('/appointmentans', 'App\Http\Controllers\AppointmentAnsController@create');
 
-Route::get('/profile', 'App\Http\Controllers\ClientController@index');
-Route::get('/journalindex', 'App\Http\Controllers\JournalController@journalindex');
+
+//USER AUTH
 Route::post('/postlogin', 'App\Http\Controllers\AuthController@postlogin');
+Route::get('/logout', '\App\Http\Controllers\AuthController@logout');
+Route::get('/profile', 'App\Http\Controllers\ClientController@index');
 Route::post('/create', 'App\Http\Controllers\AuthController@create');
+
+//JOURNAL
+Route::get('/journalindex', 'App\Http\Controllers\JournalController@journalindex');
 Route::post('/postjournal', 'App\Http\Controllers\JournalController@createjournal');
+
+//SEND MESSAGE
+Route::post('/leavemessage', 'App\Http\Controllers\MessageController@createmessage');
+Route::get('/messagehistory', 'App\Http\Controllers\MessageController@index');
+Route::get('/clientinbox', 'App\Http\Controllers\MessageController@getreplies');
+
     

@@ -76,30 +76,31 @@
         <center>
             <div class="box">
             <div class="h3" >Appointment Reply</div>
-                <form method=""style="color:#0BA9D0;font-family: 'Be Vietnam';" align="left">
+                <form method="POST" action="/appointmentans" style="color:#0BA9D0;font-family: 'Be Vietnam';" align="left">
+                {{ csrf_field() }}
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md">Schedule ID</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" row="1"
-                                placeholder="5925191082" name="scheduleID"></textarea>
+                                placeholder="5925191082" name="scheduleid"></textarea>
                     </div>
                     <div class="form-group row">
-                        <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md">Student ID</label>
+                        <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md">Client ID</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" row="1"
-                                placeholder="12098765" name="studentID"></textarea>
+                                placeholder="12098765" name="clientid"></textarea>
                     </div>
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md">Date</label>
                             <input class="form-control" id="colFormLabel" type="date" name="date">
                     </div>
                     <div class="form-group row">
-                      <select class="form-control" name="counselor">
+                      <select class="form-control" name="approval">
                                 <option>Approve</option>
                                 <option>Disapprove</option>
                             </select>                        
                     </div>
                     <div class="form-group row">
                             <textarea class="form-control" id="exampleFormControlTextarea1" row="5"
-                                placeholder="Describe" name="desc"></textarea>
+                                placeholder="Describe" name="message"></textarea>
                     </div>
                     <div class="wrap">
                         <button class="tblsend">Send</button>

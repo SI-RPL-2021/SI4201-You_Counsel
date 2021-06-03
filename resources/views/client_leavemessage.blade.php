@@ -39,8 +39,7 @@
             </ul>
             <span class="navbar-text" style="color:white;">
                 Hello, <a href="client_userprofile" style="color:white; font-size:15px;"><u>James</u></a>!
-                <a href="/" type="button" class="btn btn-sm btn-outline-light" role="button"
-                    style="color:white; font-size:15px;">Logout</a>
+                <a href="/logout"><button type="button" class="btn btn-sm btn-outline-light">Logout</button></a>
             </span>
         </div>
     </nav>
@@ -64,6 +63,8 @@
             </div>
 
             <!-- Isi Konten -->
+            <form action="/leavemessage" method="POST">
+            {{csrf_field()}}
             <div class="tglwaktu" style="margin-top:-90px; margin-left:20px;">
                 <input type="text" readonly class="form-control-plaintext"
                     style="font-family: 'Be Vietnam';font-size: 20px;" id="date" value="<?php echo date('D, d M Y');?>">
@@ -81,7 +82,6 @@
             </center>
 
             <center>
-                <form method="">
                     <div class="form-check" style="width:85%;">
                         <textarea class="form-control" id="message" name="pesanclient"
                             style="border-color: #0BA9D0;height:17%"
@@ -92,8 +92,8 @@
             <div class="wrap">
                 <button class="tblsend">Send</button>
             </div>
-            </form>
         </div>
+        </form>
 
 
 

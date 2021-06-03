@@ -64,32 +64,26 @@
             <!-- Isi Konten -->
             <center>
                 <div class="table-responsive" style="width:90%;">
-                    <table class="table table-hover">
-                        <thead style="background-color:#F2F2F2; color:#069ED7;">
-                            <tr>
-                                <th scope="col" style="width:20%; text-align:center;">Date</th>
-                                <th scope="col" style="width:70%; text-align:center;">Your Message</th>
 
+                    <table class="table table-bordered ml-auto mr-auto" style="position:static;width:95%; margin-top:20px;">
+                        <thead class="thead-light">
+                            <tr>
+                            <th scope="col" style="text-align:center; width:5%; color: #069FD7;">No</th>
+                            <th scope="col" style="text-align:center; width:12%; color: #069FD7;">Date</th>
+                            <th scope="col" style="text-align:center; width:15%; color: #069FD7;">Messages</th>
                             </tr>
                         </thead>
                         <tbody>
+                        @foreach($client_leavemessagehistory as $client)
                             <tr>
-                                <th scope="row" style="text-align:center;">21/03/2021</th>
-                                <td>I’m tired, so tired :)</td>
-
+                            <th scope="row" style="text-align:center;"> <?php for ($i=1; $i <= 10; $i++) {echo " ".$i ;} ?> </th>
+                            <td>{{$client->created_at}}</td>
+                            <td>{{$client->messages}}</td>
                             </tr>
-                            <tr>
-                                <th scope="row" style="text-align:center;">21/03/2021</th>
-                                <td>I’m tired, so tired :)</td>
-
-                            </tr>
-                            <tr>
-                                <th scope="row" style="text-align:center;">21/03/2021</th>
-                                <td>I’m tired, so tired :)</td>
-
-                            </tr>
+                        @endforeach
                         </tbody>
-                    </table>
+                     </table>
+                
                 </div>
             </center>
 

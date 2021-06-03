@@ -20,7 +20,7 @@ class CreateAppointmentansTable extends Migration
             $table->string('clientid');
             $table->string('counselorid');
             $table->string('approval');
-            $table->string('link');
+            $table->string('message');
 
             $table->timestamps();
         });
