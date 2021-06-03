@@ -132,6 +132,9 @@ Route::get('/tes', function () {
 });
 Route::post('/appointmentans', 'App\Http\Controllers\AppointmentAnsController@create');
 
+Route::get('/client_appointment_thanks', function () {
+    return view('client_appointment_thanks');
+});
 
 //USER AUTH
 Route::post('/postlogin', 'App\Http\Controllers\AuthController@postlogin');
