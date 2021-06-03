@@ -134,6 +134,7 @@ Route::get('/tes', function () {
     return view('tes');
 });
 Route::post('/appointmentans', 'App\Http\Controllers\AppointmentAnsController@create');
+Route::post('/appointmentreq', 'App\Http\Controllers\AppointmentReqController@create');
 
 Route::get('/client_appointment_thanks', function () {
     return view('client_appointment_thanks');

@@ -78,7 +78,7 @@
                     <h5 class="card-title" style="text-align:center; color:#0788D9;">Messages</h4>
                     <p class="card-text" style="font-size:15px;text-align: center">Check your incoming messages.</p>
                     <br>
-                    <center><a href="counselor_message" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Go to Inbox</button></a></center>
+                    <center><a href="/counselormessages" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Go to Inbox</button></a></center>
                     <br>
             </div>
             </div>

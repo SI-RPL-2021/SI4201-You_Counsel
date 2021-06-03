@@ -39,8 +39,18 @@ class MessageController extends Controller
 
     $userId = Auth::id();
     $inbox = \App\Models\Message::all()->where('clientid', $userId);
-    $appointmentreq = \App\Models\AppointmentReq::all()->where('clientid', $userId);
+    // $appointmentreq = \App\Models\AppointmentReq::all()->where('clientid', $userId);
     return view('inbox', ['inbox' => $inbox]);
+
+    }
+
+    public function getmessages()
+    {
+
+    $userId = Auth::id();
+    $inbox = \App\Models\Message::all()->where('counselorid', $userId);
+    // $appointmentreq = \App\Models\AppointmentReq::all()->where('clientid', $userId);
+    return view('clientmessage', ['inbox' => $inbox]);
 
     }
      
