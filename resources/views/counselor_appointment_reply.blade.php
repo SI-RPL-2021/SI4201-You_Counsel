@@ -71,6 +71,17 @@
         <h3 class="center" style="margin-top:10px; color:#0788D9;font-family: 'Be Vietnam';font-size: 20px;">Appointment Requests
         </h3>
 
+
+        <div class="" style="float:left; margin-top:-200px; margin-left:20px; position:static;">
+                <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
+                    <a href="/counselor_apointmentlist" style="text-decoration: none; color:#0BA9D0;">
+                        <button type="submit" style="width:70px; height:35px; font-size:15px"
+                            class="btn btn-outline-info btn-sm btn-block tblbackhome">Back</button>
+                    </a>
+                </div>
+            </div>
+
+
         <!-- Isi Konten -->
         <!-- FORM -->
         <center>

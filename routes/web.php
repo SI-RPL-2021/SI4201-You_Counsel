@@ -117,6 +117,10 @@ Route::get('/counselor_appointment', function () {
     return view('counselor_appointment');
 });
 
+Route::get('/counselor_apointmentlist', function () {
+    return view('counselor_apointmentlist');
+});
+
 Route::get('/counselor_appointment_reply', function () {
     return view('counselor_appointment_reply');
 });
