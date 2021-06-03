@@ -74,9 +74,10 @@
                             </tr>
                         </thead>
                         <tbody>
+                        @php $no = 1; @endphp
                         @foreach($client_leavemessagehistory as $client)
                             <tr>
-                            <th scope="row" style="text-align:center;"> <?php for ($i=1; $i <= 10; $i++) {echo " ".$i ;} ?> </th>
+                            <th scope="row" style="text-align:center;">{{ $no++ }} </th>
                             <td>{{$client->created_at}}</td>
                             <td>{{$client->messages}}</td>
                             </tr>
