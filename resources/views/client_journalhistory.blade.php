@@ -76,11 +76,12 @@
       <tbody>
       @foreach($clientjournal as $client)
         <tr>
-          <th scope="row" style="text-align:center;"> <?php for ($i=1; $i <= 10; $i++) {echo " ".$i ;} ?> </th>
+          <th scope="row" style="text-align:center;"> <?php  $i=1; foreach ($clientjournal as $client) { echo '';  ?> </th>
           <td>{{$client->created_at}}</td>
           <td>{{$client->mood}}</td>
           <td>{{$client->message}} </td>
         </tr>
+        <?php $i++; } ?>
        @endforeach
       </tbody>
     </table>

@@ -73,7 +73,7 @@ class DatabaseSeeder extends Seeder
             ]);  
         \DB::table('appointmentreq')->insert([
             'id' => 001,
-            'scheduleid' => '101',
+            // 'scheduleid' => '101',
             'requesteddate' => '001',
             'clientid'=> '123',
             'counselorid'=> '789',
