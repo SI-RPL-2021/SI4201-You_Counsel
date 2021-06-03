@@ -81,25 +81,7 @@
                         </tbody>
                      </table>
 
-                     
-                     <table class="table table-bordered ml-auto mr-auto" style="position:static;width:95%; margin-top:20px;">
-                        <thead class="thead-light">
-                            <tr>
-                            <th scope="col" style="text-align:center; width:5%; color: #069FD7;">No</th>
-                            <th scope="col" style="text-align:center; width:12%; color: #069FD7;">Date</th>
-                            <th scope="col" style="text-align:center; width:15%; color: #069FD7;">Messages</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        @foreach($appointmentreq as $client)
-                            <tr>
-                            <th scope="row" style="text-align:center;"> <?php for ($i=1; $i <= 10; $i++) {echo " ".$i ;} ?> </th>
-                            <td>{{$client->created_at}}</td>
-                            <td>{{$client->messages}}</td>
-                            </tr>
-                        @endforeach
-                        </tbody>
-                     </table>
+                    
         <br>
         <br>
         <br>

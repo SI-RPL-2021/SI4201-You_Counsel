@@ -40,7 +40,7 @@ class MessageController extends Controller
     $userId = Auth::id();
     $inbox = \App\Models\Message::all()->where('clientid', $userId);
     $appointmentreq = \App\Models\AppointmentReq::all()->where('clientid', $userId);
-    return view('inbox', ['inbox' => $inbox], ['inbox' => $appointmentreq]);
+    return view('inbox', ['inbox' => $inbox]);
 
     }
      
