@@ -86,23 +86,30 @@
                                 <th scope="col" style="text-align:center;">Date</th>
                                 <th scope="col" style=" text-align:center;">Client ID</th>
                                 <th scope="col" style=" text-align:center;">Client Name</th>
+                                <th scope="col" style=" text-align:center;">Type</th>
+                                <th scope="col" style=" text-align:center;">Method</th>
+                                <th scope="col" style=" text-align:center;">Reason</th>
                                 <th scope="col" style=" text-align:center;">Action</th>
 
                             </tr>
                         </thead>
                         <tbody >
+                        @foreach($counselor_appointmentlist as $client)
                             <tr>
                                 <td scope="row" style="text-align:center;">1</td>
-                                <td align="center">187692</td>
-                                <td align="center">21/03/2021</td>
-                                <td align="center">974075</td>
+                                <td align="center">{{$client->id}}</td>
+                                <td align="center">{{$client->requesteddate}}</td>
+                                <td align="center">{{$client->clientid}}</td>
                                 <td align="center">Alexander Gundara</td>
+                                <td align="center">{{$client->type}}</td>
+                                <td align="center">{{$client->method}}</td>
+                                <td align="center">{{$client->reason}}</td>
                                 <td align="center">
-                                    <a href="counselor_appointment_reply" button type="button" class="btn btn-success" style="width:70px;">Reply</button>
+                                    <a href="{{$client->id}}/appointmentreply" button type="button" class="btn btn-success" style="width:70px;">Reply</button>
                                     <a href="" button type="button" class="btn btn-danger" style="width:70px;">Delete</button>
                                 </td>
                             </tr>
-                            
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

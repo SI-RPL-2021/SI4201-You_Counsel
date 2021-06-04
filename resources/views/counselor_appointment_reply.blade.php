@@ -91,17 +91,17 @@
                 {{ csrf_field() }}
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md">Schedule ID</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" row="1"
-                                placeholder="5925191082" name="scheduleid"></textarea>
-                    </div>
+                            <input class="form-control" id="exampleFormControlTextarea1"
+                               name="scheduleid" value="{{$counselor_appointment_reply->id}}" ></input>
+                    </div> 
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md">Client ID</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" row="1"
-                                placeholder="12098765" name="clientid"></textarea>
+                            <input class="form-control" id="exampleFormControlTextarea1"
+                                placeholder="12098765" name="clientid" value="{{$counselor_appointment_reply->clientid}}" ></input>
                     </div>
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md">Date</label>
-                            <input class="form-control" id="colFormLabel" type="date" name="date">
+                            <input class="form-control" name="requesteddate" id="colFormLabel" type="text" value="{{$counselor_appointment_reply->requesteddate}}" ></input>
                     </div>
                     <div class="form-group row">
                       <select class="form-control" name="approval">

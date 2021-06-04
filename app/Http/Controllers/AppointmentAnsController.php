@@ -13,7 +13,7 @@ class AppointmentAnsController extends Controller
         $userId = Auth::id();
         $request = new \App\Models\AppointmentAns;
         $request -> scheduleid = request('scheduleid');
-        $request -> requesteddate = request('date');
+        $request -> requesteddate = request('requesteddate');
         $request -> clientid = request('clientid');
         $request -> counselorid = $userId;
         $request -> approval = request('approval');
@@ -22,5 +22,13 @@ class AppointmentAnsController extends Controller
 
         //   \App\Models\User::create($request->only('username', 'email', Hash::'password', 'access'));
         return redirect('/counselor_homepage');
+    }
+
+    public function index()
+    {
+
+    $userId = Auth::id();
+    $AppointmentList = \App\Models\Message::all()->where('clientid', $userId);
+    return view('client_leavemessagehistory', ['client_leavemessagehistory' => $client_leavemessagehistory]);
     }
 }

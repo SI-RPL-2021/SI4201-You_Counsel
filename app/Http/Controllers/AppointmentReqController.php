@@ -25,4 +25,18 @@ class AppointmentReqController extends Controller
         //   \App\Models\User::create($request->only('username', 'email', Hash::'password', 'access'));
         return redirect('/client_appointment_thanks');
     }
+
+    public function index()
+    {
+
+    $userId = Auth::id();
+    $counselor_appointmentlist = \App\Models\AppointmentReq::all()->where('counselorid', $userId);
+    return view('counselor_appointmentlist', ['counselor_appointmentlist' => $counselor_appointmentlist]);
+    }
+
+    public function reply($id)
+    {
+        $counselor_appointment_reply = \App\Models\AppointmentReq::find($id);
+        return view('/counselor_appointment_reply', ['counselor_appointment_reply' => $counselor_appointment_reply]);
+    }
 }

@@ -144,6 +144,7 @@ Route::get('/client_appointment_thanks', function () {
     return view('client_appointment_thanks');
 });
 Route::get('/appointmentlist', '\App\Http\Controllers\AppointmentReqController@index');
+Route::get('/{id}/appointmentreply', '\App\Http\Controllers\AppointmentReqController@reply');
 
 //USER AUTH
 Route::post('/postlogin', 'App\Http\Controllers\AuthController@postlogin');
@@ -160,5 +161,7 @@ Route::post('/leavemessage', 'App\Http\Controllers\MessageController@createmessa
 Route::get('/messagehistory', 'App\Http\Controllers\MessageController@index');
 Route::get('/clientinbox', 'App\Http\Controllers\MessageController@getreplies');
 Route::get('/counselormessages', 'App\Http\Controllers\MessageController@getmessages');
+Route::get('/{id}/replymessages', 'App\Http\Controllers\MessageController@reply');
+Route::post('/sendreply', 'App\Http\Controllers\MessageController@sendreply');
 
     

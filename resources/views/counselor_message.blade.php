@@ -77,26 +77,25 @@
                                 <th scope="col" style=" text-align:center;">Student's ID</th>
                                 <th scope="col" style=" text-align:center;">Student's Name</th>
                                 <th scope="col" style=" text-align:center;">Message</th>
-                                <th scope="col" style=" text-align:center;">Reply</th>
                                 <th scope="col" style=" text-align:center;">Action</th>
 
                             </tr>
                         </thead>
                         <tbody >
+                        @foreach($counselor_message as $client)
                             <tr>
                                 <td scope="row" style="text-align:center;">1</td>
-                                <td>187692</td>
-                                <td>21/03/2021</td>
-                                <td>974075</td>
-                                <td>Alexander Gundara</td>
-                                <td>I need some help</td>
-                                <td align="center">Yes</td>
+                                <td>{{$client->id}}</td>
+                                <td>{{$client->created_at}}</td>
+                                <td>{{$client->clientid}}</td>
+                                <td>Alex Gundara</td>
+                                <td>{{$client->messages}}</td>
                                 <td align="center">
-                                    <button type="button" class="btn btn-success" style="width:70px;">Reply</button>
+                                    <a href="{{$client->id}}/replymessages"> <button type="button" class="btn btn-success" style="width:70px;">Reply</button></a>
                                     <button type="button" class="btn btn-danger" style="width:70px;">Delete</button>
                                 </td>
                             </tr>
-                            
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
