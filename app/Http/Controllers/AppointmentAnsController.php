@@ -31,4 +31,12 @@ class AppointmentAnsController extends Controller
     $AppointmentList = \App\Models\Message::all()->where('clientid', $userId);
     return view('client_leavemessagehistory', ['client_leavemessagehistory' => $client_leavemessagehistory]);
     }
+
+    public function indexclient()
+    {
+
+    $userId = Auth::id();
+    $client_inbox2 = \App\Models\AppointmentAns::all()->where('clientid', $userId);
+    return view('client_inbox2', ['client_inbox2' => $client_inbox2]);
+    }
 }

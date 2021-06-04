@@ -39,4 +39,13 @@ class AppointmentReqController extends Controller
         $counselor_appointment_reply = \App\Models\AppointmentReq::find($id);
         return view('/counselor_appointment_reply', ['counselor_appointment_reply' => $counselor_appointment_reply]);
     }
+
+    public function delete($id){
+        $appointmentreq =  \App\Models\AppointmentReq::find($id);
+        $appointmentreq->delete();
+
+        return redirect('/counselor_homepage');
+    }
+
+
 }

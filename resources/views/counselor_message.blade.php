@@ -92,7 +92,7 @@
                                 <td>{{$client->messages}}</td>
                                 <td align="center">
                                     <a href="{{$client->id}}/replymessages"> <button type="button" class="btn btn-success" style="width:70px;">Reply</button></a>
-                                    <button type="button" class="btn btn-danger" style="width:70px;">Delete</button>
+                                    <a href="{{$client->id}}/messagedelete"><button type="button" class="btn btn-danger" style="width:70px;">Delete</button></a>
                                 </td>
                             </tr>
                             @endforeach

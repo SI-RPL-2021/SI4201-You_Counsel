@@ -106,7 +106,7 @@
                                 <td align="center">{{$client->reason}}</td>
                                 <td align="center">
                                     <a href="{{$client->id}}/appointmentreply" button type="button" class="btn btn-success" style="width:70px;">Reply</button>
-                                    <a href="" button type="button" class="btn btn-danger" style="width:70px;">Delete</button>
+                                    <a href="{{$client->id}}/appointmentdelete" button type="button" class="btn btn-danger" style="width:70px;">Delete</button>
                                 </td>
                             </tr>
                             @endforeach

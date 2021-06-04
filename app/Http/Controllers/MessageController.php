@@ -74,4 +74,11 @@ class MessageController extends Controller
         //   \App\Models\User::create($request->only('username', 'email', Hash::'password', 'access'));
         return redirect('/counselor_homepage');
     }
+
+    public function delete($id){
+        $messages =  \App\Models\Message::find($id);
+        $messages->delete();
+
+        return redirect('/counselor_homepage');
+    }
 }

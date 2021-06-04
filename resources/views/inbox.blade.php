@@ -61,7 +61,7 @@
             </div>
     <div class="" style="float:right; margin-top:-200px; margin-right:20px; position:static;">
     <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
-                <a href="/client_inbox2" style="text-decoration: none; color:#0BA9D0;" >
+                <a href="/clientinbox2" style="text-decoration: none; color:#0BA9D0;" >
                     <button type="submit" style="width:200px; height:35px; font-size:15px" class="btn btn-outline-info btn-sm btn-block tblbackhome">Appoinment Request</button>
 
             </div>

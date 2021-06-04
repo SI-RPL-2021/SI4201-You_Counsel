@@ -84,6 +84,7 @@ Route::get('/inboxmessage', function () {
     return view('inboxmessage');
 });
 
+
 //KONSELOR
 Route::get('/penjadwalan', function () {
     return view('penjadwalan');
@@ -143,8 +144,10 @@ Route::post('/appointmentreq', 'App\Http\Controllers\AppointmentReqController@cr
 Route::get('/client_appointment_thanks', function () {
     return view('client_appointment_thanks');
 });
+Route::get('/clientinbox2', 'App\Http\Controllers\AppointmentAnsController@indexclient');
 Route::get('/appointmentlist', '\App\Http\Controllers\AppointmentReqController@index');
 Route::get('/{id}/appointmentreply', '\App\Http\Controllers\AppointmentReqController@reply');
+Route::get('/{id}/appointmentdelete/', 'App\Http\Controllers\AppointmentReqController@delete');
 
 //USER AUTH
 Route::post('/postlogin', 'App\Http\Controllers\AuthController@postlogin');
@@ -163,5 +166,7 @@ Route::get('/clientinbox', 'App\Http\Controllers\MessageController@getreplies');
 Route::get('/counselormessages', 'App\Http\Controllers\MessageController@getmessages');
 Route::get('/{id}/replymessages', 'App\Http\Controllers\MessageController@reply');
 Route::post('/sendreply', 'App\Http\Controllers\MessageController@sendreply');
+Route::get('/{id}/messagedelete/', 'App\Http\Controllers\MessageController@delete');
+
 
     

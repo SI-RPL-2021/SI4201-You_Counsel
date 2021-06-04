@@ -71,27 +71,30 @@
     <table class="table table-bordered ml-auto mr-auto" style="position:static;width:95%;margin-top: -70px;">
       <thead class="thead-light">
         <tr>
+          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">No.</th>
           <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Date</th>
           <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Requested Date</th>
           <th scope="col" style="text-align:center; width:10%; color: #069FD7;">Counselor Name</th>
-          <th scope="col" style="text-align:center; width:10%; color: #069FD7;">Type</th>
-          <th scope="col" style="text-align:center; width:10%; color: #069FD7;">Method</th>
-          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Link</th>
           <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Approval</th>
+          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Message</th>
           <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Action</th>
+        </tr>
       </thead>
+      <tbody>
+      @php $no = 1; @endphp
+       @foreach($inbox as $client)
         <tr>
-          <th scope="row" style="text-align:center;">21/03/2021</th>
-          <td>24/03/2021</td>
-          <td>Dr. Ulala, S.psi</td>
-          <td>Personal Development</td>
-          <td>Video Call</td>
-          <td></td>
-          <td><b>Rejected</td>
+          <td> {{ $no++ }} </th>
+          <td>{{$client->created_at}}</th>
+          <td>{{$client->requesteddate}}</td>
+          <td>{{$client->counselorid}}</td>
+          <td>{{$client->approval}}</td>
+          <td>{{$client->message}}</td>
           <td align="center">
                 <button type="button" class="btn btn-danger" style="width:70px;">Delete</button>
             </td>
         </tr>
+        @endforeach
       </tbody>
     </table>
   </div>
