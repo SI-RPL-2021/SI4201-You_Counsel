@@ -3,7 +3,7 @@
 <head>
     <title>You-Counsel | MyJournal</title>
     <!-- LOGO -->
-    <link rel="icon" href="photos/LogoBiru-01.png" type="image/x-icon">
+    <link rel="icon" href="/photos/LogoBiru-01.png" type="image/x-icon">
     <!-- LOGO -->
 
     <!-- STYLING -->
@@ -45,7 +45,7 @@
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <a class="navbar-brand" href="clientlandingpage"><img src="PHOTOS/LogoPutih-01.png" width="60" height="60"
+        <a class="navbar-brand" href="/counselor_homepage"><img src="/PHOTOS/LogoPutih-01.png" width="60" height="60"
                 class="d-inline-block align-top" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,14 +67,14 @@
 
     <!-- CONTENT -->
     <div class="center" style="width:70%; height:750px;  background-color:white;">
-        <img src="PHOTOS/appointment.jpg" alt="journal2" class="iconjournal">
+        <img src="/PHOTOS/appointment.jpg" alt="journal2" class="iconjournal">
         <h3 class="center" style="margin-top:10px; color:#0788D9;font-family: 'Be Vietnam';font-size: 20px;">Appointment Requests
         </h3>
 
 
         <div class="" style="float:left; margin-top:-200px; margin-left:20px; position:static;">
                 <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
-                    <a href="/counselor_apointmentlist" style="text-decoration: none; color:#0BA9D0;">
+                    <a href="/appointmentlist" style="text-decoration: none; color:#0BA9D0;">
                         <button type="submit" style="width:70px; height:35px; font-size:15px"
                             class="btn btn-outline-info btn-sm btn-block tblbackhome">Back</button>
                     </a>
@@ -104,6 +104,7 @@
                             <input class="form-control" name="requesteddate" id="colFormLabel" type="text" value="{{$counselor_appointment_reply->requesteddate}}" ></input>
                     </div>
                     <div class="form-group row">
+                     <label for="approval" class="col-sm-4 col-form-label col-form-label-md">Approval</label>
                       <select class="form-control" name="approval">
                                 <option>Approve</option>
                                 <option>Disapprove</option>

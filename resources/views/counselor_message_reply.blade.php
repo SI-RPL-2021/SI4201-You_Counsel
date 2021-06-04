@@ -30,7 +30,7 @@
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <a class="navbar-brand" href="counselor_homepage"><img src="/PHOTOS/LogoPutih-01.png" width="60" height="60"
+        <a class="navbar-brand" href="/counselor_homepage"><img src="/PHOTOS/LogoPutih-01.png" width="60" height="60"
                 class="d-inline-block align-top" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +42,7 @@
             </ul>
             <span class="navbar-text" style="color:white;">
                 Hello, <a href="/counselor_userprofile" style="color:white; font-size:15px;"><u>Steph</u></a>!
-                <a href="/"><button type="button" class="btn btn-sm btn-outline-light">Logout</button></a>
+                <a href="/logout"><button type="button" class="btn btn-sm btn-outline-light">Logout</button></a>
             </span>
         </div>
     </nav>
