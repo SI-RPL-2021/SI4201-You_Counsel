@@ -148,6 +148,7 @@ Route::get('/clientinbox2', 'App\Http\Controllers\AppointmentAnsController@index
 Route::get('/appointmentlist', '\App\Http\Controllers\AppointmentReqController@index');
 Route::get('/{id}/appointmentreply', '\App\Http\Controllers\AppointmentReqController@reply');
 Route::get('/{id}/appointmentdelete/', 'App\Http\Controllers\AppointmentReqController@delete');
+Route::get('/{id}/answerdelete/', 'App\Http\Controllers\AppointmentAnsController@delete');
 
 //USER AUTH
 Route::post('/postlogin', 'App\Http\Controllers\AuthController@postlogin');
@@ -167,6 +168,8 @@ Route::get('/counselormessages', 'App\Http\Controllers\MessageController@getmess
 Route::get('/{id}/replymessages', 'App\Http\Controllers\MessageController@reply');
 Route::post('/sendreply', 'App\Http\Controllers\MessageController@sendreply');
 Route::get('/{id}/messagedelete/', 'App\Http\Controllers\MessageController@delete');
+Route::get('/{id}/clientmessagedelete/', 'App\Http\Controllers\MessageController@clientdelete');
+Route::get('/{id}/repliesdelete/', 'App\Http\Controllers\MessageController@repliesdelete');
 
 
     

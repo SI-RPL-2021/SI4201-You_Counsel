@@ -29,7 +29,7 @@
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-    <a class="navbar-brand" href="clientlandingpage"><img src="PHOTOS/LogoPutih-01.png" width="60" height="60"
+    <a class="navbar-brand" href="/clientlandingpage"><img src="PHOTOS/LogoPutih-01.png" width="60" height="60"
         class="d-inline-block align-top" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
       aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,17 +55,23 @@
     <h3 class="center" style="color:0788D9; margin-top:10px;">Inbox</h3>
     <div class="" style="float:left; margin-top:-200px; margin-left:20px; position:static;">
     <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
-                <a href="/clientinbox" style="text-decoration: none; color:#0BA9D0;" >
+                <a href="/clientlandingpage" style="text-decoration: none; color:#0BA9D0;" >
                     <button type="submit" style="width:70px; height:35px; font-size:15px" class="btn btn-outline-info btn-sm btn-block tblbackhome">Back</button>
-                    </a>
+<<<<<<< HEAD:resources/views/client_inbox2.blade.php
+                </a>
+=======
+>>>>>>> parent of 26443a6... a:resources/views/client_inbox2.php
             </div>
             </div>
     <div class="" style="float:right; margin-top:-200px; margin-right:20px; position:static;">
     <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
-                <a href="/inboxmessage" style="text-decoration: none; color:#0BA9D0;" >
+                <a href="/clientinbox" style="text-decoration: none; color:#0BA9D0;" >
                     <button type="submit" style="width:80px; height:35px; font-size:15px" class="btn btn-outline-info btn-sm btn-block tblbackhome">Message</button>
-                    </a>
+<<<<<<< HEAD:resources/views/client_inbox2.blade.php
+                </a>
+=======
 
+>>>>>>> parent of 26443a6... a:resources/views/client_inbox2.php
             </div>
             </div> 
     <!-- Isi Konten -->
@@ -84,7 +90,7 @@
       </thead>
       <tbody>
       @php $no = 1; @endphp
-       @foreach($inbox as $client)
+      @foreach($client_inbox2 as $client)
         <tr>
           <td> {{ $no++ }} </th>
           <td>{{$client->created_at}}</th>
@@ -93,11 +99,11 @@
           <td>{{$client->approval}}</td>
           <td>{{$client->message}}</td>
           <td align="center">
-                <button type="button" class="btn btn-danger" style="width:70px;">Delete</button>
+               <a href="{{$client->id}}/answerdelete"><button type="button" class="btn btn-danger" style="width:70px;">Delete</button></a>
             </td>
         </tr>
-        @endforeach
       </tbody>
+      @endforeach
     </table>
   </div>
   

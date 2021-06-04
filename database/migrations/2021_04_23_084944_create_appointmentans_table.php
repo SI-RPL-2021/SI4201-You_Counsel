@@ -19,6 +19,7 @@ class CreateAppointmentansTable extends Migration
             $table->string('requesteddate');
             $table->string('clientid');
             $table->string('counselorid');
+            $table->string('counselorname');
             $table->string('approval');
             $table->string('message');
 

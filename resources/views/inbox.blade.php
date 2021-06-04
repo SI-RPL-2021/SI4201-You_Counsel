@@ -63,7 +63,7 @@
     <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
                 <a href="/clientinbox2" style="text-decoration: none; color:#0BA9D0;" >
                     <button type="submit" style="width:200px; height:35px; font-size:15px" class="btn btn-outline-info btn-sm btn-block tblbackhome">Appoinment Request</button>
-
+                </a>
             </div>
             </div> 
     <!-- Isi Konten -->
@@ -72,8 +72,10 @@
                         <thead class="thead-light">
                             <tr>
                             <th scope="col" style="text-align:center; width:5%; color: #069FD7;">No</th>
-                            <th scope="col" style="text-align:center; width:12%; color: #069FD7;">Date</th>
-                            <th scope="col" style="text-align:center; width:15%; color: #069FD7;">Messages</th>
+                            <th scope="col" style="text-align:center; width:10%; color: #069FD7;">Date</th>
+                            <th scope="col" style="text-align:center; width:10%; color: #069FD7;">Message ID</th>
+                            <th scope="col" style="text-align:center; width:40%; color: #069FD7;">Messages</th>
+                            <th scope="col" style="text-align:center; width:10%; color: #069FD7;">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -82,7 +84,11 @@
                             <tr>
                             <th scope="row" style="text-align:center;"> {{ $no++ }} </th>
                             <td>{{$client->created_at}}</td>
+                            <td>{{$client->messageid}}</td>
                             <td>{{$client->messages}}</td>
+                            <td align="center">
+                              <a href="{{$client->id}}/repliesdelete"><button type="button" class="btn btn-danger" style="width:70px;">Delete</button></a>
+                            </td>
                             </tr>
                         @endforeach
                         </tbody>

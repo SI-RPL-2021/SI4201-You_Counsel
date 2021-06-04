@@ -77,6 +77,7 @@ class DatabaseSeeder extends Seeder
             'requesteddate' => '001',
             'clientid'=> '123',
             'counselorid'=> '789',
+            'clientname'=> 'Alexander Gundara',
             'type'=> 'Personal Development',
             'method' => 'Video Counseling',
             'reason'=> 'Need help to plan my future!',

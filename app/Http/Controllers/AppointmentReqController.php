@@ -5,6 +5,7 @@ use Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\AppointmentReq;
+use Illuminate\Support\Facades\DB;
 
 class AppointmentReqController extends Controller
 {
@@ -12,10 +13,14 @@ class AppointmentReqController extends Controller
     public function create(Request $request)
     {
         $userId = Auth::id();
+        $clientname = DB::table('clients')->where('id', $userId)->pluck('name');
+        $clientname = trim($clientname, '[{"id":}]');
+        
         $request = new \App\Models\AppointmentReq;
         $request -> requesteddate = request('date');
         $request -> clientid = $userId;
         $request -> counselorid = request('counselorid');
+        $request -> clientname = $clientname;
         $request -> type = request('type');
         $request -> method = request('method');
         $request -> reason = request('reason');

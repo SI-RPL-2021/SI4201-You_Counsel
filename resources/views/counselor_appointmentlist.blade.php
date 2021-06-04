@@ -100,7 +100,7 @@
                                 <td align="center">{{$client->id}}</td>
                                 <td align="center">{{$client->requesteddate}}</td>
                                 <td align="center">{{$client->clientid}}</td>
-                                <td align="center">Alexander Gundara</td>
+                                <td align="center">{{$client->clientname}}</td>
                                 <td align="center">{{$client->type}}</td>
                                 <td align="center">{{$client->method}}</td>
                                 <td align="center">{{$client->reason}}</td>

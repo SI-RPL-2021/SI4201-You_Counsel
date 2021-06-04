@@ -17,6 +17,7 @@ class CreateAppointmentreqTable extends Migration
             $table->id();
             $table->string('requesteddate');
             $table->string('clientid');
+            $table->string('clientname');
             $table->string('counselorid');
             $table->string('type');
             $table->string('method');

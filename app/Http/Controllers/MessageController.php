@@ -38,7 +38,7 @@ class MessageController extends Controller
     {
 
     $userId = Auth::id();
-    $inbox = \App\Models\Message::all()->where('clientid', $userId);
+    $inbox = \App\Models\Replies::all()->where('clientid', $userId);
     // $appointmentreq = \App\Models\AppointmentReq::all()->where('clientid', $userId);
     return view('inbox', ['inbox' => $inbox]);
 
@@ -80,5 +80,19 @@ class MessageController extends Controller
         $messages->delete();
 
         return redirect('/counselor_homepage');
+    }
+
+    public function repliesdelete($id){
+        $replies =  \App\Models\Replies::find($id);
+        $replies->delete();
+
+        return redirect('/clientlandingpage');
+    }
+
+    public function clientdelete($id){
+        $replies =  \App\Models\Message::find($id);
+        $replies->delete();
+
+        return redirect('/clientlandingpage');
     }
 }

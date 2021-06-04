@@ -1,0 +1,9 @@
+diff a/app/Http/Controllers/AppointmentAnsController.php b/app/Http/Controllers/AppointmentAnsController.php	(rejected hunks)
+@@ -4,6 +4,7 @@
+ use Auth;
+ use App\Http\Controllers\Controller;
+ use Illuminate\Http\Request;
++use Illuminate\Support\Facades\DB;
+ 
+ class AppointmentAnsController extends Controller
+ {

@@ -11,11 +11,15 @@ class AppointmentAnsController extends Controller
     public function create(Request $request)
     {
         $userId = Auth::id();
+        $counselorname = DB::table('counselor')->where('id', $userId)->pluck('name');
+        $counselorname = trim($counselorname, '[{"id":}]');
+     
         $request = new \App\Models\AppointmentAns;
         $request -> scheduleid = request('scheduleid');
         $request -> requesteddate = request('requesteddate');
         $request -> clientid = request('clientid');
         $request -> counselorid = $userId;
+        $request -> counselorname = $counselorname;
         $request -> approval = request('approval');
         $request -> message = request('message');
         $request -> save(); 
@@ -39,4 +43,13 @@ class AppointmentAnsController extends Controller
     $client_inbox2 = \App\Models\AppointmentAns::all()->where('clientid', $userId);
     return view('client_inbox2', ['client_inbox2' => $client_inbox2]);
     }
+
+    public function delete($id){
+        $appointmentans =  \App\Models\AppointmentAns::find($id);
+        $appointmentans->delete();
+
+        return redirect('/clientlandingpage');
+    }
+
+
 }
