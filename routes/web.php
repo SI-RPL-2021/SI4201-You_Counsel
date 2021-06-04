@@ -144,6 +144,11 @@ Route::post('/appointmentreq', 'App\Http\Controllers\AppointmentReqController@cr
 Route::get('/client_appointment_thanks', function () {
     return view('client_appointment_thanks');
 });
+
+Route::get('/client_appointment_history', function () {
+    return view('client_appointment_history');
+});
+
 Route::get('/clientinbox2', 'App\Http\Controllers\AppointmentAnsController@indexclient');
 Route::get('/appointmentlist', '\App\Http\Controllers\AppointmentReqController@index');
 Route::get('/{id}/appointmentreply', '\App\Http\Controllers\AppointmentReqController@reply');
