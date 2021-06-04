@@ -64,7 +64,7 @@
             <center>
                 <div>
                     <p style="color:#0BA9D0; font-family: 'Be Vietnam';font-size: 40px; margin-top:-80px;">Appointment
-                        Requests of Students</p>
+                        Answers for Students</p>
                 </div>
             </center>
 
@@ -76,28 +76,28 @@
                                 <th scope="col" style=" text-align:center;">No</th>
                                 <th scope="col" style=" text-align:center;">Schedule ID </th>
                                 <th scope="col" style=" text-align:center;">Requested Date </th>
-                                <th scope="col" style=" text-align:center;">Student's ID</th>
-                                <th scope="col" style="text-align:center;">Student's Name</th>
-                                <th scope="col" style=" text-align:center;">Type</th>
-                                <th scope="col" style=" text-align:center;">Method</th>
-                                <th scope="col" style=" text-align:center;">Reason</th>
+                                <th scope="col" style=" text-align:center;">Client's ID</th>
                                 <th scope="col" style=" text-align:center;">Approval</th>
+                                <th scope="col" style=" text-align:center;">Message</th>
+                                <th scope="col" style=" text-align:center;">Action</th>
                             </tr>
                         </thead>
                         <tbody style="text-align:center;">
+                        @php $no = 1; @endphp
+                        @foreach($counselor_appointment as $client)
                             <tr>
-                                <td scope="row" style="text-align:center;">1</td>
-                                <td>187692</td>
-                                <td>21/03/2021</td>
-                                <td>974075</td>
-                                <td>Alexander Gundara</td>
-                                <td>I need some help</td>
-                                <td>Yes</td>
-                                <td>Crazy</td>
-                                <td>Approved</td>
+                                <td scope="row" style="text-align:center;">{{ $no++ }}</td>
+                                <td scope="row" style="text-align:center;">{{$client->scheduleid}}</td>
+                                <td scope="row" style="text-align:center;">{{$client->requesteddate}}</td>
+                                <td scope="row" style="text-align:center;">{{$client->clientid}}</td>
+                                <td scope="row" style="text-align:center;">{{$client->approval}}</td>
+                                <td scope="row" style="text-align:center;">{{$client->message}}</td>
+                                <td align="center">
+                              <a href="{{$client->id}}/counselorappointmentdelete"><button type="button" class="btn btn-danger" style="width:70px;">Delete</button></a>
+                            </td>
                             </tr>
-
                         </tbody>
+                        @endforeach
                     </table>
                 </div>
             </center>

@@ -60,13 +60,15 @@
             </div>
             </td>
             <td>
-            <div class="card " style="width: 300px; height:350px">
+            <div class="card " style="width: 300px; height:400px">
                 <img class="card-img-top" src="PHOTOS/appointment.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title" style="text-align:center; color:#0788D9;">Appointment Request</h4>
                     <p class="card-text" style="font-size:15px;text-align: center;">Check your appointment requests.</p>
                     <br>
                     <center><a href="/appointmentlist" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Go to Request</button></a></center>
+                    <br>
+                    <center><a href="/answerlist" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Appointment Answers</button></a></center>
                     <br>
             </div>
             </div>

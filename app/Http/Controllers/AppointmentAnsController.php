@@ -37,6 +37,15 @@ class AppointmentAnsController extends Controller
     return view('client_leavemessagehistory', ['client_leavemessagehistory' => $client_leavemessagehistory]);
     }
 
+    public function counselorindex()
+    {
+
+    $userId = Auth::id();
+    $counselor_appointment = \App\Models\AppointmentAns::all()->where('counselorid', $userId);
+    return view('counselor_appointment', ['counselor_appointment' => $counselor_appointment]);
+    }
+
+    
     public function indexclient()
     {
 
@@ -50,6 +59,14 @@ class AppointmentAnsController extends Controller
         $appointmentans->delete();
 
         return redirect('/clientlandingpage');
+    }
+
+    public function counselordelete($id){
+        
+        $appointmentans =  \App\Models\AppointmentAns::find($id);
+        $appointmentans->delete();
+
+        return redirect('/counselor_homepage');
     }
 
 

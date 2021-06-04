@@ -151,11 +151,13 @@ Route::get('/client_appointment_history', function () {
 
 Route::get('/clientinbox2', 'App\Http\Controllers\AppointmentAnsController@indexclient');
 Route::get('/appointmentlist', '\App\Http\Controllers\AppointmentReqController@index');
+Route::get('/answerlist', '\App\Http\Controllers\AppointmentAnsController@counselorindex');
 Route::get('/client_appointmentlist', '\App\Http\Controllers\AppointmentReqController@clientindex');
 Route::get('/{id}/appointmentreply', '\App\Http\Controllers\AppointmentReqController@reply');
 Route::get('/{id}/appointmentdelete/', 'App\Http\Controllers\AppointmentReqController@delete');
 Route::get('/{id}/answerdelete/', 'App\Http\Controllers\AppointmentAnsController@delete');
 Route::get('/{id}/clientappointmentdelete/', 'App\Http\Controllers\AppointmentReqController@clientdelete');
+Route::get('/{id}/counselorappointmentdelete/', 'App\Http\Controllers\AppointmentAnsController@counselordelete');
 
 //USER AUTH
 Route::post('/postlogin', 'App\Http\Controllers\AuthController@postlogin');
