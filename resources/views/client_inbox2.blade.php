@@ -57,21 +57,14 @@
     <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
                 <a href="/clientlandingpage" style="text-decoration: none; color:#0BA9D0;" >
                     <button type="submit" style="width:70px; height:35px; font-size:15px" class="btn btn-outline-info btn-sm btn-block tblbackhome">Back</button>
-<<<<<<< HEAD:resources/views/client_inbox2.blade.php
                 </a>
-=======
->>>>>>> parent of 26443a6... a:resources/views/client_inbox2.php
             </div>
             </div>
     <div class="" style="float:right; margin-top:-200px; margin-right:20px; position:static;">
     <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
                 <a href="/clientinbox" style="text-decoration: none; color:#0BA9D0;" >
                     <button type="submit" style="width:80px; height:35px; font-size:15px" class="btn btn-outline-info btn-sm btn-block tblbackhome">Message</button>
-<<<<<<< HEAD:resources/views/client_inbox2.blade.php
                 </a>
-=======
-
->>>>>>> parent of 26443a6... a:resources/views/client_inbox2.php
             </div>
             </div> 
     <!-- Isi Konten -->
@@ -84,7 +77,7 @@
           <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Requested Date</th>
           <th scope="col" style="text-align:center; width:10%; color: #069FD7;">Counselor Name</th>
           <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Approval</th>
-          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Message</th>
+          <th scope="col" style="text-align:center; width:20%; color: #069FD7;">Message</th>
           <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Action</th>
         </tr>
       </thead>
