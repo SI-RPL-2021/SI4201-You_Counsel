@@ -25,7 +25,7 @@
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <a class="navbar-brand" href="/counselor_homepage"><img src="PHOTOS/LogoPutih-01.png" width="60" height="60"
+        <a class="navbar-brand" href="/clientlandingpage"><img src="PHOTOS/LogoPutih-01.png" width="60" height="60"
                 class="d-inline-block align-top" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +36,7 @@
 
             </ul>
             <span class="navbar-text" style="color:white;">
-                Hello, <a href="/counselor_userprofile" style="color:white; font-size:15px;"><u>James</u></a>!
+                Hello, <a href="/clientprofile" style="color:white; font-size:15px;"><u>James</u></a>!
                 <a href="/"><button type="button" class="btn btn-sm btn-outline-light">Logout</button></a>
             </span>
         </div>
@@ -58,13 +58,19 @@
 
             <div class="" style="float:left; margin-top:-200px; margin-left:20px; position:static;">
                 <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
-                    <a href="/counselor_homepage" style="text-decoration: none; color:#0BA9D0;">
+                    <a href="/clientlandingpage" style="text-decoration: none; color:#0BA9D0;">
                         <button type="submit" style="width:70px; height:35px; font-size:15px"
                             class="btn btn-outline-info btn-sm btn-block tblbackhome">Back</button>
                     </a>
                 </div>
             </div>
-
+            <div class="" style="float:right; margin-top:-200px; margin-right:20px; position:static;">
+                <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
+                <a href="/clientinbox2" style="text-decoration: none; color:#0BA9D0;" >
+                    <button type="submit" style="width:200px; height:35px; font-size:15px" class="btn btn-outline-info btn-sm btn-block tblbackhome">Appointment Answers</button>
+                </a>
+            </div>
+            </div>
 
             <!-- Isi Konten -->
 
@@ -82,7 +88,7 @@
                             <tr>
                                 <th scope="col" style=" text-align:center;">No</th>
                                 <th scope="col" style=" text-align:center;">Schedule ID</th>
-                                <th scope="col" style="text-align:center;">Date</th>
+                                <th scope="col" style="text-align:center;">Requested Date</th>
                                 <th scope="col" style=" text-align:center;">Client ID</th>
                                 <th scope="col" style=" text-align:center;">Client Name</th>
                                 <th scope="col" style=" text-align:center;">Type</th>
@@ -94,19 +100,21 @@
                         </thead>
                         <tbody >
                             <tr>
-                                <td scope="row" style="text-align:center;"></td>
-                                <td align="center"> </td>
-                                <td align="center"> </td>
-                                <td align="center"> </td>
-                                <td align="center"> </td>
-                                <td align="center"> </td>
-                                <td align="center"> </td>
-                                <td align="center"> </td>
+                            @php $no = 1; @endphp
+                            @foreach($client_appointment_history as $client)
+                                <td scope="row" style="text-align:center;"> {{ $no++ }}</td>
+                                <td align="center">{{$client->id}}</td>
+                                <td align="center">{{$client->requesteddate}}</td>
+                                <td align="center">{{$client->clientid}}</td>
+                                <td align="center">{{$client->clientname}}</td>
+                                <td align="center">{{$client->type}}</td>
+                                <td align="center">{{$client->method}}</td>
+                                <td align="center">{{$client->reason}}</td>
                                 <td align="center">
-                                    <a href="" button type="button" class="btn btn-success" style="width:70px;">Reply</button>
-                                    <a href="" button type="button" class="btn btn-danger" style="width:70px;">Delete</button>
+                                    <a href="{{$client->id}}/clientappointmentdelete" button type="button" class="btn btn-danger" style="width:70px;">Delete</button>
                                 </td>
                             </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

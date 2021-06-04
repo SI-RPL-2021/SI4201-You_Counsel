@@ -71,8 +71,7 @@
 
             <center>
                 <div>
-                    <p style="color:#0BA9D0; font-family: 'Be Vietnam';font-size: 40px; margin-top:-80px;">Appointment From
-                        Clients</p>
+                    <p style="color:#0BA9D0; font-family: 'Be Vietnam';font-size: 40px; margin-top:-80px;">Appointment History</p>
                 </div>
             </center>
 
@@ -94,9 +93,10 @@
                             </tr>
                         </thead>
                         <tbody >
+                        @php $no = 1; @endphp
                         @foreach($counselor_appointmentlist as $client)
                             <tr>
-                                <td scope="row" style="text-align:center;">1</td>
+                                <td scope="row" style="text-align:center;"> {{ $no++ }}</td>
                                 <td align="center">{{$client->id}}</td>
                                 <td align="center">{{$client->requesteddate}}</td>
                                 <td align="center">{{$client->clientid}}</td>

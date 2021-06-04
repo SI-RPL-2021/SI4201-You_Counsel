@@ -39,6 +39,14 @@ class AppointmentReqController extends Controller
     return view('counselor_appointmentlist', ['counselor_appointmentlist' => $counselor_appointmentlist]);
     }
 
+    public function clientindex()
+    {
+
+    $userId = Auth::id();
+    $client_appointment_history = \App\Models\AppointmentReq::all()->where('clientid', $userId);
+    return view('client_appointment_history', ['client_appointment_history' => $client_appointment_history]);
+    }
+
     public function reply($id)
     {
         $counselor_appointment_reply = \App\Models\AppointmentReq::find($id);
@@ -52,5 +60,12 @@ class AppointmentReqController extends Controller
         return redirect('/counselor_homepage');
     }
 
+
+    public function clientdelete($id){
+        $appointmentreq =  \App\Models\AppointmentReq::find($id);
+        $appointmentreq->delete();
+
+        return redirect('/clientlandingpage');
+    }
 
 }

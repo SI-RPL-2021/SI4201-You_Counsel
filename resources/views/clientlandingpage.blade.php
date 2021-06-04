@@ -72,7 +72,7 @@
                     <br>
                     <center><a href="/client_scheduleappointment" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Create Schedule</button></a></center>
                     <br>
-                    <center><a href="/" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Schedule History</button></a></center>
+                    <center><a href="/client_appointmentlist" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Schedule History</button></a></center>
             </div>
             </div>
             </td>
