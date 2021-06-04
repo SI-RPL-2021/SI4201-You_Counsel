@@ -74,6 +74,7 @@
         <tr>
           <th scope="col" style="text-align:center; width:5%; color: #069FD7;">No.</th>
           <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Date</th>
+          <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Schedule ID</th>
           <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Requested Date</th>
           <th scope="col" style="text-align:center; width:10%; color: #069FD7;">Counselor Name</th>
           <th scope="col" style="text-align:center; width:5%; color: #069FD7;">Approval</th>
@@ -87,6 +88,7 @@
         <tr>
           <td> {{ $no++ }} </th>
           <td>{{$client->created_at}}</th>
+          <td>{{$client->scheduleid}}</th>
           <td>{{$client->requesteddate}}</td>
           <td>{{$client->counselorid}}</td>
           <td>{{$client->approval}}</td>

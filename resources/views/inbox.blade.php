@@ -72,6 +72,7 @@
                         <thead class="thead-light">
                             <tr>
                             <th scope="col" style="text-align:center; width:5%; color: #069FD7;">No</th>
+                            <th scope="col" style="text-align:center; width:10%; color: #069FD7;">ID</th>
                             <th scope="col" style="text-align:center; width:10%; color: #069FD7;">Date</th>
                             <th scope="col" style="text-align:center; width:10%; color: #069FD7;">Message ID</th>
                             <th scope="col" style="text-align:center; width:40%; color: #069FD7;">Messages</th>
@@ -83,6 +84,7 @@
                         @foreach($inbox as $client)
                             <tr>
                             <th scope="row" style="text-align:center;"> {{ $no++ }} </th>
+                            <th scope="row" style="text-align:center;"> {{$client->id}} </th>
                             <td>{{$client->created_at}}</td>
                             <td>{{$client->messageid}}</td>
                             <td>{{$client->messages}}</td>
