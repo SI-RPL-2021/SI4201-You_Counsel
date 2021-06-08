@@ -75,13 +75,13 @@
                     <table class="table table-hover">
                         <thead style="background-color:#F2F2F2; color:#069ED7;">
                             <tr>
-                                <th scope="col" style="width:; text-align:center;">No</th>
-                                <th scope="col" style="width:; text-align:center;">Journal ID</th>
-                                <th scope="col" style="width:%; text-align:center;">Date</th>
-                                <th scope="col" style="width:%; text-align:center;">Student's ID</th>
-                                <th scope="col" style="width:%; text-align:center;">Student's Name</th>
-                                <th scope="col" style="width:%; text-align:center;">Condition</th>
-                                <th scope="col" style="width:%; text-align:center;">Message</th>
+                                <th scope="col" style="text-align:center;">No</th>
+                                <th scope="col" style="text-align:center;">Journal ID</th>
+                                <th scope="col" style="text-align:center;">Date</th>
+                                <th scope="col" style="text-align:center;">Student's ID</th>
+                                <th scope="col" style="text-align:center;">Student's Name</th>
+                                <th scope="col" style="text-align:center;">Condition</th>
+                                <th scope="col" style="text-align:center;">Message</th>
                             </tr>
                         </thead>
                         <tbody>
