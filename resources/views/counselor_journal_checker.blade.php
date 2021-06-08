@@ -55,7 +55,7 @@
             </div>
         </center>
 
-        <form>
+        <form method="get">
             <div class="form-group col-sm-8 ml-auto mr-auto">
                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="inputID"
                     placeholder="Client's ID">
