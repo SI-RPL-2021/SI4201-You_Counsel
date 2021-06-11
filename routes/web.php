@@ -180,5 +180,10 @@ Route::get('/{id}/messagedelete/', 'App\Http\Controllers\MessageController@delet
 Route::get('/{id}/clientmessagedelete/', 'App\Http\Controllers\MessageController@clientdelete');
 Route::get('/{id}/repliesdelete/', 'App\Http\Controllers\MessageController@repliesdelete');
 
+//ADMIN
+Route::get('/admin_homepage', function () {
+    return view('admin_homepage');
+});
+
 
     
