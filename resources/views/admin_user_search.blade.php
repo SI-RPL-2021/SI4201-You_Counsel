@@ -22,7 +22,7 @@
         padding-right:30px;
         padding-left:30px;
         width:80%;
-        height:70%;
+        height:68%;
         border:2px
         solid
         #0BA9D0;
@@ -120,7 +120,7 @@
                     </div>
                     
                     <div class="wrap">
-                        <button class="tblclose">Close</button>
+                        <button class="tblclose" style="margin-right:10px;">Close</button>
                         <button class="tbldel">Delete</button>
                     </div>
                     
