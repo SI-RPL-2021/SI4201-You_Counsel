@@ -152,31 +152,31 @@
                         <label for="colFormLabelLg" class="col-sm-6 col-form-label col-form-label-md"
                             style="margin-top:10px; ">Username</label>
                         <input class="form-control" id="exampleFormControlTextarea1" placeholder="Enter Username"
-                            name="username" value=""></input>
+                            name="username"></input>
                     </div>
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-6 col-form-label col-form-label-md"
                             style="margin-top:-20px;">Name</label>
                         <input class="form-control" id="exampleFormControlTextarea1" placeholder="Enter Name"
-                            name="name" value=""></input>
+                            name="name"></input>
                     </div>
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-6 col-form-label col-form-label-md"
                             style="margin-top:-20px;">Email</label>
                         <input type="email" class="form-control" id="exampleFormControlTextarea1"
-                            placeholder="Enter Email" name="email" value=""></input>
+                            placeholder="Enter Email" name="email"></input>
                     </div>
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-6 col-form-label col-form-label-md"
                             style="margin-top:-20px;">Password</label>
                         <input type="password" class="form-control" id="exampleFormControlTextarea1"
-                            placeholder="Enter Password" name="password" value=""></input>
+                            placeholder="Enter Password" name="password"></input>
                     </div>
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-6 col-form-label col-form-label-md"
                             style="margin-top:-20px;">Phone Number</label>
                         <input type="text" class="form-control" id="exampleFormControlTextarea1"
-                            placeholder="Enter Phone Number" name="nohp" value=""></input>
+                            placeholder="Enter Phone Number" name="nohp"></input>
                     </div>
                     <fieldset class="form-group row">
                         <legend class="col-form-label col-sm-2 float-sm-left pt-0">Roles</legend>
