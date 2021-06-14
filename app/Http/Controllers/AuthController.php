@@ -26,10 +26,12 @@ class AuthController extends Controller
         $useraccess = DB::table('users')->where('id', $userId)->pluck('access');
         $useraccess = trim($useraccess, '[]');
         $access = (int)$useraccess;
-        if($access == 3){
-            return redirect('/clientlandingpage');
-        }else{
+        if($access == 2){
             return redirect('/counselor_homepage');
+        }elseif($access == 1){
+            return redirect('/admin_homepage');
+        }else{
+            return redirect('/clientlandingpage');
         }
        }
          return redirect('/login');
@@ -42,6 +44,35 @@ class AuthController extends Controller
     }
 
     public function create(Request $request)
+    {
+        $request = new \App\Models\User;
+        $request -> username = request('username');
+        $request -> email = request('email');
+        $request -> password = bcrypt(request('password'));
+        $request -> access = request('access');
+        $request -> save(); 
+        
+        if($request->access == 1){
+        $request = new \App\Models\Admin;
+        $request -> username = request('username');
+        $request -> name = request('name');
+        $request -> email = request('email');
+        $request -> phonenumber = request('phonenumber');
+        $request -> save(); 
+        }else{
+        $request = new \App\Models\Admin;
+        $request -> username = request('username');
+        $request -> name = request('name');
+        $request -> email = request('email');
+        $request -> phonenumber = request('phonenumber');
+        $request -> save(); 
+        }
+        
+        //   \App\Models\User::create($request->only('username', 'email', Hash::'password', 'access'));
+        return redirect('/login');
+    }
+
+    public function admincreate(Request $request)
     {
         $request = new \App\Models\User;
         $request -> username = request('username');

@@ -57,6 +57,7 @@ class DatabaseSeeder extends Seeder
             'email' => 'skinner@gmail.com',
             'specialization' => 'A, B, C',
             'availdays' => 'Mon, Tue, Wed',
+            'phonenumber' => 3215,
             ]);   
         \DB::table('messages')->insert([
             'id' => 001,

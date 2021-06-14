@@ -20,6 +20,7 @@ class CreateCounselorTable extends Migration
             $table->string('email');
             $table->string('specialization');
             $table->string('availdays');
+            $table->string('phonenumber');
             $table->timestamps();
         });
     }
