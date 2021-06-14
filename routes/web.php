@@ -189,3 +189,6 @@ Route::get('/admin_user_search', function () {
     return view('admin_user_search');
 });
     
+Route::get('/admin_user_search_home', function () {
+    return view('admin_user_search_home');
+});
