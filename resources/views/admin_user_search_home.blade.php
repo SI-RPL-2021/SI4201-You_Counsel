@@ -110,9 +110,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/inbox" style="color:white; font-size:15px;"><u>Inbox</u></a>
-                </li>
+                
             </ul>
             <span class="navbar-text" style="color:white;">
                 Hello, <u>James</u>!
