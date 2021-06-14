@@ -192,3 +192,11 @@ Route::get('/admin_user_search', function () {
 Route::get('/admin_user_search_home', function () {
     return view('admin_user_search_home');
 });
+
+Route::get('/admin_list_admin', function () {
+    return view('admin_list_admin');
+});
+
+Route::get('/admin_list_counselor', function () {
+    return view('admin_list_counselor');
+});

@@ -66,7 +66,7 @@
                 <div class="card-body">
                     <h5 class="card-title" style="text-align:center; color:#0788D9;">Admin List</h4>
                     <br>
-                    <center><a href="admin_list" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Go to Admin Lists</button></a></center>
+                    <center><a href="admin_list_admin" style="text-decoration: none;"><button type="submit" class="btn btn-outline-primary btn-sm btn-block">Go to Admin Lists</button></a></center>
             </div>
             </div>
             </td>
