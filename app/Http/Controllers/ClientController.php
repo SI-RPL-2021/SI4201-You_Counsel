@@ -16,6 +16,18 @@ class ClientController extends Controller
     $clientprofile = \App\Models\Client::all()->where('id', $userId);
     return view('clientprofile', ['clientprofile' => $clientprofile]);
     }
+
+    public function adminsearchbyid($id)
+    {
+    $clientprofile =  \App\Models\Client::find($id);
+    return view('/', ['/' => $clientprofile]);
+    }
+
+    public function adminsearchbyusername($username)
+    {
+    $clientprofile =  \App\Models\Client::find($username);
+    return view('clientprofile', ['clientprofile' => $clientprofile]);
+    }
      
 }
  
