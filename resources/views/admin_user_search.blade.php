@@ -45,7 +45,7 @@
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <a class="navbar-brand" href="/counselor_homepage"><img src="/PHOTOS/LogoPutih-01.png" width="60" height="60"
+        <a class="navbar-brand" href="admin_homepage"><img src="/PHOTOS/LogoPutih-01.png" width="60" height="60"
                 class="d-inline-block align-top" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,7 +74,7 @@
 
         <div class="" style="float:left; margin-top:-200px; margin-left:20px; position:static;">
                 <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
-                    <a href="/" style="text-decoration: none; color:#0BA9D0;">
+                    <a href="admin_homepage" style="text-decoration: none; color:#0BA9D0;">
                         <button type="submit" style="width:70px; height:35px; font-size:15px"
                             class="btn btn-outline-info btn-sm btn-block tblbackhome">Back</button>
                     </a>
@@ -87,40 +87,40 @@
         <center>
             <div class="box">
             <div class="h3" >Search by Username</div>
-                <form method="POST" action="/" style="color:#0BA9D0;font-family: 'Be Vietnam';font-size:15px;" align="left">
+                <form method="GET" action="/" style="color:#0BA9D0;font-family: 'Be Vietnam';font-size:15px;" align="left">
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md">User ID</label>
                             <input class="form-control" id="exampleFormControlTextarea1"
-                            placeholder="12098765" name="userid" value="" ></input>
+                            placeholder="" name="userid" value="" disabled></input>
                     </div> 
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md" style="margin-top:-20px;">Username</label>
                             <input class="form-control" id="exampleFormControlTextarea1"
-                                placeholder="James12" name="username" value="" ></input>
+                                placeholder="" name="username" value="" disabled></input>
                     </div>
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md" style="margin-top:-20px;">Name</label>
                             <input class="form-control" id="exampleFormControlTextarea1"
-                                placeholder="James H." name="name" value="" ></input>
+                                placeholder="" name="name" value="" disabled></input>
                     </div>
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md" style="margin-top:-20px;">Password</label>
                             <input class="form-control" id="exampleFormControlTextarea1"
-                                placeholder="12345" name="password" value="" ></input>
+                                placeholder="" name="password" value="" disabled></input>
                     </div>
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md" style="margin-top:-20px;">Phone Number</label>
                             <input class="form-control" id="exampleFormControlTextarea1"
-                                placeholder="0812121212" name="nohp" value="" ></input>
+                                placeholder="" name="nohp" value="" disabled></input>
                     </div>
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md" style="margin-top:-20px;">Role</label>
                             <input class="form-control" id="exampleFormControlTextarea1"
-                                placeholder="3" name="role" value="" ></input>
+                                placeholder="" name="role" value="" disabled></input>
                     </div>
                     
                     <div class="wrap">
-                        <button class="tblclose" style="margin-right:10px;">Close</button>
+                        <a href="admin_homepage"><button class="tblclose" style="margin-right:10px;">Close</button></a>
                         <button class="tbldel">Delete</button>
                     </div>
                     
