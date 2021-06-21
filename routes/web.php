@@ -184,6 +184,7 @@ Route::get('/{id}/repliesdelete/', 'App\Http\Controllers\MessageController@repli
 Route::post('/admincreate', 'App\Http\Controllers\AuthController@admincreate');
 Route::get('/adminlist', 'App\Http\Controllers\AuthController@getadmin');
 Route::get('/counselorlist', 'App\Http\Controllers\AuthController@getcounselor');
+Route::get('/{id}/userdelete/', 'App\Http\Controllers\AuthController@deleteaccount');
 Route::get('/admin_homepage', function () {
     return view('admin_homepage');
 });

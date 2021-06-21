@@ -109,5 +109,12 @@ class AuthController extends Controller
     return view('admin_list_counselor', ['admin_list_counselor' => $admin_list_counselor]);
 
     }
+
+    public function userdelete($id){
+        $user =  \App\Models\User::find($id);
+        $user->delete();
+
+        return redirect('/admin_homepage');
+    }
     
 }
