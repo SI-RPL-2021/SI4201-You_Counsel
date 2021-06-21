@@ -33,16 +33,16 @@
             </li>
             </ul>
             <span class="navbar-text" style="color:white;">
-            Hello, <a href="/profile" style="color:white; font-size:15px;"><u>James</u></a>!
-            <a href="/logout"><button type="button" class="btn btn-sm btn-outline-light">Logout</button></a>
-            </span>
+                <a href="/profile"><button type="button" class="btn btn-sm btn-outline-light">Profile</button></a>
+                <a href="/logout"><button type="button" class="btn btn-sm btn-outline-light">Logout</button></a>
+             </span>
         </div>
         </nav>
     <!-- NAVBAR -->
 
     <!-- TITLE -->
         <div class="content center" style="margin-top:10px; width:100%;">
-        <h3 style="color:#7D7E80; text-align: center; font-size: 30px; color:white;"><b>Hi, James!</b> How can we help you today? </h2>
+        <h3 style="color:#7D7E80; text-align: center; font-size: 30px; color:white;">How can we help you today? </h2>
     </div>
     <!-- TITLE -->
 
