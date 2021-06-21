@@ -50,15 +50,15 @@
 
         <center>
             <div>
-                <p style="color:#0BA9D0; font-family: 'Be Vietnam';font-size: 20px; margin-top:-80px;">Input Client's ID
+                <p style="color:#0BA9D0; font-family: 'Be Vietnam';font-size: 20px; margin-top:-80px;">Input Client's Username
                 </p>
             </div>
         </center>
 
-        <form method="get">
+        <form method="get" action="journalchecker">
             <div class="form-group col-sm-8 ml-auto mr-auto">
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="inputID"
-                    placeholder="Client's ID">
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="inputUsername" name="username"
+                    placeholder="Client's Username">
             </div>
             <br>
             <button type="submit" class="btn btn-outline-info">Submit</button>

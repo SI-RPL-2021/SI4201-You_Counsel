@@ -28,9 +28,12 @@ class JournalController extends Controller
         return view('client_journalhistory', ['clientjournal' => $clientjournal]);
     }  
     
-    public function findjournal($id)
-    {
-        $clientjournal = \App\Models\Journal::all()->where('clientid', $id);
-        return view('/', ['/' => $clientjournal]);
+    public function findjournal()
+    {   
+        $username = request('username');
+        $userid = \App\Models\User::select('id')->where('username', $username)->first();
+        $userid = trim($userid, '[{"id":}]');
+        $counselor_journal_checker2 = \App\Models\Journal::all()->where('clientid', $userid);
+        return view('counselor_journal_checker2', ['counselor_journal_checker2' => $counselor_journal_checker2]);
     }   
 }

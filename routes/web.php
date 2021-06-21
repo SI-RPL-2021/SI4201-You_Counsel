@@ -168,6 +168,7 @@ Route::post('/create', 'App\Http\Controllers\AuthController@create');
 //JOURNAL
 Route::get('/journalindex', 'App\Http\Controllers\JournalController@journalindex');
 Route::post('/postjournal', 'App\Http\Controllers\JournalController@createjournal');
+Route::get('/journalchecker', 'App\Http\Controllers\JournalController@findjournal');
 
 //SEND MESSAGE
 Route::post('/leavemessage', 'App\Http\Controllers\MessageController@createmessage');

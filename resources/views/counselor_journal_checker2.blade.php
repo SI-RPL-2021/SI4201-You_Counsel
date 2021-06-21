@@ -59,16 +59,7 @@
                     </a>
                 </div>
             </div>
-
             <!-- Isi Konten -->
-
-
-            <center>
-                <div>
-                    <p style="color:#0BA9D0; font-family: 'Be Vietnam';font-size: 40px; margin-top:-80px;">Journal of
-                        Stephen Curry</p>
-                </div>
-            </center>
 
             <center>
                 <div class="" style="width:90%;">
@@ -76,24 +67,23 @@
                         <thead style="background-color:#F2F2F2; color:#069ED7;">
                             <tr>
                                 <th scope="col" style="text-align:center;">No</th>
-                                <th scope="col" style="text-align:center;">Journal ID</th>
                                 <th scope="col" style="text-align:center;">Date</th>
                                 <th scope="col" style="text-align:center;">Student's ID</th>
-                                <th scope="col" style="text-align:center;">Student's Name</th>
                                 <th scope="col" style="text-align:center;">Condition</th>
                                 <th scope="col" style="text-align:center;">Message</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td scope="row" style="text-align:center;">1</td>
-                                <td>273868</td>
-                                <td>21/03/2021</td>
-                                <td>974075</td>
-                                <td>Alexander Gundara</td>
-                                <td>Neutral</td>
-                                <td>Im good</td>
+                        @php $no = 1; @endphp
+                        @foreach($counselor_journal_checker2 as $client)
+                        <tr>
+                            <td scope="row" style="text-align:center;"> {{ $no++ }} </td>
+                            <td>{{$client->created_at}}</td>
+                            <td>{{$client->clientid}}</td>
+                            <td>{{$client->mood}}</td>
+                            <td>{{$client->message}}</td>
                             </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
