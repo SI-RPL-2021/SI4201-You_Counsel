@@ -181,6 +181,7 @@ Route::get('/{id}/clientmessagedelete/', 'App\Http\Controllers\MessageController
 Route::get('/{id}/repliesdelete/', 'App\Http\Controllers\MessageController@repliesdelete');
 
 //ADMIN
+Route::post('/admincreate', 'App\Http\Controllers\AuthController@admincreate');
 Route::get('/admin_homepage', function () {
     return view('admin_homepage');
 });
