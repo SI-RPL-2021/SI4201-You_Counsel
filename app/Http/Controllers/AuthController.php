@@ -52,7 +52,14 @@ class AuthController extends Controller
         $request -> access = 3;
         $request -> save(); 
 
+        $username = request('username');
+        $userid = \App\Models\User::select('id')->where('username', $username)->first();
+        $userid = trim($userid, '[{"id":}]');
+        $userid = intval($userid);
+        echo $userid;
+
         $request = new \App\Models\Client;
+        $request -> id = $userid;
         $request-> username = request('username');
         $request-> name = request('name');
         $request -> email = request('email');
@@ -62,7 +69,7 @@ class AuthController extends Controller
         $request -> save(); 
 
         //   \App\Models\User::create($request->only('username', 'email', Hash::'password', 'access'));
-        return redirect('/login');
+       return redirect('/login');
     }
 
     public function admincreate(Request $request)
@@ -74,8 +81,14 @@ class AuthController extends Controller
         $request -> access = request('access');
         $request -> save(); 
 
+        $username = request('username');
+        $userid = \App\Models\User::select('id')->where('username', $username)->first();
+        $userid = trim($userid, '[{"id":}]');
+        $userid = intval($userid);
+        echo $userid;
         if($request->access == 1){
             $request = new \App\Models\Admin;
+            $request -> id = $userid;
             $request -> username = request('username');
             $request -> name = request('name');
             $request -> email = request('email');
@@ -83,6 +96,7 @@ class AuthController extends Controller
             $request -> save(); 
             }else{
             $request = new \App\Models\Counselor;
+            $request -> id = $userid;
             $request -> username = request('username');
             $request -> name = request('name');
             $request -> email = request('email');
