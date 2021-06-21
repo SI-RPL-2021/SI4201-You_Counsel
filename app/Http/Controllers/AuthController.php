@@ -49,25 +49,18 @@ class AuthController extends Controller
         $request -> username = request('username');
         $request -> email = request('email');
         $request -> password = bcrypt(request('password'));
-        $request -> access = request('access');
+        $request -> access = 3;
         $request -> save(); 
-        
-        if($request->access == 1){
-        $request = new \App\Models\Admin;
-        $request -> username = request('username');
-        $request -> name = request('name');
+
+        $request = new \App\Models\Client;
+        $request-> username = request('username');
+        $request-> name = request('name');
         $request -> email = request('email');
+        $request -> address = request('address');
         $request -> phonenumber = request('phonenumber');
+        $request -> univname = request('univname');
         $request -> save(); 
-        }else{
-        $request = new \App\Models\Admin;
-        $request -> username = request('username');
-        $request -> name = request('name');
-        $request -> email = request('email');
-        $request -> phonenumber = request('phonenumber');
-        $request -> save(); 
-        }
-        
+
         //   \App\Models\User::create($request->only('username', 'email', Hash::'password', 'access'));
         return redirect('/login');
     }
@@ -81,17 +74,26 @@ class AuthController extends Controller
         $request -> access = request('access');
         $request -> save(); 
 
-        $request = new \App\Models\Client;
-        $request -> username = request('username');
-        $request -> name = request('name');
-        $request -> email = request('email');
-        $request -> address = request('address');
-        $request -> phonenumber = request('notelp');
-        $request -> univname = request('univname');
-        $request -> save(); 
+        if($request->access == 1){
+            $request = new \App\Models\Admin;
+            $request -> username = request('username');
+            $request -> name = request('name');
+            $request -> email = request('email');
+            $request -> phonenumber = request('phonenumber');
+            $request -> save(); 
+            }else{
+            $request = new \App\Models\Counselor;
+            $request -> username = request('username');
+            $request -> name = request('name');
+            $request -> email = request('email');
+            $request -> specialization = "-";
+            $request -> availdays = "-";
+            $request -> phonenumber = request('phonenumber');
+            $request -> save(); 
+            }
         
         //   \App\Models\User::create($request->only('username', 'email', Hash::'password', 'access'));
-        return redirect('/login');
+        return redirect('/admin_homepage');
     }
     
 }

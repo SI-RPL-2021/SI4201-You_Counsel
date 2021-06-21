@@ -114,7 +114,7 @@
             </ul>
             <span class="navbar-text" style="color:white;">
                 Hello, <u>James</u>!
-                <a href="/" style="color:white; font-size:15px;"><button type="button"
+                <a href="/logout" style="color:white; font-size:15px;"><button type="button"
                         class="btn btn-sm btn-outline-light">Logout</button></a>
             </span>
         </div>
@@ -145,7 +145,8 @@
         <div class="row">
             <div class="box">
                 <div class="h3">Add User</div>
-                <form style="color:#0BA9D0;font-family: 'Be Vietnam';font-size:15px;" align="left">
+                <form style="color:#0BA9D0;font-family: 'Be Vietnam';font-size:15px;" align="left" action="/admincreate" method="POST">
+                {{csrf_field()}}
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-6 col-form-label col-form-label-md"
                             style="margin-top:10px; ">Username</label>
@@ -174,21 +175,21 @@
                         <label for="colFormLabelLg" class="col-sm-6 col-form-label col-form-label-md"
                             style="margin-top:-20px;">Phone Number</label>
                         <input type="text" class="form-control" id="exampleFormControlTextarea1"
-                            placeholder="Enter Phone Number" name="nohp"></input>
+                            placeholder="Enter Phone Number" name="phonenumber"></input>
                     </div>
                     <fieldset class="form-group row">
                         <legend class="col-form-label col-sm-2 float-sm-left pt-0">Roles</legend>
                         <div class="col-sm-10">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="Roles" id="gridRadios1"
-                                    value="Administrator">
+                                <input class="form-check-input" type="radio" name="access" id="gridRadios1"
+                                    value="1">
                                 <label class="form-check-label" for="gridRadios1">
                                     Role 1 - Administrator
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="Roles" id="gridRadios2"
-                                    value="Counselor">
+                                <input class="form-check-input" type="radio" name="access" id="gridRadios2"
+                                    value="2">
                                 <label class="form-check-label" for="gridRadios2">
                                     Role 2 - Counselor
                                 </label>
