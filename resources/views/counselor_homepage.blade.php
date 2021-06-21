@@ -31,8 +31,8 @@
             
             </ul>
             <span class="navbar-text" style="color:white;">
-            Hello, <a href="#" style="color:white; font-size:15px;"><u>Steph</u></a>!
-            <a href="/index"><button type="button" class="btn btn-sm btn-outline-light">Logout</button></a>
+                <a href="/profile"><button type="button" class="btn btn-sm btn-outline-light">Profile</button></a>
+                <a href="/logout"><button type="button" class="btn btn-sm btn-outline-light">Logout</button></a>
             </span>
         </div>
         </nav>
@@ -40,7 +40,7 @@
 
     <!-- TITLE -->
         <div class="content center" style="margin-top:10px; width:100%;">
-        <h3 style="color:#7D7E80; text-align: center; font-size: 30px; color:white;"><b>Steph</b> Counselor Page</h2>
+        <h3 style="color:#7D7E80; text-align: center; font-size: 30px; color:white;">Counselor Page</h2>
     </div>
     <!-- TITLE -->
 
