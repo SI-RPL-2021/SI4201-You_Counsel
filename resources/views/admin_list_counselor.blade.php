@@ -59,7 +59,7 @@
             </div>
     <div class="" style="float:right; margin-top:-200px; margin-right:20px; position:static;">
     <div style="margin-top:10px; color:#0BA9D0; border-color: #0BA9D0">
-                <a href="admin_list_admin" style="text-decoration: none; color:#0BA9D0;" >
+                <a href="/adminlist" style="text-decoration: none; color:#0BA9D0;" >
                     <button type="submit" style="width:200px; height:35px; font-size:15px" class="btn btn-outline-info btn-sm btn-block tblbackhome">Admin List</button>
                 </a>
             </div>
@@ -79,16 +79,16 @@
                         </thead>
                         <tbody>
                         @php $no = 1; @endphp
-                       
+                        @foreach($admin_list_counselor as $client)
                             <tr>
                             <td scope="row" style="text-align:center;"> {{ $no++ }} </td>
-                            <td scope="row" style="text-align:center;"> </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td scope="row" style="text-align:center;">{{$client->id}} </td>
+                            <td>{{$client->username}}</td>
+                            <td>{{$client->name}}</td>
+                            <td>{{$client->email}}</td>
+                            <td>{{$client->phonenumber}}</td>
                             </tr>
-                        
+                            @endforeach
                         </tbody>
                      </table>
 

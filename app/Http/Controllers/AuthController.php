@@ -95,5 +95,19 @@ class AuthController extends Controller
         //   \App\Models\User::create($request->only('username', 'email', Hash::'password', 'access'));
         return redirect('/admin_homepage');
     }
+
+    public function getadmin()
+    {
+    $admin_list_admin = \App\Models\Admin::all();
+    return view('admin_list_admin', ['admin_list_admin' => $admin_list_admin]);
+
+    }
+    
+    public function getcounselor()
+    {
+    $admin_list_counselor = \App\Models\Counselor::all();
+    return view('admin_list_counselor', ['admin_list_counselor' => $admin_list_counselor]);
+
+    }
     
 }
