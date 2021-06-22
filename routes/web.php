@@ -188,6 +188,9 @@ Route::get('/counselorlist', 'App\Http\Controllers\AuthController@getcounselor')
 Route::get('/{id}/userdelete/', 'App\Http\Controllers\AuthController@deleteaccount');
 Route::get('/{id}/admindelete/', 'App\Http\Controllers\AuthController@admindelete');
 Route::get('/{id}/counselordelete/', 'App\Http\Controllers\AuthController@counselordelete');
+Route::get('/searchbyid', 'App\Http\Controllers\AuthController@searchbyid');
+Route::get('/searchbyusername', 'App\Http\Controllers\AuthController@searchbyusername');
+
 Route::get('/admin_homepage', function () {
     return view('admin_homepage');
 });

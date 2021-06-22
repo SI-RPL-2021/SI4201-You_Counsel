@@ -30,7 +30,7 @@ class MessageController extends Controller
     {
 
     $userId = Auth::id();
-    $client_leavemessagehistory = \App\Models\Message::all()->where('clientid', $userId);
+    $client_leavemessagehistory = \App\Models\Message::all()->where('id', $userId);
     return view('client_leavemessagehistory', ['client_leavemessagehistory' => $client_leavemessagehistory]);
     }
 
@@ -38,7 +38,7 @@ class MessageController extends Controller
     {
 
     $userId = Auth::id();
-    $inbox = \App\Models\Replies::all()->where('clientid', $userId);
+    $inbox = \App\Models\Replies::all()->where('id', $userId);
     // $appointmentreq = \App\Models\AppointmentReq::all()->where('clientid', $userId);
     return view('inbox', ['inbox' => $inbox]);
 

@@ -131,11 +131,20 @@ class AuthController extends Controller
         return redirect('/admin_homepage');
     }
 
-    public function getbyid($id)
+    public function searchbyid()
     {
-        $clientjournal = \App\Models\Clients::all()->where('clientid', $id);
-        return view('/', ['/' => $clientjournal]);
+        $id = request('userid');
+        $admin_user_search = \App\Models\Client::all()->where('id', $id);
+        return view('admin_user_search', ['admin_user_search' => $admin_user_search]);
     }
+
+    public function searchbyusername()
+    {
+        $username = request('username');
+        $admin_user_search = \App\Models\Client::where('username', 'LIKE', '%'.$username.'%')->get();
+        return view('admin_user_search', ['admin_user_search' => $admin_user_search]);
+    }
+    
 
     public function admindelete($id){
         $user =  \App\Models\User::find($id);

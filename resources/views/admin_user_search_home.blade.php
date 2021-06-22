@@ -203,23 +203,23 @@
 
             <div class="box">
                 <div class="h3">User Search</div>
-                <form style="color:#0BA9D0;font-family: 'Be Vietnam';font-size:20px;" align="left">
+                <form style="color:#0BA9D0;font-family: 'Be Vietnam';font-size:20px;" align="left" method="get" action="searchbyid">
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-12 col-form-label col-form-label-md"
                             style="margin-top:60px; text-align:center; ">Search By ID</label>
                         <input type="text" class="form-control" id="exampleFormControlTextarea1" placeholder="Enter ID"
-                            name="byid"></input>
+                            name="userid"></input>
                     </div>
                     <div class="wrap">
                         <button class="tblclose" style="margin-top:-30px; width:50%;">Search by ID</button>
                     </div>
                 </form>
-                <form style="color:#0BA9D0;font-family: 'Be Vietnam';font-size:20px;" align="left">
+                <form style="color:#0BA9D0;font-family: 'Be Vietnam';font-size:20px;" align="left" method="get" action="searchbyusername">
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-12 col-form-label col-form-label-md"
                             style="margin-top:40px; text-align:center; ">Search by Username</label>
                         <input type="text" class="form-control" id="exampleFormControlTextarea1"
-                            placeholder="Enter Username" name="byuname"></input>
+                            placeholder="Enter Username" name="username"></input>
                     </div>
                     <div class="wrap">
                         <button class="tblclose" style="margin-top:-30px; width:70%;">Search by Username</button>

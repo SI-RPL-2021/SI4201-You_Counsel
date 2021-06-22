@@ -84,44 +84,49 @@
         <!-- FORM -->
         <center>
             <div class="box">
-            <div class="h3" >Search by Username</div>
+            <div class="h3" >Search Client Profile</div>
+            @foreach($admin_user_search as $client)  
                 <form method="GET" action="/" style="color:#0BA9D0;font-family: 'Be Vietnam';font-size:15px;" align="left">
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md">User ID</label>
                             <input class="form-control" id="exampleFormControlTextarea1"
-                            placeholder="" name="userid" value="" disabled></input>
+                            placeholder="{{$client->id}}" name="userid" value="" disabled></input>
                     </div> 
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md" style="margin-top:-20px;">Username</label>
                             <input class="form-control" id="exampleFormControlTextarea1"
-                                placeholder="" name="username" value="" disabled></input>
+                                placeholder="{{$client->username}}" name="username" value="" disabled></input>
                     </div>
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md" style="margin-top:-20px;">Name</label>
                             <input class="form-control" id="exampleFormControlTextarea1"
-                                placeholder="" name="name" value="" disabled></input>
+                                placeholder="{{$client->name}}" name="name" value="" disabled></input>
                     </div>
                     <div class="form-group row">
-                        <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md" style="margin-top:-20px;">Password</label>
+                        <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md" style="margin-top:-20px;">Email</label>
                             <input class="form-control" id="exampleFormControlTextarea1"
-                                placeholder="" name="password" value="" disabled></input>
+                                placeholder="{{$client->email}}" name="name" value="" disabled></input>
+                    </div>
+                    <div class="form-group row">
+                        <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md" style="margin-top:-20px;">Address</label>
+                            <input class="form-control" id="exampleFormControlTextarea1"
+                                placeholder="{{$client->address}}" name="password" value="" disabled></input>
                     </div>
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md" style="margin-top:-20px;">Phone Number</label>
                             <input class="form-control" id="exampleFormControlTextarea1"
-                                placeholder="" name="nohp" value="" disabled></input>
+                                placeholder="{{$client->phonenumber}}" name="nohp" value="" disabled></input>
                     </div>
                     <div class="form-group row">
-                        <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md" style="margin-top:-20px;">Role</label>
+                        <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md" style="margin-top:-20px;">University</label>
                             <input class="form-control" id="exampleFormControlTextarea1"
-                                placeholder="" name="role" value="" disabled></input>
+                                placeholder="{{$client->univname}}" name="nohp" value="" disabled></input>
                     </div>
-                    
                     <div class="wrap">
-                        <a href="admin_homepage"><button class="tblclose" style="margin-right:10px;">Close</button></a>
-                        <button class="tbldel">Delete</button>
+                        <a href="/admin_homepage"><button class="tblclose" style="margin-right:10px;">Close</button></a>
+                        <a href="{{$client->id}}/admin_homepage"><button class="tbldel">Delete</button></a>
                     </div>
-                    
+                @endforeach
                 </form>
             </div>
         </center>
