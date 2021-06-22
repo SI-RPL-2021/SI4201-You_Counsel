@@ -85,7 +85,7 @@ class AuthController extends Controller
         $userid = \App\Models\User::select('id')->where('username', $username)->first();
         $userid = trim($userid, '[{"id":}]');
         $userid = intval($userid);
-        echo $userid;
+    
         if($request->access == 1){
             $request = new \App\Models\Admin;
             $request -> id = $userid;
@@ -126,6 +126,32 @@ class AuthController extends Controller
 
     public function userdelete($id){
         $user =  \App\Models\User::find($id);
+        $user->delete();
+
+        return redirect('/admin_homepage');
+    }
+
+    public function getbyid($id)
+    {
+        $clientjournal = \App\Models\Clients::all()->where('clientid', $id);
+        return view('/', ['/' => $clientjournal]);
+    }
+
+    public function admindelete($id){
+        $user =  \App\Models\User::find($id);
+        $user->delete();
+
+        $user =  \App\Models\Admin::find($id);
+        $user->delete();
+
+        return redirect('/admin_homepage');
+    }
+
+    public function counselordelete($id){
+        $user =  \App\Models\User::find($id);
+        $user->delete();
+
+        $user =  \App\Models\Counselor::find($id);
         $user->delete();
 
         return redirect('/admin_homepage');

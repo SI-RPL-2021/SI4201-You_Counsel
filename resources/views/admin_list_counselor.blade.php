@@ -75,6 +75,7 @@
                             <th scope="col" style="text-align:center; width:auto; color: #069FD7;">Name</th>
                             <th scope="col" style="text-align:center; width:auto; color: #069FD7;">Email</th>
                             <th scope="col" style="text-align:center; width:auto; color: #069FD7;">Phone Number</th>
+                            <th scope="col" style="text-align:center; width:auto; color: #069FD7;">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -87,6 +88,9 @@
                             <td>{{$client->name}}</td>
                             <td>{{$client->email}}</td>
                             <td>{{$client->phonenumber}}</td>
+                            <td>
+                            <a href="{{$client->id}}/counselordelete" button type="button" class="btn btn-danger" style="width:70px;">Delete</button>
+                            </td>
                             </tr>
                             @endforeach
                         </tbody>
