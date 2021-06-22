@@ -43,7 +43,7 @@
     </nav>
     <!-- NAVBAR -->
 
-    <h3 class="center font-weight-lighter" style="margin-top:10px; color:white;font-family: 'Be Vietnam';">User Profile
+    <h3 class="center font-weight-lighter" style="margin-top:10px; color:white;font-family: 'Be Vietnam';">Counselor Profile
     </h3>
 
     <!-- CONTENT -->
