@@ -33,7 +33,7 @@
             </li>
             </ul>
             <span class="navbar-text" style="color:white;">
-                <a href="/profile"><button type="button" class="btn btn-sm btn-outline-light">Profile</button></a>
+                <a href="/client_userprofile"><button type="button" class="btn btn-sm btn-outline-light">Profile</button></a>
                 <a href="/logout"><button type="button" class="btn btn-sm btn-outline-light">Logout</button></a>
              </span>
         </div>

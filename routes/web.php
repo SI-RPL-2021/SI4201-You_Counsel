@@ -210,3 +210,7 @@ Route::get('/admin_list_admin', function () {
 Route::get('/admin_list_counselor', function () {
     return view('admin_list_counselor');
 });
+
+Route::get('/admin_profile', function () {
+    return view('admin_profile');
+});
