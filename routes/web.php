@@ -130,6 +130,10 @@ Route::get('/counselor_userprofile', function () {
     return view('counselor_userprofile');
 });
 
+Route::get('/counselor_schedule', function () {
+    return view('counselor_schedule');
+});
+
 //SCHEDULE APPOINTMENT
 Route::get('/client_scheduleappointment', function () {
     return view('client_scheduleappointment');
