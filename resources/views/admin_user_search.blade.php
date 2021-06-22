@@ -22,7 +22,7 @@
         padding-right:30px;
         padding-left:30px;
         width:80%;
-        height:68%;
+        height:70%;
         border:2px
         solid
         #0BA9D0;
@@ -64,7 +64,7 @@
     <!-- NAVBAR -->
 
     <!-- CONTENT -->
-    <div class="center" style="width:70%; height:750px;  background-color:white;">
+    <div class="center" style="width:70%; height:800px;  background-color:white;">
         <img src="/PHOTOS/search.jpg" alt="journal2" class="iconjournal">
         <h3 class="center" style="margin-top:10px; color:#0788D9;font-family: 'Be Vietnam';font-size: 20px;">User Management
         </h3>
