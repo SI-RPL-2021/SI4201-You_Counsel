@@ -88,7 +88,7 @@
                             <td>{{$client->name}}</td>
                             <td>{{$client->email}}</td>
                             <td>{{$client->phonenumber}}</td>
-                            <td>
+                            <td style="text-align:center;">
                             <a href="{{$client->id}}/admindelete" button type="button" class="btn btn-danger" style="width:70px;">Delete</button>
                             </td>
                             </tr>
