@@ -43,17 +43,20 @@
     </nav>
     <!-- NAVBAR -->
 
-    <h3 class="center font-weight-lighter" style="margin-top:10px; color:white;font-family: 'Be Vietnam';">Counselor Profile
-    </h3>
+    
 
     <!-- CONTENT -->
     <div class="content">
-        <div class="center" style="width:70%; height:1000px;  background-color:white;">
+        <div class="center" style="width:70%; height:800px;  background-color:white;">
             <img src="PHOTOS/inboxicon.png" alt="journal2" class="iconjournal">
+            <center> <h4 style="margin-left:-0px;margin-top:10px;color:#0BA9D0;font-family: 'Be Vietnam'; font-size:20px;">User Management </h4> <center>
+
+            <center> <h4 style="margin-left:-0px;margin-top:30px;color:#0BA9D0;font-family: 'Be Vietnam'; font-size:30px;">Change Schedules </h4> <center>
 
             <!-- Isi Konten -->
+            <center>
                 <div style="margin-top:50px;width:70%;" align="left">
-                    <h4 style="margin-left:-100px;margin-bottom:30px;color:#848484;font-family: 'Be Vietnam';">User ID
+                    <h4 style="margin-left:-50px;margin-bottom:30px;color:#0BA9D0;font-family: 'Be Vietnam'; font-size:20px;">User ID
                     </h4>
                     <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;">
                         <div class="form-row">
@@ -65,7 +68,7 @@
                 </div>
 
                 <div style="margin-top:px;width:70%;" align="left">
-                    <h4 style="margin-left:-100px;margin-bottom:30px;color:#848484;font-family: 'Be Vietnam';">Name
+                    <h4 style="margin-left:-50px;margin-bottom:30px;color:#0BA9D0;font-family: 'Be Vietnam'; font-size:20px;">Name
                     </h4>
                     <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;">
                         <div class="form-row">
@@ -77,16 +80,36 @@
                 </div>
 
                 <div style="margin-top:px;width:70%;" align="left">
-                    <h4 style="margin-left:-100px;margin-bottom:30px;color:#848484;font-family: 'Be Vietnam';">Specialization
+                    <h4 style="margin-left:-50px;margin-bottom:30px;color:#0BA9D0;font-family: 'Be Vietnam'; font-size:20px;">Specialization
                     </h4>
-                    <form action="" method="post">
-                        <input type="checkbox" name="check1" value="Setuju">Minat/Bakat<br/>
-                        
-                         
+                    <form action="" method="post" style="color:#0BA9D0;font-family: 'Be Vietnam';">
+                        <input type="checkbox" name="check1a" value="Setuju">Minat/Bakat
+                        <input type="checkbox" name="check2a" value="Setuju">Karir
+                        <input type="checkbox" name="check3a" value="Setuju">Pribadi
+                        <input type="checkbox" name="check4a" value="Setuju">Kelompok
 
-                        <center><button type="button" class="btn btn-outline-info" style="margin-top:30px;">Change your Schedules</button><center>
+                
                     </form>
                 </div>
+
+                <div style="margin-top:px;width:70%;" align="left">
+                    <h4 style="margin-left:-50px;margin-bottom:30px;color:#0BA9D0;font-family: 'Be Vietnam'; font-size:20px;">Available Days
+                    </h4>
+                    <form action="" method="post" style="color:#0BA9D0;font-family: 'Be Vietnam';">
+                        <input type="checkbox" name="check1b" value="Setuju">Monday
+                        <input type="checkbox" name="check2b" value="Setuju">Tuesday
+                        <input type="checkbox" name="check3b" value="Setuju">Wednesday
+                        <input type="checkbox" name="check4b" value="Setuju">Thursday
+                        <input type="checkbox" name="check5b" value="Setuju">friday
+                        <input type="checkbox" name="check6b" value="Setuju">Saturday
+                        
+                        </form>
+                </div>  
+                         
+
+                        <center><button type="button" class="btn btn-outline-info" style="margin-top:30px;">Save Changes</button><center>
+                    
+                
 
             </center>
         </div>
