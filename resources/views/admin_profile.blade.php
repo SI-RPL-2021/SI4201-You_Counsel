@@ -36,7 +36,7 @@
 
             </ul>
             <span class="navbar-text" style="color:white;">
-                <a href="/admin_profile"><button type="button" class="btn btn-sm btn-outline-light">Profile</button></a>
+                <a href="/adminprofile"><button type="button" class="btn btn-sm btn-outline-light">Profile</button></a>
                 <a href="/logout"><button type="button" class="btn btn-sm btn-outline-light">Logout</button></a>
             </span>
         </div>
@@ -58,48 +58,52 @@
                     <h4 style="margin-left:-100px;margin-bottom:30px;color:#848484;font-family: 'Be Vietnam';">Edit
                         Information
                     </h4>
-                    <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;">
+                    @foreach($admin_profile as $client)
+                    <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;" action="updateadmin" method="POST">
+                    {{csrf_field()}}
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputDisplayName" style="text-shadow: 3px 3px 4px #bfbfbf;">Username</label>
-                                <input type="text" class="form-control" id="inputDisplayName" value="" readonly></input>
+                                <input type="text" class="form-control" id="inputDisplayName" name="username" value="{{$client->username}}" readonly></input>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputFullName" style="text-shadow: 3px 3px 4px #bfbfbf;">Full Name</label>
-                                <input type="text" class="form-control" id="inputFullName" value="" readonly></input>
+                                <input type="text" class="form-control" id="inputFullName" name="name" value="{{$client->name}}"></input>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputEmail" style="text-shadow: 3px 3px 4px #bfbfbf;">Email Address</label>
-                                <input type="email" class="form-control" id="inputEmail" style="border:0;background-color:white;text-shadow: 3px 3px 4px #bfbfbf;" value="" disabled>
+                                <input type="email" class="form-control" id="inputEmail"  name="email" style="border:0;background-color:white;text-shadow: 3px 3px 4px #bfbfbf;" value="{{$client->email}}" disabled>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputPhone" style="text-shadow: 3px 3px 4px #bfbfbf;">Phone Number</label>
-                                <input type="text" class="form-control" id="inputPhone" value=""></input>
+                                <input type="text" class="form-control" id="inputPhone" name="phonenumber" value="{{$client->phonenumber}}"></input>
                             </div>
                         </div>
-                        <center><button type="button" class="btn btn-outline-info" style="margin-top:30px;">Save Changes</button><center>
+                        <center><button type="submit" class="btn btn-outline-info" style="margin-top:30px;">Save Changes</button><center>
                     </form>
+                    @endforeach
                 </div>
                 
                 <div style="margin-top:50px;width:70%;" align="left">
                         <h4 style="margin-left:-100px;margin-bottom:30px;color:#848484;font-family: 'Be Vietnam';">
                             Change Password
                         </h4>
-                    <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;">
+                    <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;" action="/updateadminpassword" method="POST" >
+                    {{csrf_field()}}
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputNewPassword" style="text-shadow: 3px 3px 4px #bfbfbf;">New Password</label>
-                                <input type="password" class="form-control" id="inputNewPassword">
+                                <input type="password" name="password" class="form-control" id="inputNewPassword">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputConfirmNewPassword" style="text-shadow: 3px 3px 4px #bfbfbf;">Confirm New Password</label>
-                                <input type="password" class="form-control" id="inputConfirmNewPassword">
+                                <input type="password" name="password2" class="form-control" id="inputConfirmNewPassword">
                             </div>
                         </div>
 
-                        <center><button type="button" class="btn btn-outline-info" style="margin-top:30px;">Change Password</button><center>
+                        <center><button type="submit" class="btn btn-outline-info" style="margin-top:30px;">Change Password</button><center>
                     
                     </form>
                 </div>
