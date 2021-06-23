@@ -58,29 +58,30 @@
                     <h4 style="margin-left:-100px;margin-bottom:30px;color:#848484;font-family: 'Be Vietnam';">Edit
                         Information
                     </h4>
-                    <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;">
+                    <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;" method="POST" action="updatecounselor">
+                    {{csrf_field()}}
                     @foreach($counselor_userprofile as $client)
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputDisplayName" style="text-shadow: 3px 3px 4px #bfbfbf;">Counselor ID</label>
-                                <input type="text" class="form-control" id="inputcounselorid" value="{{$client->id}}" readonly>
+                                <input type="text" class="form-control" id="inputcounselorid" value="{{$client->id}}" name="id" readonly>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputFullName" style="text-shadow: 3px 3px 4px #bfbfbf;">Name</label>
-                                <input type="text" class="form-control" id="inputFullName" value="{{$client->name}}" >
+                                <input type="text" class="form-control" id="inputFullName" value="{{$client->name}}" name="name" >
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputEmail" style="text-shadow: 3px 3px 4px #bfbfbf;">Email Address</label>
-                                <input type="email" class="form-control" id="inputEmail" value="{{$client->email}}" readonly>
+                                <input type="email" class="form-control" id="inputEmail" value="{{$client->email}}"  name="email" readonly>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputPhone" style="text-shadow: 3px 3px 4px #bfbfbf;">Phone Number</label>
-                                <input type="text" class="form-control" id="inputPhone" value="{{$client->phonenumber}}" >
+                                <input type="text" class="form-control" id="inputPhone" value="{{$client->phonenumber}}"  name="phonenumber" >
                             </div>
                         </div>
-                        <center><button type="button" class="btn btn-outline-info" style="margin-top:30px;">Save Changes</button><center>
+                        <center><button type="submit" class="btn btn-outline-info" style="margin-top:30px;">Save Changes</button><center>
                     </form>
                 </div>
                 <div style="margin-top:50px;width:70%;" align="left">
@@ -88,7 +89,8 @@
                         @endforeach
                             Change Password
                         </h4>
-                    <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;">
+                    <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;" method="POST" action="updatecounselorpassword">
+                    {{csrf_field()}}
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputNewPassword" style="text-shadow: 3px 3px 4px #bfbfbf;">New Password</label>
@@ -100,17 +102,18 @@
                             </div>
                         </div>
 
-                        <center><button type="button" class="btn btn-outline-info" style="margin-top:30px;">Change Password</button><center>
+                        <center><button type="submit" class="btn btn-outline-info" style="margin-top:30px;">Change Password</button><center>
                     </form>
                 </div>
 
                 <div style="margin-top:50px;width:70%;" align="left">
                     <h4 style="margin-left:-100px;margin-bottom:30px;color:#848484;font-family: 'Be Vietnam';">Specialization
                     </h4>
+                    @foreach($counselor_userprofile as $client)
                     <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;">
                         <div class="form-row">
                             <div class="form-group col-md-12">
-                                <input type="text" class="form-control" id="inputspecialization" style="border:5;background-color:#E1E1E1;text-shadow: 3px 3px 4px #bfbfbf;" placeholder="Minat/Bakat,Karir,Pribadi" disabled>
+                                <input type="text" class="form-control" id="inputspecialization" style="border:5;background-color:#E1E1E1;text-shadow: 3px 3px 4px #bfbfbf;" value="{{$client->specialization}}" readonly>
                             </div>
                         </div>
                     </form>
@@ -122,12 +125,13 @@
                     <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;">
                         <div class="form-row">
                             <div class="form-group col-md-12">
-                                <input type="text" class="form-control" id="inputdays" style="border:5;background-color:#E1E1E1;text-shadow: 3px 3px 4px #bfbfbf;" placeholder="Mon,Tue,Fri" disabled>
+                                <input type="text" class="form-control" id="inputdays" style="border:5;background-color:#E1E1E1;text-shadow: 3px 3px 4px #bfbfbf;" value="{{$client->availdays}}" readonly>
                             </div>
                         </div>
 
                         <center><a href="/counselor_schedule"><button type="button" class="btn btn-outline-info" style="margin-top:30px;">Change your Schedules</button></a><center>
                     </form>
+                    @endforeach
                 </div>
 
             </center>

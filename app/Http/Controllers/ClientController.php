@@ -25,6 +25,14 @@ class ClientController extends Controller
     return view('admin_profile', ['admin_profile' => $admin_profile]);
     }
 
+    public function counselorindex()
+    {
+
+    $userId = Auth::id();
+    $counselor_userprofile = \App\Models\Counselor::all()->where('id', $userId);
+    return view('counselor_userprofile', ['counselor_userprofile' => $counselor_userprofile]);
+    }
+
     public function updateclient(Request $request)
     {
 
@@ -49,6 +57,19 @@ class ClientController extends Controller
 
     $admin_profile = \App\Models\Admin::all()->where('id', $userId);
     return view('admin_profile', ['admin_profile' => $admin_profile]);
+    }
+
+    public function updatecounselor(Request $request)
+    {
+
+    $userId = Auth::id();
+    $request = \App\Models\Counselor::all()->where('id', $userId)->first();
+    $request -> name = request('name');
+    $request -> phonenumber = request('phonenumber');
+    $request -> save(); 
+
+    $counselor_userprofile = \App\Models\Counselor::all()->where('id', $userId);
+    return view('counselor_userprofile', ['counselor_userprofile' => $counselor_userprofile]);
     }
 
     public function updateclientpassword(Request $request)
@@ -82,6 +103,23 @@ class ClientController extends Controller
     
     $admin_profile = \App\Models\Admin::all()->where('id', $userId);
     return view('admin_profile', ['admin_profile' => $admin_profile]);
+    }
+
+    public function updatecounselorpassword(Request $request)
+    {
+
+    $password = request('password');
+    $password2 = request('password2');
+        
+    if($password == $password2){
+    $userId = Auth::id();
+    $request = \App\Models\User::all()->where('id', $userId)->first();
+    $request -> password = bcrypt(request('password'));
+    $request -> save(); 
+    }
+    
+    $counselor_userprofile = \App\Models\Counselor::all()->where('id', $userId);
+    return view('counselor_userprofile', ['counselor_userprofile' => $counselor_userprofile]);
     }
 
     public function adminsearchbyid($id)

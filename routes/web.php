@@ -167,13 +167,15 @@ Route::get('/{id}/counselorappointmentdelete/', 'App\Http\Controllers\Appointmen
 Route::post('/postlogin', 'App\Http\Controllers\AuthController@postlogin');
 Route::get('/logout', '\App\Http\Controllers\AuthController@logout');
 Route::get('/profile', 'App\Http\Controllers\ClientController@index');
-Route::get('/counselorprofile', 'App\Http\Controllers\AuthController@counselorindex');
+Route::get('/counselorprofile', 'App\Http\Controllers\ClientController@counselorindex');
 Route::get('/adminprofile', 'App\Http\Controllers\ClientController@adminindex');
 Route::post('/create', 'App\Http\Controllers\AuthController@create');
 Route::post('/updateclient', 'App\Http\Controllers\ClientController@updateclient');
 Route::post('/updateadmin', 'App\Http\Controllers\ClientController@updateadmin');
+Route::post('/updatecounselor', 'App\Http\Controllers\ClientController@updatecounselor');
 Route::post('/updateclientpassword', 'App\Http\Controllers\ClientController@updateclientpassword');
 Route::post('/updateadminpassword', 'App\Http\Controllers\ClientController@updateadminpassword');
+Route::post('/updatecounselorpassword', 'App\Http\Controllers\ClientController@updatecounselorpassword');
 
 //JOURNAL
 Route::get('/journalindex', 'App\Http\Controllers\JournalController@journalindex');
