@@ -48,7 +48,7 @@
 
     <!-- CONTENT -->
     <div class="content">
-        <div class="center" style="width:70%; height:670px;  background-color:white;">
+        <div class="center" style="width:70%; height:700px;  background-color:white;">
             <img src="PHOTOS/inboxicon.png" alt="journal2" class="iconjournal">
 
             <!-- Isi Konten -->
@@ -79,6 +79,7 @@
                                 <input type="text" class="form-control" id="inputPhone" value="{{$client->phonenumber}}"></input>
                             </div>
                         </div>
+                        <center><button type="button" class="btn btn-outline-info" style="margin-top:30px;">Save Changes</button><center>
                     </form>
                 </div>
                 @endforeach
@@ -98,7 +99,7 @@
                             </div>
                         </div>
 
-                        <center><button type="button" class="btn btn-outline-info" style="margin-top:30px;">Save Changes</button><center>
+                        <center><button type="button" class="btn btn-outline-info" style="margin-top:30px;">Change Password</button><center>
                     
                     </form>
                 </div>
