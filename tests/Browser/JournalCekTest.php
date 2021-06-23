@@ -19,7 +19,7 @@ class JournalCekTest extends DuskTestCase
             $browser->visit('http://127.0.0.1:8000/counselor_journal_checker')
                     ->assertSee('Journal Checker')
                     ->type('username','user')
-                    ->press('Submit');;
+                    ->press('Submit');
         });
     }
 }
