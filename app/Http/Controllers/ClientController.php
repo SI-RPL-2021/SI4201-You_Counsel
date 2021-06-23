@@ -13,7 +13,6 @@ class ClientController extends Controller
     {
 
     $userId = Auth::id();
-    echo $userId;
     $client_userprofile = \App\Models\Client::all()->where('id', $userId);
     return view('client_userprofile', ['client_userprofile' => $client_userprofile]);
     }
