@@ -43,7 +43,7 @@
                         <hr align="left" width="50%" style="background-color: #17BFBF; opacity: 30%;">
                         <h2 style="margin-left:50px; margin-top:-15px; color:#17BFBF;">Counsel</h2>
                         <p>We listen your problem and understanding your emotion with patience. You-Counsel will take care and give you attention and help you until blooming.</p>
-                        <p class="testimonial-text">"Ini tujuan pendirian/kata-kata founder"</p>
+                        <p class="testimonial-text">"Our Main Focus is You"</p>
                         <div class="testimonial-author">Todoan - Founder</div>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
