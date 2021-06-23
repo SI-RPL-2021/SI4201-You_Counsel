@@ -24,7 +24,7 @@ class JournalController extends Controller
     public function journalindex()
     {
         $userId = Auth::id();
-        $clientjournal = \App\Models\Journal::all()->where('id', $userId);
+        $clientjournal = \App\Models\Journal::all()->where('clientid', $userId);
         return view('client_journalhistory', ['clientjournal' => $clientjournal]);
     }  
     
