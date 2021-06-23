@@ -79,7 +79,10 @@
                                 <input type="text" class="form-control" id="inputPhone" value="{{$client->phonenumber}}"></input>
                             </div>
                         </div>
-                        
+                    </form>
+                </div>
+                
+                <div style="margin-top:50px;width:70%;" align="left">
                         <h4 style="margin-left:-100px;margin-bottom:30px;color:#848484;font-family: 'Be Vietnam';">
                             Change Password
                         </h4>
