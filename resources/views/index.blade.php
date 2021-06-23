@@ -42,7 +42,8 @@
                         <h2 style="margin-left:20px; margin-bottom:-15px; color:#17BFBF;">You</h2>
                         <hr align="left" width="50%" style="background-color: #17BFBF; opacity: 30%;">
                         <h2 style="margin-left:50px; margin-top:-15px; color:#17BFBF;">Counsel</h2>
-                        <p>We listen your problem and understanding your emotion with patience. You-Counsel will take care and give you attention and help you until blooming.</p>
+                        <p>We listen to your problem. We understanding your emotion. We solved your problem.
+                         You-Counsel will take care and give you full attention until you blooming.</p>
                         <p class="testimonial-text">"Our Main Focus is You"</p>
                         <div class="testimonial-author">Todoan - Founder</div>
                     </div> <!-- end of text-container -->
