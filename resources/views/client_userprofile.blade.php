@@ -79,17 +79,8 @@
                                 <input type="text" class="form-control" id="inputPhone" value="{{$client->phonenumber}}"></input>
                             </div>
                         </div>
-<<<<<<< HEAD
-                        <center><button type="button" class="btn btn-outline-info" style="margin-bottom:20px;">Save Changes</button><center>
-                    </form>
-                </div>
-                
-                <div style="margin-top:50px;width:70%;" align="left">
-                    <h4 style="margin-left:-100px;margin-bottom:30px;color:#848484;font-family: 'Be Vietnam';">
-=======
-                        @endforeach
+                        
                         <h4 style="margin-left:-100px;margin-bottom:30px;color:#848484;font-family: 'Be Vietnam';">
->>>>>>> 49a59b39f02d4a4b730c5e31d82fa0362c143cd6
                             Change Password
                         </h4>
                     <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;">
@@ -104,12 +95,8 @@
                             </div>
                         </div>
 
-<<<<<<< HEAD
-                        <center><button type="button" class="btn btn-outline-info" style="margin-bottom:20px;">Change Password</button><center>
-=======
                         <center><button type="button" class="btn btn-outline-info" style="margin-top:30px;">Save Changes</button><center>
                     
->>>>>>> 49a59b39f02d4a4b730c5e31d82fa0362c143cd6
                     </form>
                 </div>
             </center>
