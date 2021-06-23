@@ -127,6 +127,9 @@ class AuthController extends Controller
         $user =  \App\Models\User::find($id);
         $user->delete();
 
+        $user =  \App\Models\Client::find($id);
+        $user->delete();
+
         return redirect('/admin_homepage');
     }
 
