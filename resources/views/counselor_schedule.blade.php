@@ -25,7 +25,7 @@
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <a class="navbar-brand" href="counselor_homepage.php.php"><img src="PHOTOS/LogoPutih-01.png" width="60" height="60"
+        <a class="navbar-brand" href="/counselor_homepage"><img src="PHOTOS/LogoPutih-01.png" width="60" height="60"
                 class="d-inline-block align-top" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +36,7 @@
 
             </ul>
             <span class="navbar-text" style="color:white;">
-                <a href="/profile"><button type="button" class="btn btn-sm btn-outline-light">Profile</button></a>
+                <a href="/counselorprofile"><button type="button" class="btn btn-sm btn-outline-light">Profile</button></a>
                 <a href="/logout"><button type="button" class="btn btn-sm btn-outline-light">Logout</button></a>
             </span>
         </div>
@@ -83,10 +83,10 @@
                     <h4 style="margin-left:-50px;margin-bottom:30px;color:#0BA9D0;font-family: 'Be Vietnam'; font-size:20px;">Specialization
                     </h4>
                     <form action="" method="post" style="color:#0BA9D0;font-family: 'Be Vietnam';">
-                        <input type="checkbox" name="check1a" value="Setuju">Minat/Bakat
-                        <input type="checkbox" name="check2a" value="Setuju">Karir
-                        <input type="checkbox" name="check3a" value="Setuju">Pribadi
-                        <input type="checkbox" name="check4a" value="Setuju">Kelompok
+                        <input type="checkbox" name="check1a" value="Setuju">&nbsp;Minat/Bakat&nbsp;
+                        <input type="checkbox" name="check2a" value="Setuju">&nbsp;Karir&nbsp;
+                        <input type="checkbox" name="check3a" value="Setuju">&nbsp;Pribadi&nbsp;
+                        <input type="checkbox" name="check4a" value="Setuju">&nbsp;Kelompok&nbsp;
 
                 
                     </form>
@@ -96,12 +96,12 @@
                     <h4 style="margin-left:-50px;margin-bottom:30px;color:#0BA9D0;font-family: 'Be Vietnam'; font-size:20px;">Available Days
                     </h4>
                     <form action="" method="post" style="color:#0BA9D0;font-family: 'Be Vietnam';">
-                        <input type="checkbox" name="check1b" value="Setuju">Monday
-                        <input type="checkbox" name="check2b" value="Setuju">Tuesday
-                        <input type="checkbox" name="check3b" value="Setuju">Wednesday
-                        <input type="checkbox" name="check4b" value="Setuju">Thursday
-                        <input type="checkbox" name="check5b" value="Setuju">friday
-                        <input type="checkbox" name="check6b" value="Setuju">Saturday
+                        <input type="checkbox" name="check1b" value="Setuju">&nbsp;Monday&nbsp;
+                        <input type="checkbox" name="check2b" value="Setuju">&nbsp;Tuesday&nbsp;
+                        <input type="checkbox" name="check3b" value="Setuju">&nbsp;Wednesday&nbsp;
+                        <input type="checkbox" name="check4b" value="Setuju">&nbsp;Thursday&nbsp;
+                        <input type="checkbox" name="check5b" value="Setuju">&nbsp;friday&nbsp;
+                        <input type="checkbox" name="check6b" value="Setuju">&nbsp;Saturday&nbsp;
                         
                         </form>
                 </div>  
