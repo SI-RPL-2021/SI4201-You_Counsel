@@ -72,23 +72,22 @@
                         <thead style="background-color:#F2F2F2; color:#069ED7;">
                             <tr>
                                 <th scope="col" style=" text-align:center;">No</th>
-                                <th scope="col" style=" text-align:center;">Message ID</th>
+                                <th scope="col" style=" text-align:center; width:auto;">Message ID</th>
                                 <th scope="col" style="text-align:center;">Date</th>
                                 <th scope="col" style=" text-align:center;">Student's ID</th>
-                                <th scope="col" style=" text-align:center;">Student's Name</th>
                                 <th scope="col" style=" text-align:center;">Message</th>
                                 <th scope="col" style=" text-align:center;">Action</th>
 
                             </tr>
                         </thead>
                         <tbody >
+                        @php $no = 1; @endphp
                         @foreach($counselor_message as $client)
-                            <tr>
-                                <td scope="row" style="text-align:center;">1</td>
+                            <tr style="text-align:center;">
+                                <td scope="row" >{{ $no++ }} </td>
                                 <td>{{$client->id}}</td>
                                 <td>{{$client->created_at}}</td>
                                 <td>{{$client->clientid}}</td>
-                                <td>Alex Gundara</td>
                                 <td>{{$client->messages}}</td>
                                 <td align="center">
                                     <a href="{{$client->id}}/replymessages"> <button type="button" class="btn btn-success" style="width:70px;">Reply</button></a>

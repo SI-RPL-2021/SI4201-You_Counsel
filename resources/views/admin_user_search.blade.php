@@ -86,7 +86,7 @@
             <div class="box">
             <div class="h3" >Search Client Profile</div>
             @foreach($admin_user_search as $client)  
-                <form method="GET" action="/" style="color:#0BA9D0;font-family: 'Be Vietnam';font-size:15px;" align="left">
+                <form method="GET" style="color:#0BA9D0;font-family: 'Be Vietnam';font-size:15px;" align="left">
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-md">User ID</label>
                             <input class="form-control" id="exampleFormControlTextarea1"
@@ -122,12 +122,13 @@
                             <input class="form-control" id="exampleFormControlTextarea1"
                                 placeholder="{{$client->univname}}" name="nohp" value="" disabled></input>
                     </div>
+                    </form>
                     <div class="wrap">
                         <a href="/admin_homepage"><button class="tblclose" style="margin-right:10px;">Close</button></a>
-                        <a href="{{$client->id}}/admin_homepage"><button class="tbldel">Delete</button></a>
+                        <a href="{{$client->id}}/userdelete"><button class="tbldel">Delete</button></a>
                     </div>
                 @endforeach
-                </form>
+                
             </div>
         </center>
     </div>
