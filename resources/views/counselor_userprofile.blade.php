@@ -59,27 +59,29 @@
                         Information
                     </h4>
                     <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;">
+                    @foreach($counselor_userprofile as $client)
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputDisplayName" style="text-shadow: 3px 3px 4px #bfbfbf;">Counselor ID</label>
-                                <input type="text" class="form-control" id="inputcounselorid" style="border:0;background-color:white;text-shadow: 3px 3px 4px #bfbfbf;" placeholder="1203821332" disabled>
+                                <input type="text" class="form-control" id="inputcounselorid" value="{{$client->id}}" readonly>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputFullName" style="text-shadow: 3px 3px 4px #bfbfbf;">Name</label>
-                                <input type="text" class="form-control" id="inputFullName">
+                                <input type="text" class="form-control" id="inputFullName" value="{{$client->name}}" >
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputEmail" style="text-shadow: 3px 3px 4px #bfbfbf;">Email Address</label>
-                                <input type="email" class="form-control" id="inputEmail" style="border:0;background-color:white;text-shadow: 3px 3px 4px #bfbfbf;" placeholder="email@youconsel.dot" disabled>
+                                <input type="email" class="form-control" id="inputEmail" value="{{$client->email}}" readonly>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputPhone" style="text-shadow: 3px 3px 4px #bfbfbf;">Phone Number</label>
-                                <input type="text" class="form-control" id="inputPhone">
+                                <input type="text" class="form-control" id="inputPhone" value="{{$client->phonenumber}}" >
                             </div>
                         </div>
                         <h4 style="margin-left:-100px;margin-bottom:30px;color:#848484;font-family: 'Be Vietnam';">
+                        @endforeach
                             Change Password
                         </h4>
                         <div class="form-row">

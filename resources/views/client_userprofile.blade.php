@@ -25,7 +25,7 @@
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <a class="navbar-brand" href="clientlandingpage.php"><img src="PHOTOS/LogoPutih-01.png" width="60" height="60"
+        <a class="navbar-brand" href="/clientlandingpage"><img src="PHOTOS/LogoPutih-01.png" width="60" height="60"
                 class="d-inline-block align-top" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +52,7 @@
             <img src="PHOTOS/inboxicon.png" alt="journal2" class="iconjournal">
 
             <!-- Isi Konten -->
-
+            @foreach($client_userprofile as $client)
             <center>
                 <div style="margin-top:50px;width:70%;" align="left">
                     <h4 style="margin-left:-100px;margin-bottom:30px;color:#848484;font-family: 'Be Vietnam';">Edit
@@ -61,30 +61,35 @@
                     <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;">
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label for="inputDisplayName" style="text-shadow: 3px 3px 4px #bfbfbf;">Display Name</label>
-                                <input type="text" class="form-control" id="inputDisplayName">
+                                <label for="inputDisplayName" style="text-shadow: 3px 3px 4px #bfbfbf;">Username</label>
+                                <input type="text" class="form-control" id="inputDisplayName" value="{{$client->username}}" readonly></input>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputFullName" style="text-shadow: 3px 3px 4px #bfbfbf;">Full Name</label>
-                                <input type="text" class="form-control" id="inputFullName">
+                                <input type="text" class="form-control" id="inputFullName" value="{{$client->name}}" readonly></input>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputEmail" style="text-shadow: 3px 3px 4px #bfbfbf;">Email Address</label>
-                                <input type="email" class="form-control" id="inputEmail" style="border:0;background-color:white;text-shadow: 3px 3px 4px #bfbfbf;" placeholder="email@youconsel.dot" disabled>
+                                <input type="email" class="form-control" id="inputEmail" style="border:0;background-color:white;text-shadow: 3px 3px 4px #bfbfbf;" value="{{$client->email}}" disabled>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputPhone" style="text-shadow: 3px 3px 4px #bfbfbf;">Phone Number</label>
-                                <input type="text" class="form-control" id="inputPhone">
+                                <input type="text" class="form-control" id="inputPhone" value="{{$client->phonenumber}}"></input>
                             </div>
                         </div>
+<<<<<<< HEAD
                         <center><button type="button" class="btn btn-outline-info" style="margin-bottom:20px;">Save Changes</button><center>
                     </form>
                 </div>
                 
                 <div style="margin-top:50px;width:70%;" align="left">
                     <h4 style="margin-left:-100px;margin-bottom:30px;color:#848484;font-family: 'Be Vietnam';">
+=======
+                        @endforeach
+                        <h4 style="margin-left:-100px;margin-bottom:30px;color:#848484;font-family: 'Be Vietnam';">
+>>>>>>> 49a59b39f02d4a4b730c5e31d82fa0362c143cd6
                             Change Password
                         </h4>
                     <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;">
@@ -99,7 +104,12 @@
                             </div>
                         </div>
 
+<<<<<<< HEAD
                         <center><button type="button" class="btn btn-outline-info" style="margin-bottom:20px;">Change Password</button><center>
+=======
+                        <center><button type="button" class="btn btn-outline-info" style="margin-top:30px;">Save Changes</button><center>
+                    
+>>>>>>> 49a59b39f02d4a4b730c5e31d82fa0362c143cd6
                     </form>
                 </div>
             </center>
