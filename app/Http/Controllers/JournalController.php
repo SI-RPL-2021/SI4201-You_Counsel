@@ -33,7 +33,7 @@ class JournalController extends Controller
         $username = request('username');
         $userid = \App\Models\User::select('id')->where('username', $username)->first();
         $userid = trim($userid, '[{"id":}]');
-        $counselor_journal_checker2 = \App\Models\Journal::all()->where('id', $userid);
+        $counselor_journal_checker2 = \App\Models\Journal::all()->where('clientid', $userid);
         return view('counselor_journal_checker2', ['counselor_journal_checker2' => $counselor_journal_checker2]);
     }   
 }
