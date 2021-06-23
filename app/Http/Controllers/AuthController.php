@@ -106,7 +106,6 @@ class AuthController extends Controller
             $request -> save(); 
             }
         
-        //   \App\Models\User::create($request->only('username', 'email', Hash::'password', 'access'));
         return redirect('/admin_homepage');
     }
 
