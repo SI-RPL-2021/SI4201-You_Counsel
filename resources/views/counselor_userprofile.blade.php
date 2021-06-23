@@ -126,7 +126,7 @@
                             </div>
                         </div>
 
-                        <center><button type="button" class="btn btn-outline-info" style="margin-top:30px;">Change your Schedules</button><center>
+                        <center><a href="/counselor_schedule"><button type="button" class="btn btn-outline-info" style="margin-top:30px;">Change your Schedules</button></a><center>
                     </form>
                 </div>
 
