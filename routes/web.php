@@ -168,7 +168,10 @@ Route::post('/postlogin', 'App\Http\Controllers\AuthController@postlogin');
 Route::get('/logout', '\App\Http\Controllers\AuthController@logout');
 Route::get('/profile', 'App\Http\Controllers\ClientController@index');
 Route::get('/counselorprofile', 'App\Http\Controllers\AuthController@counselorindex');
+Route::get('/adminprofile', 'App\Http\Controllers\AuthController@adminindex');
 Route::post('/create', 'App\Http\Controllers\AuthController@create');
+Route::post('/updateclient', 'App\Http\Controllers\ClientController@updateclient');
+Route::post('/updateclientpassword', 'App\Http\Controllers\ClientController@updateclientpassword');
 
 //JOURNAL
 Route::get('/journalindex', 'App\Http\Controllers\JournalController@journalindex');

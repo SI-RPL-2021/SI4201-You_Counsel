@@ -58,7 +58,8 @@
                     <h4 style="margin-left:-100px;margin-bottom:30px;color:#848484;font-family: 'Be Vietnam';">Edit
                         Information
                     </h4>
-                    <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;">
+                    <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;" action="updateclient" method="POST">
+                    {{csrf_field()}}
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputDisplayName" style="text-shadow: 3px 3px 4px #bfbfbf;">Username</label>
@@ -66,7 +67,7 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputFullName" style="text-shadow: 3px 3px 4px #bfbfbf;">Full Name</label>
-                                <input type="text" class="form-control" id="inputFullName" value="{{$client->name}}" readonly></input>
+                                <input type="text" class="form-control" id="inputFullName" value="{{$client->name}}" name="name"></input>
                             </div>
                         </div>
                         <div class="form-row">
@@ -76,10 +77,10 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputPhone" style="text-shadow: 3px 3px 4px #bfbfbf;">Phone Number</label>
-                                <input type="text" class="form-control" id="inputPhone" value="{{$client->phonenumber}}"></input>
+                                <input type="text" class="form-control" id="inputPhone" value="{{$client->phonenumber}}" name="phonenumber"></input>
                             </div>
                         </div>
-                        <center><button type="button" class="btn btn-outline-info" style="margin-top:30px;">Save Changes</button><center>
+                        <center><button type="submit" class="btn btn-outline-info" style="margin-top:30px;">Save Changes</button><center>
                     </form>
                 </div>
                 @endforeach
@@ -87,19 +88,20 @@
                         <h4 style="margin-left:-100px;margin-bottom:30px;color:#848484;font-family: 'Be Vietnam';">
                             Change Password
                         </h4>
-                    <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;">
+                    <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;" action="updateclientpassword" method="POST"> 
+                    {{csrf_field()}}
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputNewPassword" style="text-shadow: 3px 3px 4px #bfbfbf;">New Password</label>
-                                <input type="password" class="form-control" id="inputNewPassword">
+                                <input type="password" class="form-control" id="inputNewPassword" name="password">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputConfirmNewPassword" style="text-shadow: 3px 3px 4px #bfbfbf;">Confirm New Password</label>
-                                <input type="password" class="form-control" id="inputConfirmNewPassword">
+                                <input type="password" class="form-control" id="inputConfirmNewPassword" name="password2">
                             </div>
                         </div>
 
-                        <center><button type="button" class="btn btn-outline-info" style="margin-top:30px;">Change Password</button><center>
+                        <center><button type="submit" class="btn btn-outline-info" style="margin-top:30px;">Change Password</button><center>
                     
                     </form>
                 </div>
