@@ -34,8 +34,8 @@ class ComposerStaticInitc56d9b657321c001f0fd4a9d50431851
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
-        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '2a3c2110e8e0295330dc3d11a4cbc4cb' => __DIR__ . '/..' . '/php-webdriver/webdriver/lib/Exception/TimeoutException.php',
+        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
     );
 
@@ -5263,7 +5263,10 @@ class ComposerStaticInitc56d9b657321c001f0fd4a9d50431851
         'Symfony\\Polyfill\\Php73\\Php73' => __DIR__ . '/..' . '/symfony/polyfill-php73/Php73.php',
         'Symfony\\Polyfill\\Php80\\Php80' => __DIR__ . '/..' . '/symfony/polyfill-php80/Php80.php',
         'Tests\\Browser\\ClientAppointmentTest' => __DIR__ . '/../..' . '/tests/Browser/ClientAppointmentTest.php',
+<<<<<<< HEAD
+=======
         'Tests\\Browser\\ClientLoginTest' => __DIR__ . '/../..' . '/tests/Browser/ClientLoginTest.php',
+>>>>>>> 459ba73d470dfa9f6d3c133ae7bb765a93c90704
         'Tests\\Browser\\ClientMessageTest' => __DIR__ . '/../..' . '/tests/Browser/ClientMessageTest.php',
         'Tests\\Browser\\ExampleTest' => __DIR__ . '/../..' . '/tests/Browser/ExampleTest.php',
         'Tests\\Browser\\Pages\\HomePage' => __DIR__ . '/../..' . '/tests/Browser/Pages/HomePage.php',

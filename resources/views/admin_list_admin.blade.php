@@ -37,7 +37,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
-        
+
       </ul>
       <span class="navbar-text" style="color:white;">
         <a href="/profile"><button type="button" class="btn btn-sm btn-outline-light">Profile</button></a>
@@ -63,9 +63,9 @@
                     <button type="submit" style="width:200px; height:35px; font-size:15px" class="btn btn-outline-info btn-sm btn-block tblbackhome">Counselor List</button>
                 </a>
             </div>
-            </div> 
-    <!-- Isi Konten -->
-  
+            </div>
+    <!-- CONTENT -->
+
     <table class="table table-bordered ml-auto mr-auto" style="position:static;width:95%; margin-top:20px;">
                         <thead class="thead-light">
                             <tr>
@@ -103,7 +103,7 @@
       <a href="https://instagram.com/" class="fa fa-instagram fa-3x" style="color: white;"></a>
       <a href="https://accounts.google.com/" class="fa fa-google fa-3x" style="color: white;"></a>
     </div>
-  
+
   <!-- SOCMED -->
 
 <br>

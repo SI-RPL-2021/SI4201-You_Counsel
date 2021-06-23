@@ -4758,7 +4758,10 @@ return array(
     'Symfony\\Polyfill\\Php73\\Php73' => $vendorDir . '/symfony/polyfill-php73/Php73.php',
     'Symfony\\Polyfill\\Php80\\Php80' => $vendorDir . '/symfony/polyfill-php80/Php80.php',
     'Tests\\Browser\\ClientAppointmentTest' => $baseDir . '/tests/Browser/ClientAppointmentTest.php',
+<<<<<<< HEAD
+=======
     'Tests\\Browser\\ClientLoginTest' => $baseDir . '/tests/Browser/ClientLoginTest.php',
+>>>>>>> 459ba73d470dfa9f6d3c133ae7bb765a93c90704
     'Tests\\Browser\\ClientMessageTest' => $baseDir . '/tests/Browser/ClientMessageTest.php',
     'Tests\\Browser\\ExampleTest' => $baseDir . '/tests/Browser/ExampleTest.php',
     'Tests\\Browser\\Pages\\HomePage' => $baseDir . '/tests/Browser/Pages/HomePage.php',

@@ -80,10 +80,15 @@
                                 <input type="text" class="form-control" id="inputPhone" value="{{$client->phonenumber}}" >
                             </div>
                         </div>
+                        <center><button type="button" class="btn btn-outline-info" style="margin-top:30px;">Save Changes</button><center>
+                    </form>
+                </div>
+                <div style="margin-top:50px;width:70%;" align="left">
                         <h4 style="margin-left:-100px;margin-bottom:30px;color:#848484;font-family: 'Be Vietnam';">
                         @endforeach
                             Change Password
                         </h4>
+                    <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;">
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputNewPassword" style="text-shadow: 3px 3px 4px #bfbfbf;">New Password</label>
@@ -95,7 +100,7 @@
                             </div>
                         </div>
 
-                        <center><button type="button" class="btn btn-outline-info" style="margin-top:30px;">Save Changes</button><center>
+                        <center><button type="button" class="btn btn-outline-info" style="margin-top:30px;">Change Password</button><center>
                     </form>
                 </div>
 
