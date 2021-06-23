@@ -112,18 +112,15 @@ class AuthController extends Controller
 
     public function getadmin()
     {
-
     $admin_list_admin = \App\Models\Admin::all();
     return view('admin_list_admin', ['admin_list_admin' => $admin_list_admin]);
 
     }
     
     public function getcounselor()
-    {
-        
+    {  
     $admin_list_counselor = \App\Models\Counselor::all();
     return view('admin_list_counselor', ['admin_list_counselor' => $admin_list_counselor]);
-
     }
 
     public function userdelete($id){
