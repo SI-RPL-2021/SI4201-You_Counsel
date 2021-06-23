@@ -30,7 +30,7 @@ class MessageController extends Controller
     {
 
     $userId = Auth::id();
-    $client_leavemessagehistory = \App\Models\Message::all()->where('id', $userId);
+    $client_leavemessagehistory = \App\Models\Message::all()->where('clientid', $userId);
     return view('client_leavemessagehistory', ['client_leavemessagehistory' => $client_leavemessagehistory]);
     }
 
