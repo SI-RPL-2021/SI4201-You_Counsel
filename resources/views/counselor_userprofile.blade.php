@@ -48,7 +48,7 @@
 
     <!-- CONTENT -->
     <div class="content">
-        <div class="center" style="width:70%; height:1000px;  background-color:white;">
+        <div class="center" style="width:70%; height:1100px;  background-color:white;">
             <img src="PHOTOS/inboxicon.png" alt="journal2" class="iconjournal">
 
             <!-- Isi Konten -->
