@@ -13,8 +13,8 @@ class ClientController extends Controller
     {
 
     $userId = Auth::id();
-    $clientprofile = \App\Models\Client::all()->where('id', $userId);
-    return view('clientprofile', ['clientprofile' => $clientprofile]);
+    $client_userprofile = \App\Models\Client::all()->where('id', $userId);
+    return view('client_userprofile', ['client_userprofile' => $client_userprofile]);
     }
 
     public function adminsearchbyid($id)

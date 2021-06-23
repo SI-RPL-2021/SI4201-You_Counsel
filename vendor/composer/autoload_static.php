@@ -5263,6 +5263,10 @@ class ComposerStaticInitc56d9b657321c001f0fd4a9d50431851
         'Symfony\\Polyfill\\Php73\\Php73' => __DIR__ . '/..' . '/symfony/polyfill-php73/Php73.php',
         'Symfony\\Polyfill\\Php80\\Php80' => __DIR__ . '/..' . '/symfony/polyfill-php80/Php80.php',
         'Tests\\Browser\\ClientAppointmentTest' => __DIR__ . '/../..' . '/tests/Browser/ClientAppointmentTest.php',
+<<<<<<< HEAD
+=======
+        'Tests\\Browser\\ClientLoginTest' => __DIR__ . '/../..' . '/tests/Browser/ClientLoginTest.php',
+>>>>>>> 459ba73d470dfa9f6d3c133ae7bb765a93c90704
         'Tests\\Browser\\ClientMessageTest' => __DIR__ . '/../..' . '/tests/Browser/ClientMessageTest.php',
         'Tests\\Browser\\ExampleTest' => __DIR__ . '/../..' . '/tests/Browser/ExampleTest.php',
         'Tests\\Browser\\Pages\\HomePage' => __DIR__ . '/../..' . '/tests/Browser/Pages/HomePage.php',

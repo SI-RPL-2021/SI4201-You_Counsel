@@ -118,10 +118,9 @@ class AuthController extends Controller
     }
     
     public function getcounselor()
-    {
+    {  
     $admin_list_counselor = \App\Models\Counselor::all();
     return view('admin_list_counselor', ['admin_list_counselor' => $admin_list_counselor]);
-
     }
 
     public function userdelete($id){
@@ -164,6 +163,14 @@ class AuthController extends Controller
         $user->delete();
 
         return redirect('/admin_homepage');
+    }
+
+    public function counselorindex()
+    {
+
+    $userId = Auth::id();
+    $counselor_userprofile = \App\Models\Counselor::all()->where('id', $userId);
+    return view('counselor_userprofile', ['counselor_userprofile' => $counselor_userprofile]);
     }
     
 }

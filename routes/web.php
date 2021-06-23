@@ -167,6 +167,7 @@ Route::get('/{id}/counselorappointmentdelete/', 'App\Http\Controllers\Appointmen
 Route::post('/postlogin', 'App\Http\Controllers\AuthController@postlogin');
 Route::get('/logout', '\App\Http\Controllers\AuthController@logout');
 Route::get('/profile', 'App\Http\Controllers\ClientController@index');
+Route::get('/counselorprofile', 'App\Http\Controllers\AuthController@counselorindex');
 Route::post('/create', 'App\Http\Controllers\AuthController@create');
 
 //JOURNAL
