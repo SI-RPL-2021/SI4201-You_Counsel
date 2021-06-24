@@ -36,7 +36,7 @@
 
             </ul>
             <span class="navbar-text" style="color:white;">
-                <a href="/profile"><button type="button" class="btn btn-sm btn-outline-light">Profile</button></a>
+                <a href="/counselorprofile"><button type="button" class="btn btn-sm btn-outline-light">Profile</button></a>
                 <a href="/logout"><button type="button" class="btn btn-sm btn-outline-light">Logout</button></a>
             </span>
         </div>
@@ -68,7 +68,7 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputFullName" style="text-shadow: 3px 3px 4px #bfbfbf;">Name</label>
-                                <input type="text" class="form-control" id="inputFullName" value="{{$client->name}}" name="name" >
+                                <input type="text" class="form-control" id="inputFullName" value="{{$client->name}}" name="name" placeholder="Name">
                             </div>
                         </div>
                         <div class="form-row">
@@ -77,8 +77,8 @@
                                 <input type="email" class="form-control" id="inputEmail" value="{{$client->email}}"  name="email" readonly>
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="inputPhone" style="text-shadow: 3px 3px 4px #bfbfbf;">Phone Number</label>
-                                <input type="text" class="form-control" id="inputPhone" value="{{$client->phonenumber}}"  name="phonenumber" >
+                                <label for="phonenumber" style="text-shadow: 3px 3px 4px #bfbfbf;">Phone Number</label>
+                                <input type="text" class="form-control" id="inputPhone" value="{{$client->phonenumber}}"  name="phonenumber" placeholder="Phone Number">
                             </div>
                         </div>
                         <center><button type="submit" class="btn btn-outline-info" style="margin-top:30px;">Save Changes</button><center>
