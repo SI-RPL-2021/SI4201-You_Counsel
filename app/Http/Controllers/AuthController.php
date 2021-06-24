@@ -69,7 +69,7 @@ class AuthController extends Controller
         $request -> save(); 
 
         //   \App\Models\User::create($request->only('username', 'email', Hash::'password', 'access'));
-       return redirect('/login');
+       return redirect('/login')->with('alert', 'Account Succesfully Created!');
     }
 
     public function admincreate(Request $request)

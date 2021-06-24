@@ -44,7 +44,7 @@ class ClientController extends Controller
     $request -> save(); 
 
     $client_userprofile = \App\Models\Client::all()->where('id', $userId);
-    return view('client_userprofile', ['client_userprofile' => $client_userprofile]);
+    return view('client_userprofile', ['client_userprofile' => $client_userprofile])->with(['alert' => 'Account Succesfully Changed!']);
     }
 
     public function updateadmin(Request $request)

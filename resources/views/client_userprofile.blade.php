@@ -51,6 +51,12 @@
         <div class="center" style="width:70%; height:700px;  background-color:white;">
             <img src="PHOTOS/inboxicon.png" alt="journal2" class="iconjournal">
 
+    @if(session('alert'))
+    <div class="alert alert-success">
+        {{ session('alert') }}
+    </div>
+    @endif
+
             <!-- Isi Konten -->
             @foreach($client_userprofile as $client)
             <center>

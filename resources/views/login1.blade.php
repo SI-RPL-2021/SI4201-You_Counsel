@@ -17,7 +17,11 @@
 </head>
 
 <body>
-
+@if (session('alert'))
+    <div class="alert alert-success">
+        {{ session('alert') }}
+    </div>
+@endif
 <div class="container-fluid">
   <div class="row no-gutter">
     <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
