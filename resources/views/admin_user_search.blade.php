@@ -56,7 +56,7 @@
                 
             </ul>
             <span class="navbar-text" style="color:white;">
-                <a href="/admin_profile"><button type="button" class="btn btn-sm btn-outline-light">Profile</button></a>
+                <a href="/adminprofile"><button type="button" class="btn btn-sm btn-outline-light">Profile</button></a>
                 <a href="/logout"><button type="button" class="btn btn-sm btn-outline-light">Logout</button></a>
             </span>
         </div>
