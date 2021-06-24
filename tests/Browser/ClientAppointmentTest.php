@@ -16,13 +16,14 @@ class ClientAppointmentTest extends DuskTestCase
     public function testExample()
     {
         $this->browse(function (Browser $browser) {
-            $browser->visit('http://127.0.0.1:8000/client_scheduleappointment')
+            $browser->visit('http://127.0.0.1:8000/scheduleappointment')
                     ->assertSee('Schedule an Appointment')
                     ->select('type','Personal Development')
                     ->select('counselorid','B. F. Skinner')
                     ->select('method','Video Call')
                     ->type('reason','Contact me as soon as possible')
-                    ->press('Send');
+                    ->press('Send')
+                    ->visit('http://127.0.0.1:8000/client_appointment_thanks')
                     ;
         });
     }

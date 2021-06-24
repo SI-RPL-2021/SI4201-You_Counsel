@@ -20,7 +20,9 @@ class ClientLoginTest extends DuskTestCase
                     ->assertSee('Welcome back!')
                     ->type('username','alexgundara')
                     ->type('password','12345')
-                    ->press('LOGIN NOW');
+                    ->press('LOGIN NOW')
+                    ->visit('http://127.0.0.1:8000/clientlandingpage')
+                    ;
         });
     }
 }

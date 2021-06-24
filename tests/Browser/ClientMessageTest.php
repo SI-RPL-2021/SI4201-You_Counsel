@@ -19,7 +19,8 @@ class ClientMessageTest extends DuskTestCase
             $browser->visit('http://127.0.0.1:8000/client_leavemessage')
                     ->assertSee('Leave Us a Message')
                     ->type('pesanclient','Help')
-                    ->press('Send');
+                    ->press('Send')
+                    ->visit('http://127.0.0.1:8000/client_leavemessage_thanks');
                     
         });
     }
