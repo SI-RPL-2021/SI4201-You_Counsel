@@ -17,7 +17,7 @@
                         <div class="text-container">
                             <h1>Hello and Welcome!</h1>
                             <p class="p-heading p-large">We <span id="js-rotating">Listen to, Understand, Solved</span> Your Problem.</p>
-                            <a class="btn-solid-lg page-scroll" href="#">Join Now!</a>
+                            <a class="btn-solid-lg" href="/register">Join Now!</a>
                         </div>
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
