@@ -46,7 +46,7 @@
     <!-- CONTENT -->
     <div class="content">
         <div class="center" style="width:90%; height:auto;  background-color:white;">
-            <img src="PHOTOS/inboxicon.png" alt="journal2" class="iconjournal">
+            <img src="PHOTOS/appointment.jpg" alt="journal2" class="iconjournal">
 
             <h3 class="center" style="color:0788D9; margin-top:10px; color:#0BA9D0;font-family: 'Be Vietnam';">Appointment
             </h3>
