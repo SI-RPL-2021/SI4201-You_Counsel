@@ -94,11 +94,11 @@
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputNewPassword" style="text-shadow: 3px 3px 4px #bfbfbf;">New Password</label>
-                                <input type="password" class="form-control" id="inputNewPassword">
+                                <input type="password" class="form-control" id="inputNewPassword" name="password">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputConfirmNewPassword" style="text-shadow: 3px 3px 4px #bfbfbf;">Confirm New Password</label>
-                                <input type="password" class="form-control" id="inputConfirmNewPassword">
+                                <input type="password" class="form-control" id="inputConfirmNewPassword" name="password2">
                             </div>
                         </div>
 
