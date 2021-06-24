@@ -39,6 +39,12 @@ class AppointmentReqController extends Controller
     return view('counselor_appointmentlist', ['counselor_appointmentlist' => $counselor_appointmentlist]);
     }
 
+    public function scheduleindex()
+    {
+    $client_scheduleAppointment = \App\Models\Counselor::all();
+    return view('client_scheduleAppointment', ['client_scheduleAppointment' => $client_scheduleAppointment]);
+    }
+
     public function clientindex()
     {
 

@@ -58,11 +58,35 @@
     <!-- NAVBAR -->
 
     <!-- CONTENT -->
-    <div class="center" style="width:70%; height:750px;  background-color:white;">
+    <div class="center" style="width:70%; height:auto;  background-color:white;">
         <img src="PHOTOS/appointment.jpg" alt="journal2" class="iconjournal">
         <h3 class="center" style="margin-top:10px; color:#0BA9D0;font-family: 'Be Vietnam';">Schedule an Appointment
         </h3>
+        <center>
+                <div class="" style="width:90%;">
+                    <table class="table table-hover">
+                        <thead style="background-color:#F2F2F2; color:#069ED7;">
+                            <tr>
+                                <th scope="col" style=" text-align:center;">No</th>
+                                <th scope="col" style=" text-align:center; width:auto;">Name</th>
+                                <th scope="col" style="text-align:center;">Specialization</th>
+                                <th scope="col" style=" text-align:center;">Availdays</th>
+                            </tr>
+                        </thead>
+        @php $no = 1; @endphp
+        @foreach($client_scheduleAppointment as $client)
+            <tr style="text-align:center;">
+            <td scope="row" >{{ $no++ }} </td>
+            <td>{{$client->name}}</td>
+            <td>{{$client->specialization}}</td>
+            <td>{{$client->availdays}}</td>
 
+            </tr>
+        @endforeach
+        </tbody>
+        </table>
+        </div>
+        </center>
         <!-- Isi Konten -->
         <!-- FORM -->
         <center>

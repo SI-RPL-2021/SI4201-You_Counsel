@@ -155,6 +155,7 @@ Route::get('/client_appointment_history', function () {
 
 Route::get('/clientinbox2', 'App\Http\Controllers\AppointmentAnsController@indexclient');
 Route::get('/appointmentlist', '\App\Http\Controllers\AppointmentReqController@index');
+Route::get('/scheduleappointment', '\App\Http\Controllers\AppointmentReqController@scheduleindex');
 Route::get('/answerlist', '\App\Http\Controllers\AppointmentAnsController@counselorindex');
 Route::get('/client_appointmentlist', '\App\Http\Controllers\AppointmentReqController@clientindex');
 Route::get('/{id}/appointmentreply', '\App\Http\Controllers\AppointmentReqController@reply');
