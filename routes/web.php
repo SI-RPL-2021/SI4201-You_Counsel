@@ -176,6 +176,7 @@ Route::post('/updatecounselor', 'App\Http\Controllers\ClientController@updatecou
 Route::post('/updateclientpassword', 'App\Http\Controllers\ClientController@updateclientpassword');
 Route::post('/updateadminpassword', 'App\Http\Controllers\ClientController@updateadminpassword');
 Route::post('/updatecounselorpassword', 'App\Http\Controllers\ClientController@updatecounselorpassword');
+Route::post('/updatecounselordetails', 'App\Http\Controllers\ClientController@updatecounselordetails');
 
 //JOURNAL
 Route::get('/journalindex', 'App\Http\Controllers\JournalController@journalindex');

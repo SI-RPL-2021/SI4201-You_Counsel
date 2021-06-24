@@ -167,12 +167,5 @@ class AuthController extends Controller
         return redirect('/admin_homepage');
     }
 
-    public function counselorindex()
-    {
-
-    $userId = Auth::id();
-    $counselor_userprofile = \App\Models\Counselor::all()->where('id', $userId);
-    return view('counselor_userprofile', ['counselor_userprofile' => $counselor_userprofile]);
-    }
     
 }

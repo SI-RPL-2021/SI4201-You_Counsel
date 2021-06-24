@@ -55,63 +55,35 @@
 
             <!-- Isi Konten -->
             <center>
-                <div style="margin-top:50px;width:70%;" align="left">
-                    <h4 style="margin-left:-50px;margin-bottom:30px;color:#0BA9D0;font-family: 'Be Vietnam'; font-size:20px;">User ID
-                    </h4>
-                    <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;">
-                        <div class="form-row">
-                            <div class="form-group col-md-12">
-                                <input type="text" class="form-control" id="inputspecialization" style="border:5;background-color:#E1E1E1;text-shadow: 3px 3px 4px #bfbfbf;" placeholder="129423432" disabled>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-                <div style="margin-top:px;width:70%;" align="left">
-                    <h4 style="margin-left:-50px;margin-bottom:30px;color:#0BA9D0;font-family: 'Be Vietnam'; font-size:20px;">Name
-                    </h4>
-                    <form class="font-weight-bold" style="color:#0BA9D0; font-size:15px;">
-                        <div class="form-row">
-                            <div class="form-group col-md-12">
-                                <input type="text" class="form-control" id="inputdays" style="border:5;background-color:#E1E1E1;text-shadow: 3px 3px 4px #bfbfbf;" placeholder="C.D Floyd" disabled>
-                        </div>
-                            </div>
-                            </form>
-                </div>
 
                 <div style="margin-top:px;width:70%;" align="left">
                     <h4 style="margin-left:-50px;margin-bottom:30px;color:#0BA9D0;font-family: 'Be Vietnam'; font-size:20px;">Specialization
                     </h4>
-                    <form action="" method="post" style="color:#0BA9D0;font-family: 'Be Vietnam';">
-                        <input type="checkbox" name="check1a" value="Setuju">&nbsp;Minat/Bakat&nbsp;
-                        <input type="checkbox" name="check2a" value="Setuju">&nbsp;Karir&nbsp;
-                        <input type="checkbox" name="check3a" value="Setuju">&nbsp;Pribadi&nbsp;
-                        <input type="checkbox" name="check4a" value="Setuju">&nbsp;Kelompok&nbsp;
+                    <form action="updatecounselordetails" method="POST" style="color:#0BA9D0;font-family: 'Be Vietnam';">
+                    {{csrf_field()}}
+                        <input type="checkbox" name="check1a[]" value="Minat/Bakat,">&nbsp;Minat/Bakat&nbsp;
+                        <input type="checkbox" name="check2a[]" value="Karir,">&nbsp;Karir&nbsp;
+                        <input type="checkbox" name="check3a[]" value="Pribadi,">&nbsp;Pribadi&nbsp;
+                        <input type="checkbox" name="check4a[]" value="Kelompok">&nbsp;Kelompok&nbsp;
 
-                
-                    </form>
-                </div>
-
-                <div style="margin-top:px;width:70%;" align="left">
+                    <br>
+                    <br>
                     <h4 style="margin-left:-50px;margin-bottom:30px;color:#0BA9D0;font-family: 'Be Vietnam'; font-size:20px;">Available Days
                     </h4>
-                    <form action="" method="post" style="color:#0BA9D0;font-family: 'Be Vietnam';">
-                        <input type="checkbox" name="check1b" value="Setuju">&nbsp;Monday&nbsp;
-                        <input type="checkbox" name="check2b" value="Setuju">&nbsp;Tuesday&nbsp;
-                        <input type="checkbox" name="check3b" value="Setuju">&nbsp;Wednesday&nbsp;
-                        <input type="checkbox" name="check4b" value="Setuju">&nbsp;Thursday&nbsp;
-                        <input type="checkbox" name="check5b" value="Setuju">&nbsp;friday&nbsp;
-                        <input type="checkbox" name="check6b" value="Setuju">&nbsp;Saturday&nbsp;
+                        <input type="checkbox" name="check1b[]" value="Mon,">&nbsp;Monday&nbsp;
+                        <input type="checkbox" name="check2b[]" value="Tue,">&nbsp;Tuesday&nbsp;
+                        <input type="checkbox" name="check3b[]" value="Wed,">&nbsp;Wednesday&nbsp;
+                        <input type="checkbox" name="check4b[]" value="Thur,">&nbsp;Thursday&nbsp;
+                        <input type="checkbox" name="check5b[]" value="Fri,">&nbsp;Friday&nbsp;
                         
-                        </form>
+                        
                 </div>  
                          
 
-                        <center><button type="button" class="btn btn-outline-info" style="margin-top:30px;">Save Changes</button><center>
-                    
-                
+                        <center><button type="submit" class="btn btn-outline-info" style="margin-top:30px;">Save Changes</button><center>
 
             </center>
+            </form>
         </div>
     </div>
 

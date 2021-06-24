@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Input;
 
 class ClientController extends Controller
 {
@@ -121,6 +122,45 @@ class ClientController extends Controller
     $counselor_userprofile = \App\Models\Counselor::all()->where('id', $userId);
     return view('counselor_userprofile', ['counselor_userprofile' => $counselor_userprofile]);
     }
+
+    public function updatecounselordetails(Request $request)
+    {
+
+    $spec1 = request('check1a');
+    $spec2 = request('check2a');
+    $spec3 = request('check3a');
+    $spec4 = request('check4a');
+    if(is_null($spec1)){ $spec1 = array(' ');}
+    if(is_null($spec2)){ $spec2 = array(' ');}
+    if(is_null($spec3)){ $spec3 = array(' ');}
+    if(is_null($spec4)){ $spec4 = array(' ');}
+    $specialization = array_merge($spec1, $spec2, $spec3, $spec4);
+    $specialization = implode(' ', $specialization);
+
+    $day1 = request('check1b');
+    $day2 = request('check2b');
+    $day3 = request('check3b');
+    $day4 = request('check4b');
+    $day5 = request('check5b');
+    if(is_null($day1)){ $day1 = array(' ');}
+    if(is_null($day2)){ $day2 = array(' ');}
+    if(is_null($day3)){ $day3 = array(' ');}
+    if(is_null($day4)){ $day4 = array(' ');}
+    if(is_null($day5)){ $day5 = array(' ');}
+    $availdays = array_merge($day1, $day2, $day3, $day4, $day5);
+    $availdays = implode(' ', $availdays);
+
+    $userId = Auth::id();
+    $request = \App\Models\Counselor::all()->where('id', $userId)->first();
+    $request -> specialization = $specialization;
+    $request -> availdays = $availdays;
+    $request -> save(); 
+    
+    $counselor_userprofile = \App\Models\Counselor::all()->where('id', $userId);
+    return view('counselor_userprofile', ['counselor_userprofile' => $counselor_userprofile]);
+    }
+
+    
 
     public function adminsearchbyid($id)
     {
