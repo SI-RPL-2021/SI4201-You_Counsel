@@ -43,6 +43,13 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt(12345),
             'access' => 1,
             ]);
+        \DB::table('admin')->insert([
+            'id' => 456,
+            'username' => 'todosantana',
+            'name' => 'Todo',
+            'email' => 'todosantana@gmail.com',
+            'phonenumber' => 12345,
+            ]);
         \DB::table('users')->insert([
             'id' => 789,
             'username' => 'skinner123',
