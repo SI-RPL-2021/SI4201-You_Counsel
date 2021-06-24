@@ -15,18 +15,31 @@
     <meta charset="UTF-8">
     <style>
         <?php include 'CSS/youcounsel.css'?>
+
         .box
+
         {
-        margin-top:-70px;
+
+        margin-top: 70px;
+
         padding-top:30px;
+
         padding-right:30px;
+
         padding-left:30px;
+
         width:80%;
-        height:70%;
+
+        height:500px;
+
         border:2px
+
         solid
+
         #0BA9D0;
+
         }
+
 
     </style>
     <!-- STYLING -->
@@ -58,41 +71,42 @@
     <!-- NAVBAR -->
 
     <!-- CONTENT -->
-    <div class="center" style="width:70%; height:auto;  background-color:white;">
+    <div class="center" style="width:70%; height:auto;padding-bottom:80px;  background-color:white;">
         <img src="PHOTOS/appointment.jpg" alt="journal2" class="iconjournal">
         <h3 class="center" style="margin-top:10px; color:#0BA9D0;font-family: 'Be Vietnam';">Schedule an Appointment
         </h3>
         <center>
-                <div class="" style="width:90%;">
-                    <table class="table table-hover">
-                        <thead style="background-color:#F2F2F2; color:#069ED7;">
-                            <tr>
-                                <th scope="col" style=" text-align:center;">No</th>
-                                <th scope="col" style=" text-align:center; width:auto;">Name</th>
-                                <th scope="col" style="text-align:center;">Specialization</th>
-                                <th scope="col" style=" text-align:center;">Availdays</th>
-                            </tr>
-                        </thead>
-        @php $no = 1; @endphp
-        @foreach($client_scheduleAppointment as $client)
-            <tr style="text-align:center;">
-            <td scope="row" >{{ $no++ }} </td>
-            <td>{{$client->name}}</td>
-            <td>{{$client->specialization}}</td>
-            <td>{{$client->availdays}}</td>
+            <div class="" style="width:90%;">
+                <table class="table table-hover">
+                    <thead style="background-color:#F2F2F2; color:#069ED7;">
+                        <tr>
+                            <th scope="col" style=" text-align:center;">No</th>
+                            <th scope="col" style=" text-align:center; width:auto;">Name</th>
+                            <th scope="col" style="text-align:center;">Specialization</th>
+                            <th scope="col" style=" text-align:center;">Availdays</th>
+                        </tr>
+                    </thead>
+                    @php $no = 1; @endphp
+                    @foreach($client_scheduleAppointment as $client)
+                    <tr style="text-align:center;">
+                        <td scope="row">{{ $no++ }} </td>
+                        <td>{{$client->name}}</td>
+                        <td>{{$client->specialization}}</td>
+                        <td>{{$client->availdays}}</td>
 
-            </tr>
-        @endforeach
-        </tbody>
-        </table>
-        </div>
+                    </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+            </div>
         </center>
         <!-- Isi Konten -->
         <!-- FORM -->
         <center>
             <div class="box">
-                <form method="POST" action="/appointmentreq" style="color:#0BA9D0;font-family: 'Be Vietnam';" align="left">
-                {{csrf_field()}}
+                <form method="POST" action="/appointmentreq" style="color:#0BA9D0;font-family: 'Be Vietnam';"
+                    align="left">
+                    {{csrf_field()}}
                     <div class="form-group row">
                         <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-lg">Date</label>
                         <div class="col-sm-8 ml-auto">
